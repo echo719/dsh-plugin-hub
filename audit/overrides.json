@@ -1,0 +1,5 @@
+{
+  "Nwflower/dsh-chat-import": {
+    "permissions": {"status": "g", "note": "读指定 JSONL 文件 · 不联网", "reviewed_at": "2026-08-14"}
+  }
+}

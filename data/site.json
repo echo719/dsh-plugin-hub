@@ -1,0 +1,18 @@
+{
+  "domain": "https://dsh-plugin-hub.com",
+  "ga4_id": "",
+  "github_repo": "echo719/dsh-plugin-hub",
+  "home_report_plugin": "dsh-chat-import",
+  "roles": [
+    {"who": "独立开发<br>/ 工具站", "n": "落地页整理中", "gap": false},
+    {"who": "跨境电商", "n": "3 个处方 · 已开", "gap": false, "active": true},
+    {"who": "SEO / 内容站", "n": "空位 · 站长教程顶上", "gap": true},
+    {"who": "视频自媒体", "n": "空位 · 站长教程顶上", "gap": true},
+    {"who": "公众号 / 小红书", "n": "落地页整理中", "gap": false},
+    {"who": "设计 / 数字产品", "n": "落地页整理中", "gap": false},
+    {"who": "知识付费", "n": "落地页整理中", "gap": false},
+    {"who": "数据 / 量化副业", "n": "落地页整理中", "gap": false},
+    {"who": "自动化接单", "n": "落地页整理中", "gap": false},
+    {"who": "学术 / 科研", "n": "落地页整理中", "gap": false}
+  ]
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="按你卡住的问题找 DeepSeek Harness 插件。每个插件过四道体检(权限/维护/dsh.bundle/测试CI),破坏性变更有人盯。">
+<link rel="canonical" href="https://dsh-plugin-hub.com/">
+<meta property="og:title" content="DSH Plugin Hub — 按问题找插件,装前先看体检">
+<meta property="og:description" content="按你卡住的问题找 DeepSeek Harness 插件。每个插件过四道体检(权限/维护/dsh.bundle/测试CI),破坏性变更有人盯。">
+<meta property="og:url" content="https://dsh-plugin-hub.com/">
+<meta property="og:type" content="website">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<title>DSH Plugin Hub — 按问题找插件,装前先看体检</title>
+<link rel="stylesheet" href="/assets/style.css">
+
+</head>
+<body>
+<nav><div class="wrap nav-in">
+  <a class="logo" href="/">dsh-plugin-hub<span class="tld">.com</span></a>
+  <div class="nav-links"><a href="/scenarios.html">场景库</a><a href="/opc.html">一人公司工具箱</a><a href="/plugins/">插件体检</a><a href="/breaking-changes.html">破坏性变更</a><a href="/scenarios/01-migration.html">上手教程</a></div>
+  <a class="nav-cta" href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5B%E6%8F%90%E4%BA%A4%E6%8F%92%E4%BB%B6%5D+owner%2Frepo" rel="nofollow">提交插件</a>
+</div></nav>
+<div class="wrap">
+<section class="hero">
+  <span class="reg tl">┌ EST. 2026-08</span><span class="reg tr">DAILY AUDIT 2026-08-14 ┐</span>
+  <div class="hero-tag">DeepSeek Harness (dsh) · 非官方社区站 · 中文为主 / EN summaries</div>
+  <h1>别按分类翻插件,<br>按<span class="u">你卡住的问题</span>找。</h1>
+  <p class="lede">每个场景只推荐 2–4 个体检过的插件:权限、维护状态、能否真正激活,一次看清,再决定装不装。</p>
+  <div class="hero-seal"><span class="b">体检合格</span><span class="s">DSH·PLUGIN·HUB</span></div>
+  <div class="search"><span class="prompt">&gt;_</span>
+    <input id="q" placeholder="你现在卡在哪? 比如: context 爆了 / 装了没反应">
+    <button onclick="location.href='/scenarios.html'">找处方</button></div>
+  <div class="hot-q"><span>常见症状:</span>
+    <a href="/scenarios/01-migration.html">从 Claude Code 迁移</a>
+    <a href="/scenarios.html">context 爆了</a>
+    <a href="/scenarios.html">装了没反应</a>
+    <a href="/breaking-changes.html">升级后插件全挂了</a></div>
+  <div class="hero-stats">
+    <span><b>30</b>场景收录 · 首批开方中</span>
+    <span><b>39</b>插件已核验体检</span>
+    <span><b>每日</b>09:20 数据更新</span></div>
+</section>
+<div class="hooks">
+  <div class="hook"><span class="k">01 · CHECKUP</span><h3>装前先看体检,不是先看 star</h3>
+    <p>权限 / 维护状态 / dsh.bundle / 测试CI 四道检查,不合格直接标出来。全场只有这里做。</p></div>
+  <div class="hook"><span class="k">02 · BREAKING</span><h3>破坏性变更有人替你盯</h3>
+    <p>官方明说 THERE WILL BE COMPATIBILITY-BREAKING CHANGES。每次发版我们核读一次,给出该不该升。</p></div>
+  <div class="hook"><span class="k">03 · 症状 → 处方</span><h3>按你在干的事组织,不是仓库列表</h3>
+    <p>竞品是平铺目录;这里从"你卡住的问题"出发,每页给可直接照抄的处方和避坑。</p></div>
+</div>
+<div class="sec-head"><span class="no">SECTION 01</span><h2>按场景找</h2>
+  <span class="sub">症状 → 处方 · 处方数只统计已核验存在的插件</span>
+  <a class="more" href="/scenarios.html">全部 30 个场景 →</a></div>
+<div class="grid"><a class="sc featured" href="/scenarios/01-migration.html">
+  <span class="badge">最多人来的入口</span><h3>从 Claude Code / Codex 迁移过来</h3>
+  <p>想保留 @file、批注、全屏 TUI 的老习惯?这几个插件把 dsh 调成你熟悉的样子,还能带着会话历史搬家。</p>
+  <div class="rx"><span>℞ 6 个已核验插件</span><span>dsh-chat-import ★</span></div></a><a class="sc" href="/scenarios.html">
+  <div class="top-line"><span class="sym">SYMPTOM 03</span><span class="cat">A·上手</span></div>
+  <h3>第一次装插件就失败</h3><p>dsh.bundle、旧安装写法、忘重启——三大坑逐个排。</p>
+  <div class="rx"><span>℞ 3 已核验</span><span>plugin-check</span></div></a><a class="sc" href="/scenarios.html">
+  <div class="top-line"><span class="sym">SYMPTOM 05</span><span class="cat">B·排障</span></div>
+  <h3>context / token 爆了</h3><p>不知道每次请求都带了什么?先做一次 context 审计。</p>
+  <div class="rx"><span>℞ 3 已核验</span><span>context-doctor</span></div></a><a class="sc" href="/scenarios.html">
+  <div class="top-line"><span class="sym">SYMPTOM 07</span><span class="cat">B·排障</span></div>
+  <h3>装之前想看安不安全</h3><p>插件要读什么、连什么网,装前先出一份风险报告。</p>
+  <div class="rx"><span>℞ 3 已核验</span><span>security-audit</span></div></a><a class="sc" href="/scenarios.html">
+  <div class="top-line"><span class="sym">SYMPTOM 08</span><span class="cat">B·排障</span></div>
+  <h3>升级后插件全挂了(破坏性变更)</h3><p>升级前 30 秒自查 + 本站版本核读,先查再升。</p>
+  <div class="rx"><span>整理中</span><span>追踪表 →</span></div></a><a class="sc" href="/scenarios.html">
+  <div class="top-line"><span class="sym">SYMPTOM 10</span><span class="cat">C·成本</span></div>
+  <h3>控制花费 / 看每轮成本</h3><p>每轮多少钱、TPS 多少,实时可见。</p>
+  <div class="rx"><span>℞ 2 已核验</span><span>balance-meter</span></div></a><a class="sc" href="/scenarios.html">
+  <div class="top-line"><span class="sym">SYMPTOM 11</span><span class="cat">C·成本</span></div>
+  <h3>双模型编排:便宜模型干活、贵模型思考</h3><p>模型分工路由 + 旁审,账单立省一截。</p>
+  <div class="rx"><span>℞ 2 已核验</span><span>llm-fallbacks</span></div></a><a class="sc" href="/scenarios.html">
+  <div class="top-line"><span class="sym">SYMPTOM 12</span><span class="cat">C·成本</span></div>
+  <h3>纯文本模型要处理图片</h3><p>给 DeepSeek 文本模型桥接视觉:截图 OCR、UI 还原。</p>
+  <div class="rx"><span>℞ 2 已核验</span><span>vision-toolkit</span></div></a><a class="sc" href="/scenarios.html">
+  <div class="top-line"><span class="sym">SYMPTOM 14</span><span class="cat">D·工程</span></div>
+  <h3>Git 工作流武装</h3><p>git 工具链、多身份管理、自动 blame 溯源。</p>
+  <div class="rx"><span>℞ 3 已核验</span><span>tool-git</span></div></a><a class="sc gap-card" href="/scenarios.html">
+  <div class="top-line"><span class="sym">GAP 19</span><span class="cat">D·工程</span></div>
+  <h3>部署 / CI-CD</h3><p>DSH 生态还没有像样插件的空位场景。出现即收录体检。</p>
+  <div class="rx"><span>空位 · 征集中</span><span>等你来做 →</span></div></a><a class="sc" href="/scenarios.html">
+  <div class="top-line"><span class="sym">SYMPTOM 21</span><span class="cat">E·界面</span></div>
+  <h3>换个好用的界面(TUI / 侧边栏 / 皮肤)</h3><p>终端 TUI、侧边栏工作台、主题与里程碑。</p>
+  <div class="rx"><span>℞ 6 已核验</span><span>better-sidebar</span></div></a></div>
+<div class="band">
+  <div class="band-h"><span class="no">SECTION 02</span><h2>一人公司工具箱</h2>
+    <span class="sub">按你在做的事找,不是按插件分类</span>
+    <a class="more" href="/opc.html">全部 10 个方向 →</a></div>
+  <div class="roles"><a class="role" href="/opc.html"><span class="who">独立开发<br>/ 工具站</span><span class="n">落地页整理中</span></a><a class="role" href="/opc.html"><span class="who">跨境电商</span><span class="n">3 个处方 · 已开</span></a><a class="role" href="/opc.html"><span class="who">SEO / 内容站</span><span class="n gap">空位 · 站长教程顶上</span></a><a class="role" href="/opc.html"><span class="who">视频自媒体</span><span class="n gap">空位 · 站长教程顶上</span></a><a class="role" href="/opc.html"><span class="who">公众号 / 小红书</span><span class="n">落地页整理中</span></a><a class="role" href="/opc.html"><span class="who">设计 / 数字产品</span><span class="n">落地页整理中</span></a><a class="role" href="/opc.html"><span class="who">知识付费</span><span class="n">落地页整理中</span></a><a class="role" href="/opc.html"><span class="who">数据 / 量化副业</span><span class="n">落地页整理中</span></a><a class="role" href="/opc.html"><span class="who">自动化接单</span><span class="n">落地页整理中</span></a><a class="role" href="/opc.html"><span class="who">学术 / 科研</span><span class="n">落地页整理中</span></a></div>
+</div>
+<div class="sec-head"><span class="no">SECTION 03</span><h2>插件体检</h2>
+  <span class="sub">别的目录告诉你有什么,我们告诉你敢不敢装</span>
+  <a class="more" href="/plugins/dsh-chat-import.html">看一份完整体检卡 →</a></div>
+<div class="checkup">
+  <div class="checkup-copy">
+    <p>dsh 还在 developer preview,插件生态鱼龙混杂。每个收录插件都过四道检查,不合格的直接标出来:</p>
+    <ul><li>声明的权限范围 — 读文件?联网?系统资源?</li>
+      <li>维护状态 — 最后一次有效更新距今多久</li>
+      <li>能否真正激活 — 是否声明 dsh.bundle</li>
+      <li>有没有测试 / CI</li></ul>
+    <div class="verdicts"><span class="p">体检合格 1</span><span class="w">注意 / 待复核 38</span></div>
+    <p class="pipe-note">维护状态、dsh.bundle、测试CI 三项每日自动采集;权限一项人工复核,复核超 60 天且仓库有更新会自动降回"待复核"——宁可显示待复核,也不乱猜。<a href="/about-audit.html">体检方法说明 →</a></p>
+  </div>
+  <div class="report">
+    <div class="report-head"><span class="name">dsh-chat-import</span><span class="serial">AUDIT 2026-08-14</span></div>
+    
+<div class="row"><span class="dot g"></span><span class="k">权限范围</span><span class="v">读指定 JSONL 文件 · 不联网(人工复核 08-14)</span></div>
+<div class="row"><span class="dot g"></span><span class="k">维护状态</span><span class="v">今天更新(最近提交 2026-08-14)</span></div>
+<div class="row"><span class="dot g"></span><span class="k">dsh.bundle</span><span class="v">dsh.bundle 已声明,可激活</span></div>
+<div class="row"><span class="dot g"></span><span class="k">测试 / CI</span><span class="v">测试 + CI 齐全</span></div>
+    <div class="mini-seal">合格</div>
+    <div class="report-foot"><span>数据每日自动采集</span><span class="barcode"></span>
+      <a href="/plugins/dsh-chat-import.html">完整体检卡 →</a></div>
+  </div>
+</div>
+</div>
+<div class="navy-band"><div class="wrap">
+  <div class="sec-head"><span class="no" style="color:#ff9d8d">SECTION 04</span><h2>破坏性变更追踪</h2>
+    <span class="sub">官方原话:THERE WILL BE COMPATIBILITY-BREAKING CHANGES</span>
+    <a class="more" href="/breaking-changes.html" style="color:#8fb3ff">完整时间线 →</a></div>
+  <div class="strip"><div class="line"><span class="ver">v0.1.0-rc.6</span><span class="desc">2026-08-13 发布 · <a href="/breaking-changes.html">当前最新版 · 变更核读中</a></span></div><div class="line"><span class="ver">v0.1.0-rc.3</span><span class="desc">2026-08-13 发布 · <a href="/breaking-changes.html">变更核读中</a></span></div><div class="line"><span class="ver">v0.1.0-rc.2</span><span class="desc">2026-08-13 发布 · <a href="/breaking-changes.html">0.0.x → 0.1.0 版本线跃迁 · 核读中</a></span></div>
+    <div class="strip-foot"><span>升级 dsh 前 30 秒,先来对一眼</span>
+      <a href="https://github.com/deepseek-ai/deepseek-harness/releases" rel="nofollow">官方 Releases</a>
+      <a href="/breaking-changes.html">本站核读</a></div>
+  </div>
+</div></div>
+<script>document.getElementById('q').addEventListener('keydown',e=>{if(e.key==='Enter')location.href='/scenarios.html'});</script>
+<footer><div class="wrap">
+  <span class="mark">dsh-plugin-hub<span style="color:var(--seal)">.com</span> · 与 DeepSeek 无关联的社区站</span>
+  <a href="/scenarios.html">场景库</a>
+  <a href="/opc.html">一人公司工具箱</a>
+  <a href="/breaking-changes.html">破坏性变更</a>
+  <a href="/about-audit.html">体检方法</a>
+  <a href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5B%E6%8F%90%E4%BA%A4%E6%8F%92%E4%BB%B6%5D+owner%2Frepo" rel="nofollow">提交插件</a>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DSH 插件体检的四项检查、判定阈值与数据来源,全部公开。">
+<link rel="canonical" href="https://dsh-plugin-hub.com/about-audit.html">
+<meta property="og:title" content="体检方法说明 — DSH Plugin Hub">
+<meta property="og:description" content="DSH 插件体检的四项检查、判定阈值与数据来源,全部公开。">
+<meta property="og:url" content="https://dsh-plugin-hub.com/about-audit.html">
+<meta property="og:type" content="website">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<title>体检方法说明 — DSH Plugin Hub</title>
+<link rel="stylesheet" href="/assets/style.css">
+
+</head>
+<body>
+<nav><div class="wrap nav-in">
+  <a class="logo" href="/">dsh-plugin-hub<span class="tld">.com</span></a>
+  <div class="nav-links"><a href="/scenarios.html">场景库</a><a href="/opc.html">一人公司工具箱</a><a href="/plugins/" class="on">插件体检</a><a href="/breaking-changes.html">破坏性变更</a><a href="/scenarios/01-migration.html">上手教程</a></div>
+  <a class="nav-cta" href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5B%E6%8F%90%E4%BA%A4%E6%8F%92%E4%BB%B6%5D+owner%2Frepo" rel="nofollow">提交插件</a>
+</div></nav>
+<div class="wrap">
+<header class="hero" style="padding:52px 0 12px">
+  <div class="kicker">METHOD · 体检方法</div>
+  <h1 style="font-size:36px;margin-top:8px">体检怎么做,一次说清</h1>
+  <p class="lede" style="margin-top:8px;max-width:680px">所有数值来自自动采集管线与人工复核档,页面构建时直接读数据文件渲染——<b style="color:var(--ink)">没有任何一个体检数值是手写的</b>。</p>
+</header>
+<section class="sec"><div class="sec-h"><h2>四项检查</h2></div>
+<div class="method">
+<ol>
+<li><b>权限范围(人工):</b>自动只给线索(依赖里有没有网络/命令执行类库),结论由人工读代码后写入并标注复核日期。人工结论超 60 天且仓库有更新 → 自动降回"待人工复核"。</li>
+<li><b>维护状态(自动):</b>最后提交 ≤14 天绿,≤45 天黄,更久或 archived 红。</li>
+<li><b>dsh.bundle(自动):</b>官方文档规定,无此声明的包安装后不激活任何层。未声明直接标红。</li>
+<li><b>测试 / CI(自动):</b>test 脚本/测试目录 + .github/workflows,全有绿、有一黄、全无红。</li>
+</ol></div></section>
+<section class="sec"><div class="sec-h"><h2>数据从哪来</h2></div>
+<div class="method"><b>来源:</b>GitHub 仓库原始内容 + npm registry,每日北京时间 09:20 自动跑一轮,当天结果当天上线。收录清单公开在仓库里,欢迎提交补充。<br><br>
+<b>判定三档:</b><span style="font-family:var(--mono)">体检合格</span>(四项全绿含人工权限档)· <span style="font-family:var(--mono)">待复核</span>(自动三项过、权限排队)· <span style="font-family:var(--mono)">注意</span>(有红项)。</div></section>
+</div>
+<footer><div class="wrap">
+  <span class="mark">dsh-plugin-hub<span style="color:var(--seal)">.com</span> · 与 DeepSeek 无关联的社区站</span>
+  <a href="/scenarios.html">场景库</a>
+  <a href="/opc.html">一人公司工具箱</a>
+  <a href="/breaking-changes.html">破坏性变更</a>
+  <a href="/about-audit.html">体检方法</a>
+  <a href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5B%E6%8F%90%E4%BA%A4%E6%8F%92%E4%BB%B6%5D+owner%2Frepo" rel="nofollow">提交插件</a>
+</div></footer>
+</body>
+</html>

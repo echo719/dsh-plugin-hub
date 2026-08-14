@@ -1,0 +1,158 @@
+[
+ {
+  "repo": "Tyan66666/billion-context-dsh",
+  "name": "billion-context-dsh"
+ },
+ {
+  "repo": "boxeryao/deepseek-harness-tui",
+  "name": "deepseek-harness-tui"
+ },
+ {
+  "repo": "dsh-external/dsh-advisor",
+  "name": "dsh-advisor"
+ },
+ {
+  "repo": "hewzhew/dsh-agent-rp",
+  "name": "dsh-agent-rp"
+ },
+ {
+  "repo": "dsh-external/dsh-annotation",
+  "name": "dsh-annotation"
+ },
+ {
+  "repo": "FSMargoo/dsh-at-file",
+  "name": "dsh-at-file"
+ },
+ {
+  "repo": "dsh-external/dsh-auto-blame",
+  "name": "dsh-auto-blame"
+ },
+ {
+  "repo": "Ghost011118/dsh-balance-meter",
+  "name": "dsh-balance-meter"
+ },
+ {
+  "repo": "dsh-external/DSH-better-sidebar",
+  "name": "dsh-better-sidebar"
+ },
+ {
+  "repo": "ccch1mneyyy/dsh-cc-tui",
+  "name": "dsh-cc-tui"
+ },
+ {
+  "repo": "Nwflower/dsh-chat-import",
+  "name": "dsh-chat-import"
+ },
+ {
+  "repo": "Zhenyu98/dsh-context-doctor",
+  "name": "dsh-context-doctor"
+ },
+ {
+  "repo": "dsh-external/dsh-data-agent",
+  "name": "dsh-data-agent"
+ },
+ {
+  "repo": "Small-tailqwq/dsh-deepcel",
+  "name": "dsh-deepcel"
+ },
+ {
+  "repo": "asdf17128/dsh-doctor",
+  "name": "dsh-doctor"
+ },
+ {
+  "repo": "dsh-external/dsh-git-identity",
+  "name": "dsh-git-identity"
+ },
+ {
+  "repo": "dsh-external/dsh-inspect",
+  "name": "dsh-inspect"
+ },
+ {
+  "repo": "dsh-external/dsh-llm-fallbacks",
+  "name": "dsh-llm-fallbacks"
+ },
+ {
+  "repo": "SnowCrescenter-tech/dsh-milestone",
+  "name": "dsh-milestone"
+ },
+ {
+  "repo": "Moeblack/dsh-payload-capture",
+  "name": "dsh-payload-capture"
+ },
+ {
+  "repo": "lqhl/dsh-pi-tui",
+  "name": "dsh-pi-tui"
+ },
+ {
+  "repo": "dsh-external/dsh-plugin-check",
+  "name": "dsh-plugin-check"
+ },
+ {
+  "repo": "wuxiangru915/dsh-review-loop",
+  "name": "dsh-review-loop"
+ },
+ {
+  "repo": "dsh-external/dsh-security-audit",
+  "name": "dsh-security-audit"
+ },
+ {
+  "repo": "dsh-external/dsh-session-health",
+  "name": "dsh-session-health"
+ },
+ {
+  "repo": "Tieboyh/dsh-session-search",
+  "name": "dsh-session-search"
+ },
+ {
+  "repo": "KinGao294/dsh-skin",
+  "name": "dsh-skin"
+ },
+ {
+  "repo": "Moeblack/dsh-skins",
+  "name": "dsh-skins"
+ },
+ {
+  "repo": "dsh-external/dsh-slice-agent-loop",
+  "name": "dsh-slice-agent-loop"
+ },
+ {
+  "repo": "suimi8/dsh-test-runner",
+  "name": "dsh-test-runner"
+ },
+ {
+  "repo": "lxj808624/dsh-tool-git",
+  "name": "dsh-tool-git"
+ },
+ {
+  "repo": "Small-tailqwq/dsh-tps",
+  "name": "dsh-tps"
+ },
+ {
+  "repo": "Simon314620/dsh-turn-index",
+  "name": "dsh-turn-index"
+ },
+ {
+  "repo": "dsh-external/dsh-vision",
+  "name": "dsh-vision"
+ },
+ {
+  "repo": "Anionex/dsh-vision-toolkit",
+  "name": "dsh-vision-toolkit"
+ },
+ {
+  "repo": "asdf17128/dshp",
+  "name": "dshp"
+ },
+ {
+  "repo": "dsh-external/sandbox-micro",
+  "name": "sandbox-micro"
+ },
+ {
+  "repo": "dsh-external/sandbox-mxc",
+  "name": "sandbox-mxc"
+ },
+ {
+  "repo": "dsh-external/sandbox-nono",
+  "name": "sandbox-nono"
+ }
+]

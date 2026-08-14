@@ -1,0 +1,27 @@
+name: daily-audit-and-build
+on:
+  schedule:
+    - cron: "20 1 * * *"   # 09:20 北京时间
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: run audit
+        run: python3 audit/audit_daily.py
+      - name: build site
+        run: python3 build.py
+      - name: validate
+        run: python3 validate_site.py
+      - name: commit & push
+        run: |
+          git config user.name "audit-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "daily audit $(date -u +%F)"
+          git push

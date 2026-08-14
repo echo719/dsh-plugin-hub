@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="dsh-chat-import 插件体检:权限、维护状态、dsh.bundle、测试CI 四项检查,数据每日自动采集。">
+<link rel="canonical" href="https://dsh-plugin-hub.com/plugins/dsh-chat-import.html">
+<meta property="og:title" content="dsh-chat-import · 完整体检卡 — DSH Plugin Hub">
+<meta property="og:description" content="dsh-chat-import 插件体检:权限、维护状态、dsh.bundle、测试CI 四项检查,数据每日自动采集。">
+<meta property="og:url" content="https://dsh-plugin-hub.com/plugins/dsh-chat-import.html">
+<meta property="og:type" content="website">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<title>dsh-chat-import · 完整体检卡 — DSH Plugin Hub</title>
+<link rel="stylesheet" href="/assets/style.css">
+
+</head>
+<body>
+<nav><div class="wrap nav-in">
+  <a class="logo" href="/">dsh-plugin-hub<span class="tld">.com</span></a>
+  <div class="nav-links"><a href="/scenarios.html">场景库</a><a href="/opc.html">一人公司工具箱</a><a href="/plugins/" class="on">插件体检</a><a href="/breaking-changes.html">破坏性变更</a><a href="/scenarios/01-migration.html">上手教程</a></div>
+  <a class="nav-cta" href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5B%E6%8F%90%E4%BA%A4%E6%8F%92%E4%BB%B6%5D+owner%2Frepo" rel="nofollow">提交插件</a>
+</div></nav>
+<div class="wrap">
+<div class="crumb"><a href="/">首页</a> / <a href="/plugins/">插件体检</a> / dsh-chat-import</div>
+<div class="head-card">
+  <div class="head-top">
+    <div class="name">dsh-chat-import<small><a href="https://github.com/Nwflower/dsh-chat-import" rel="nofollow">github.com/Nwflower/dsh-chat-import</a> · v0.3.0</small></div>
+    <div class="big-seal "><span class="b">体检合格</span><span class="s">DSH·PLUGIN·HUB</span></div>
+  </div>
+  <p class="head-desc">Import Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / Pi Coding Agent / opencode / ZCode / Grok Build / OpenClaw / Hermes conversation histories as resumable DeepSeek Harness sessions</p>
+  <div class="head-tags"><a href="/scenarios/01-migration.html"><span class="s">SYM 01</span>从 Claude Code / Codex 迁移过来</a></div>
+  <div class="install"><span>dsh plugin --profile web add github:Nwflower/dsh-chat-import</span><button class="cp" onclick="const s=this.parentElement.querySelector('span').textContent;if(navigator.clipboard)navigator.clipboard.writeText(s);this.textContent='已复制';setTimeout(()=>this.textContent='复制',1500)">复制</button></div>
+  <p class="install-hint">装完 <b>重启 dsh</b> 才生效 · 不重启看不到变化不是插件坏了</p>
+  <div class="serial-strip"><span>AUDIT 2026-08-14</span><span class="barcode"></span></div>
+</div>
+<section class="sec"><div class="sec-h"><h2>四项检查</h2><span class="sub">采集于 2026-08-14 · 每日自动更新</span></div>
+<div class="check"><div class="check-h"><span class="light g"></span><span class="t">① 权限范围</span>
+  <span class="v"><b>读指定 JSONL 文件 · 不联网(人工复核 08-14)</b></span></div>
+  <div class="check-b"><div class="cell"><span class="k">自动线索</span>依赖中未发现网络库(axios / node-fetch / ws …)或命令执行库(execa / shelljs …)。</div><div class='cell'><span class='k'>人工结论</span>读指定 JSONL 文件 · 不联网(复核 2026-08-14)</div>
+  <div class="policy"><b>为什么权限是人工档:</b>权限没有可靠的自动判定方法,乱猜会砸掉体检的信任感。人工结论超过 60 天且仓库有更新,会自动降回"待人工复核"。</div></div></div>
+<div class="check"><div class="check-h"><span class="light g"></span><span class="t">② 维护状态</span>
+  <span class="v"><b>今天更新</b><br>最近提交 2026-08-14</span></div>
+  <div class="check-b single"><div class="cell"><span class="k">判定规则</span>最后提交 ≤ <code>14 天</code> 绿 · ≤ <code>45 天</code> 黄 · 更久或已 archived 红。</div></div></div>
+<div class="check"><div class="check-h"><span class="light g"></span><span class="t">③ dsh.bundle</span>
+  <span class="v"><b>dsh.bundle 已声明,可激活</b></span></div>
+  <div class="check-b single"><div class="cell"><span class="k">为什么查这项</span>官方文档:没有 <code>dsh.bundle</code> 声明的包只作为普通依赖安装,<b>不激活任何层</b>——"装了没反应"一半栽在这。</div></div></div>
+<div class="check"><div class="check-h"><span class="light g"></span><span class="t">④ 测试 / CI</span>
+  <span class="v"><b>测试 + CI 齐全</b></span></div>
+  <div class="check-b"><div class="cell"><span class="k">测试</span>发现 test 脚本或测试目录。</div>
+  <div class="cell"><span class="k">CI</span>发现 .github/workflows 工作流。</div></div></div>
+</section>
+<section class="sec"><div class="sec-h"><h2>体检历史</h2></div>
+<div class="hist"><div class="h-item"><span class="d">2026-08-14</span> · <b>首次收录体检</b>(判定:体检合格);兼容追踪随每日体检持续更新</div></div></section>
+<div class="cta-row">
+  <a class="pri" href="/scenarios/01-migration.html">看它所在的场景处方 →</a>
+  <a href="https://github.com/Nwflower/dsh-chat-import/issues" rel="nofollow">结论有误?向作者/本站反馈</a>
+  <a href="/about-audit.html">体检方法说明</a></div>
+</div>
+<footer><div class="wrap">
+  <span class="mark">dsh-plugin-hub<span style="color:var(--seal)">.com</span> · 与 DeepSeek 无关联的社区站</span>
+  <a href="/scenarios.html">场景库</a>
+  <a href="/opc.html">一人公司工具箱</a>
+  <a href="/breaking-changes.html">破坏性变更</a>
+  <a href="/about-audit.html">体检方法</a>
+  <a href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5B%E6%8F%90%E4%BA%A4%E6%8F%92%E4%BB%B6%5D+owner%2Frepo" rel="nofollow">提交插件</a>
+</div></footer>
+</body>
+</html>
