@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="deepseek-harness-tui 插件体检:权限、维护状态、dsh.bundle、测试CI 四项检查,数据每日自动采集。">
+<meta name="description" content="Audit report for deepseek-harness-tui: permissions, maintenance, dsh.bundle and tests/CI, refreshed daily.">
 <link rel="canonical" href="https://dsh-plugin-hub.com/plugins/deepseek-harness-tui.html">
-<meta property="og:title" content="deepseek-harness-tui · 完整体检卡 — DSH Plugin Hub">
-<meta property="og:description" content="deepseek-harness-tui 插件体检:权限、维护状态、dsh.bundle、测试CI 四项检查,数据每日自动采集。">
+<meta property="og:title" content="deepseek-harness-tui · full audit report — DSH Plugin Hub">
+<meta property="og:description" content="Audit report for deepseek-harness-tui: permissions, maintenance, dsh.bundle and tests/CI, refreshed daily.">
 <meta property="og:url" content="https://dsh-plugin-hub.com/plugins/deepseek-harness-tui.html">
 <meta property="og:type" content="website">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<title>deepseek-harness-tui · 完整体检卡 — DSH Plugin Hub</title>
+<title>deepseek-harness-tui · full audit report — DSH Plugin Hub</title>
 <link rel="stylesheet" href="/assets/style.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BM4048J6E8"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
@@ -19,52 +19,52 @@ gtag('js',new Date());gtag('config','G-BM4048J6E8');</script>
 <body>
 <nav><div class="wrap nav-in">
   <a class="logo" href="/">dsh-plugin-hub<span class="tld">.com</span></a>
-  <div class="nav-links"><a href="/">首页</a><a href="/scenarios.html">场景库</a><a href="/opc.html">OPC</a><a href="/plugins/" class="on">插件体检</a><a href="/breaking-changes.html">破坏性变更</a><a href="/scenarios/01-migration.html">上手教程</a></div>
-  <a class="nav-cta" href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5B%E6%8F%90%E4%BA%A4%E6%8F%92%E4%BB%B6%5D+owner%2Frepo" rel="nofollow">提交插件</a>
+  <div class="nav-links"><a href="/">Home</a><a href="/scenarios.html">Scenarios</a><a href="/opc.html">OPC</a><a href="/plugins/" class="on">Plugin audits</a><a href="/breaking-changes.html">Breaking changes</a><a href="/scenarios/01-migration.html">Guides</a></div>
+  <a class="nav-cta" href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5BSubmit%5D+owner%2Frepo" rel="nofollow">Submit a plugin</a>
 </div></nav>
 <div class="wrap">
-<div class="crumb"><a href="/">首页</a> / <a href="/plugins/">插件体检</a> / deepseek-harness-tui</div>
+<div class="crumb"><a href="/">Home</a> / <a href="/plugins/">Plugin audits</a> / deepseek-harness-tui</div>
 <div class="head-card">
   <div class="head-top">
-    <div class="name">deepseek-harness-tui<small><a href="https://github.com/boxeryao/deepseek-harness-tui" rel="nofollow">github.com/boxeryao/deepseek-harness-tui</a> · v0.1.1</small></div>
-    <div class="big-seal pend"><span class="b">待复核</span><span class="s">DSH·PLUGIN·HUB</span></div>
+    <div class="name">deepseek-harness-tui<small><a href="https://github.com/boxeryao/deepseek-harness-tui" rel="nofollow">github.com/boxeryao/deepseek-harness-tui</a> · v0.2.0</small></div>
+    <div class="big-seal pend"><span class="b" style="font-size:14px;letter-spacing:2px">PENDING</span><span class="s">DSH·PLUGIN·HUB</span></div>
   </div>
-  <p class="head-desc">DSH-TUI: a lightweight and fast terminal plugin connected directly to the DSH runtime</p>
-  <div class="head-tags"><a href="/scenarios.html"><span class="s">SYM 21</span>界面替换与增强(TUI / 侧边栏 / 主题)</a></div>
-  <div class="install"><span>dsh plugin --profile web add github:boxeryao/deepseek-harness-tui</span><button class="cp" onclick="const s=this.parentElement.querySelector('span').textContent;if(navigator.clipboard)navigator.clipboard.writeText(s);this.textContent='已复制';setTimeout(()=>this.textContent='复制',1500)">复制</button></div>
-  <p class="install-hint">安装后需 <b>重启 dsh</b> 方可生效 · 未重启时插件不生效,并非安装失败</p>
+  <p class="head-desc">DSH Mini TUI: a minimalist terminal interface plugin for DeepSeek Harness</p>
+  <div class="head-tags"><a href="/scenarios.html"><span class="s">SYM 21</span>Interface upgrades (TUI / sidebar / themes)</a></div>
+  <div class="install"><span>dsh plugin --profile web add github:boxeryao/deepseek-harness-tui</span><button class="cp" onclick="const s=this.parentElement.querySelector('span').textContent;if(navigator.clipboard)navigator.clipboard.writeText(s);this.textContent='Copied';setTimeout(()=>this.textContent='Copy',1500)">Copy</button></div>
+  <p class="install-hint">Restart <b>dsh</b> after installing — no change before a restart is expected, not a broken install</p>
   <div class="serial-strip"><span>AUDIT 2026-08-15</span><span class="barcode"></span></div>
 </div>
-<section class="sec"><div class="sec-h"><h2>四项检查</h2><span class="sub">采集于 2026-08-15 · 每日自动更新</span></div>
-<div class="check"><div class="check-h"><span class="light p"></span><span class="t">① 权限范围</span>
-  <span class="v"><b>待人工复核 · 未见网络/执行类依赖线索</b></span></div>
-  <div class="check-b"><div class="cell"><span class="k">自动线索</span>依赖中未发现网络库(axios / node-fetch / ws …)或命令执行库(execa / shelljs …)。</div><div class='cell'><span class='k'>人工结论</span>排队复核中——完成后此处给出明确权限范围与复核日期。</div>
-  <div class="policy"><b>权限为何采用人工档:</b>权限范围缺乏可靠的自动判定方法,因此仅由人工复核给出结论。人工结论超过 60 天且仓库有更新时,自动降回"待人工复核"。</div></div></div>
-<div class="check"><div class="check-h"><span class="light g"></span><span class="t">② 维护状态</span>
-  <span class="v"><b>今天更新</b><br>最近提交 2026-08-14</span></div>
-  <div class="check-b single"><div class="cell"><span class="k">判定规则</span>最后提交 ≤ <code>14 天</code> 绿 · ≤ <code>45 天</code> 黄 · 更久或已 archived 红。</div></div></div>
+<section class="sec"><div class="sec-h"><h2>The four checks</h2><span class="sub">Collected 2026-08-15 · refreshed daily</span></div>
+<div class="check"><div class="check-h"><span class="light p"></span><span class="t">① Permissions</span>
+  <span class="v"><b>Pending manual review · no network or exec dependency hints</b></span></div>
+  <div class="check-b"><div class="cell"><span class="k">Automated hints</span>No network libraries (axios / node-fetch / ws …) or exec libraries (execa / shelljs …) among the dependencies.</div><div class='cell'><span class='k'>Manual verdict</span>Queued for review — once complete, the confirmed permission scope and review date appear here.</div>
+  <div class="policy"><b>Why permissions are reviewed by hand:</b> there's no reliable way to determine permission scope automatically, so only a human review produces a verdict. If a review is over 60 days old and the repo has changed since, the verdict drops back to Pending automatically.</div></div></div>
+<div class="check"><div class="check-h"><span class="light g"></span><span class="t">② Maintenance</span>
+  <span class="v"><b>Updated today</b><br>last commit 2026-08-15</span></div>
+  <div class="check-b single"><div class="cell"><span class="k">Rule</span>Last commit ≤ <code>14 days</code> green · ≤ <code>45 days</code> amber · older (or archived) red.</div></div></div>
 <div class="check"><div class="check-h"><span class="light g"></span><span class="t">③ dsh.bundle</span>
-  <span class="v"><b>dsh.bundle 已声明,可激活</b></span></div>
-  <div class="check-b single"><div class="cell"><span class="k">检查依据</span>官方文档:没有 <code>dsh.bundle</code> 声明的包只作为普通依赖安装,<b>不激活任何层</b>——安装后未生效的常见原因。</div></div></div>
-<div class="check"><div class="check-h"><span class="light y"></span><span class="t">④ 测试 / CI</span>
-  <span class="v"><b>有测试,无 CI</b></span></div>
-  <div class="check-b"><div class="cell"><span class="k">测试</span>发现 test 脚本或测试目录。</div>
-  <div class="cell"><span class="k">CI</span>未发现 CI 工作流。</div></div></div>
+  <span class="v"><b>dsh.bundle declared — activates properly</b></span></div>
+  <div class="check-b single"><div class="cell"><span class="k">Why this matters</span>Per the official docs, a package without a <code>dsh.bundle</code> declaration installs as a plain dependency and <b>activates no layer</b> — the most common reason a plugin "does nothing" after install.</div></div></div>
+<div class="check"><div class="check-h"><span class="light y"></span><span class="t">④ Tests / CI</span>
+  <span class="v"><b>Tests, no CI</b></span></div>
+  <div class="check-b"><div class="cell"><span class="k">Tests</span>Test script or test directory found.</div>
+  <div class="cell"><span class="k">CI</span>No CI workflows found.</div></div></div>
 </section>
-<section class="sec"><div class="sec-h"><h2>体检历史</h2></div>
-<div class="hist"><div class="h-item"><span class="d">2026-08-15</span> · <b>首次收录体检</b>(判定:待复核);兼容追踪随每日体检持续更新</div></div></section>
+<section class="sec"><div class="sec-h"><h2>Audit history</h2></div>
+<div class="hist"><div class="h-item"><span class="d">2026-08-15</span> · <b>Latest audit</b> (verdict: Pending); compatibility tracking updates with each daily run</div></div></section>
 <div class="cta-row">
-  <a class="pri" href="/scenarios.html">看它所在的场景处方 →</a>
-  <a href="https://github.com/boxeryao/deepseek-harness-tui/issues" rel="nofollow">结论有误?提交反馈</a>
-  <a href="/about-audit.html">体检方法说明</a></div>
+  <a class="pri" href="/scenarios.html">See its scenario prescription →</a>
+  <a href="https://github.com/boxeryao/deepseek-harness-tui/issues" rel="nofollow">Spot an error? Send feedback</a>
+  <a href="/about-audit.html">Audit methodology</a></div>
 </div>
 <footer><div class="wrap">
-  <span class="mark">dsh-plugin-hub<span style="color:var(--seal)">.com</span> · 与 DeepSeek 无关联的社区站</span>
-  <a href="/scenarios.html">场景库</a>
-  <a href="/opc.html">OPC 工具箱</a>
-  <a href="/breaking-changes.html">破坏性变更</a>
-  <a href="/about-audit.html">体检方法</a>
-  <a href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5B%E6%8F%90%E4%BA%A4%E6%8F%92%E4%BB%B6%5D+owner%2Frepo" rel="nofollow">提交插件</a>
+  <span class="mark">dsh-plugin-hub<span style="color:var(--seal)">.com</span> · Community site, not affiliated with DeepSeek</span>
+  <a href="/scenarios.html">Scenarios</a>
+  <a href="/opc.html">OPC toolkits</a>
+  <a href="/breaking-changes.html">Breaking changes</a>
+  <a href="/about-audit.html">Audit methodology</a>
+  <a href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5BSubmit%5D+owner%2Frepo" rel="nofollow">Submit a plugin</a>
 </div></footer>
 </body>
 </html>

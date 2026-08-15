@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Audit report for sandbox-mxc: permissions, maintenance, dsh.bundle and tests/CI, refreshed daily.">
-<link rel="canonical" href="https://dsh-plugin-hub.com/plugins/sandbox-mxc.html">
-<meta property="og:title" content="sandbox-mxc · full audit report — DSH Plugin Hub">
-<meta property="og:description" content="Audit report for sandbox-mxc: permissions, maintenance, dsh.bundle and tests/CI, refreshed daily.">
-<meta property="og:url" content="https://dsh-plugin-hub.com/plugins/sandbox-mxc.html">
+<meta name="description" content="Audit report for dsh-office: permissions, maintenance, dsh.bundle and tests/CI, refreshed daily.">
+<link rel="canonical" href="https://dsh-plugin-hub.com/plugins/dsh-office.html">
+<meta property="og:title" content="dsh-office · full audit report — DSH Plugin Hub">
+<meta property="og:description" content="Audit report for dsh-office: permissions, maintenance, dsh.bundle and tests/CI, refreshed daily.">
+<meta property="og:url" content="https://dsh-plugin-hub.com/plugins/dsh-office.html">
 <meta property="og:type" content="website">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<title>sandbox-mxc · full audit report — DSH Plugin Hub</title>
+<title>dsh-office · full audit report — DSH Plugin Hub</title>
 <link rel="stylesheet" href="/assets/style.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BM4048J6E8"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
@@ -23,15 +23,15 @@ gtag('js',new Date());gtag('config','G-BM4048J6E8');</script>
   <a class="nav-cta" href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5BSubmit%5D+owner%2Frepo" rel="nofollow">Submit a plugin</a>
 </div></nav>
 <div class="wrap">
-<div class="crumb"><a href="/">Home</a> / <a href="/plugins/">Plugin audits</a> / sandbox-mxc</div>
+<div class="crumb"><a href="/">Home</a> / <a href="/plugins/">Plugin audits</a> / dsh-office</div>
 <div class="head-card">
   <div class="head-top">
-    <div class="name">sandbox-mxc<small><a href="https://github.com/dsh-external/sandbox-mxc" rel="nofollow">github.com/dsh-external/sandbox-mxc</a> · v0.0.2</small></div>
+    <div class="name">dsh-office<small><a href="https://github.com/Fayelin12/dsh-office" rel="nofollow">github.com/Fayelin12/dsh-office</a> · v0.1.0</small></div>
     <div class="big-seal pend"><span class="b" style="font-size:14px;letter-spacing:2px">PENDING</span><span class="s">DSH·PLUGIN·HUB</span></div>
   </div>
-  <p class="head-desc">Microsoft eXecution Containers (MXC) backend for the DeepSeek Harness sandbox seam</p>
-  <div class="head-tags"><a href="/scenarios.html"><span class="s">SYM 16</span>Sandboxing &amp; permission control</a></div>
-  <div class="install"><span>dsh plugin --profile web add github:dsh-external/sandbox-mxc</span><button class="cp" onclick="const s=this.parentElement.querySelector('span').textContent;if(navigator.clipboard)navigator.clipboard.writeText(s);this.textContent='Copied';setTimeout(()=>this.textContent='Copy',1500)">Copy</button></div>
+  <p class="head-desc">Office workspace &amp; session dashboard plugin for DeepSeek Harness (DSH): a 6-column sprite office visualizing workspaces, sessions, token usage and subagents. 给 DeepSeek Harness 的「办公室」工作区/会话/子代理可视化插件。</p>
+  <div class="head-tags"><a href="/scenarios.html"><span class="s">SYM 24</span>Office documents &amp; spreadsheets</a></div>
+  <div class="install"><span>dsh plugin --profile web add github:Fayelin12/dsh-office</span><button class="cp" onclick="const s=this.parentElement.querySelector('span').textContent;if(navigator.clipboard)navigator.clipboard.writeText(s);this.textContent='Copied';setTimeout(()=>this.textContent='Copy',1500)">Copy</button></div>
   <p class="install-hint">Restart <b>dsh</b> after installing — no change before a restart is expected, not a broken install</p>
   <div class="serial-strip"><span>AUDIT 2026-08-15</span><span class="barcode"></span></div>
 </div>
@@ -41,21 +41,21 @@ gtag('js',new Date());gtag('config','G-BM4048J6E8');</script>
   <div class="check-b"><div class="cell"><span class="k">Automated hints</span>No network libraries (axios / node-fetch / ws …) or exec libraries (execa / shelljs …) among the dependencies.</div><div class='cell'><span class='k'>Manual verdict</span>Queued for review — once complete, the confirmed permission scope and review date appear here.</div>
   <div class="policy"><b>Why permissions are reviewed by hand:</b> there's no reliable way to determine permission scope automatically, so only a human review produces a verdict. If a review is over 60 days old and the repo has changed since, the verdict drops back to Pending automatically.</div></div></div>
 <div class="check"><div class="check-h"><span class="light g"></span><span class="t">② Maintenance</span>
-  <span class="v"><b>Updated 6 days ago</b><br>last commit 2026-08-09</span></div>
+  <span class="v"><b>Updated today</b><br>last commit 2026-08-15</span></div>
   <div class="check-b single"><div class="cell"><span class="k">Rule</span>Last commit ≤ <code>14 days</code> green · ≤ <code>45 days</code> amber · older (or archived) red.</div></div></div>
 <div class="check"><div class="check-h"><span class="light g"></span><span class="t">③ dsh.bundle</span>
   <span class="v"><b>dsh.bundle declared — activates properly</b></span></div>
   <div class="check-b single"><div class="cell"><span class="k">Why this matters</span>Per the official docs, a package without a <code>dsh.bundle</code> declaration installs as a plain dependency and <b>activates no layer</b> — the most common reason a plugin "does nothing" after install.</div></div></div>
-<div class="check"><div class="check-h"><span class="light y"></span><span class="t">④ Tests / CI</span>
-  <span class="v"><b>Tests, no CI</b></span></div>
-  <div class="check-b"><div class="cell"><span class="k">Tests</span>Test script or test directory found.</div>
+<div class="check"><div class="check-h"><span class="light r"></span><span class="t">④ Tests / CI</span>
+  <span class="v"><b>No tests or CI</b></span></div>
+  <div class="check-b"><div class="cell"><span class="k">Tests</span>No test script or test directory found.</div>
   <div class="cell"><span class="k">CI</span>No CI workflows found.</div></div></div>
 </section>
 <section class="sec"><div class="sec-h"><h2>Audit history</h2></div>
 <div class="hist"><div class="h-item"><span class="d">2026-08-15</span> · <b>Latest audit</b> (verdict: Pending); compatibility tracking updates with each daily run</div></div></section>
 <div class="cta-row">
   <a class="pri" href="/scenarios.html">See its scenario prescription →</a>
-  <a href="https://github.com/dsh-external/sandbox-mxc/issues" rel="nofollow">Spot an error? Send feedback</a>
+  <a href="https://github.com/Fayelin12/dsh-office/issues" rel="nofollow">Spot an error? Send feedback</a>
   <a href="/about-audit.html">Audit methodology</a></div>
 </div>
 <footer><div class="wrap">

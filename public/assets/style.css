@@ -7,7 +7,7 @@
   --green:#1a7a48; --green-soft:#e7f3ec;
   --amber:#a8730f; --amber-soft:#f6eedb;
   --navy:#161a22;
-  --serif:'Noto Serif SC','Songti SC','SimSun',serif;
+  --serif:Georgia,'Iowan Old Style','Noto Serif SC','Songti SC',serif;
   --mono:'SF Mono','JetBrains Mono',Consolas,'Courier New',monospace;
 }
 *{margin:0;padding:0;box-sizing:border-box}

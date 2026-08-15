@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="保留 @file、批注、TUI 操作习惯,并迁移会话历史。全部处方经真实仓库核验体检,含三类迁移常见问题(依据官方文档)。">
+<meta name="description" content="Keep your @file, annotation and TUI habits and bring your session history to dsh. Every prescription verified against the real repo, with three documented migration pitfalls.">
 <link rel="canonical" href="https://dsh-plugin-hub.com/scenarios/01-migration.html">
-<meta property="og:title" content="Claude Code / Codex 迁移到 DSH:插件方案与常见问题 — DSH Plugin Hub">
-<meta property="og:description" content="保留 @file、批注、TUI 操作习惯,并迁移会话历史。全部处方经真实仓库核验体检,含三类迁移常见问题(依据官方文档)。">
+<meta property="og:title" content="Migrating from Claude Code / Codex to DSH: plugins and pitfalls — DSH Plugin Hub">
+<meta property="og:description" content="Keep your @file, annotation and TUI habits and bring your session history to dsh. Every prescription verified against the real repo, with three documented migration pitfalls.">
 <meta property="og:url" content="https://dsh-plugin-hub.com/scenarios/01-migration.html">
 <meta property="og:type" content="website">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<title>Claude Code / Codex 迁移到 DSH:插件方案与常见问题 — DSH Plugin Hub</title>
+<title>Migrating from Claude Code / Codex to DSH: plugins and pitfalls — DSH Plugin Hub</title>
 <link rel="stylesheet" href="/assets/style.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BM4048J6E8"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
@@ -19,124 +19,123 @@ gtag('js',new Date());gtag('config','G-BM4048J6E8');</script>
 <body>
 <nav><div class="wrap nav-in">
   <a class="logo" href="/">dsh-plugin-hub<span class="tld">.com</span></a>
-  <div class="nav-links"><a href="/">首页</a><a href="/scenarios.html">场景库</a><a href="/opc.html">OPC</a><a href="/plugins/">插件体检</a><a href="/breaking-changes.html">破坏性变更</a><a href="/scenarios/01-migration.html" class="on">上手教程</a></div>
-  <a class="nav-cta" href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5B%E6%8F%90%E4%BA%A4%E6%8F%92%E4%BB%B6%5D+owner%2Frepo" rel="nofollow">提交插件</a>
+  <div class="nav-links"><a href="/">Home</a><a href="/scenarios.html">Scenarios</a><a href="/opc.html">OPC</a><a href="/plugins/">Plugin audits</a><a href="/breaking-changes.html">Breaking changes</a><a href="/scenarios/01-migration.html" class="on">Guides</a></div>
+  <a class="nav-cta" href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5BSubmit%5D+owner%2Frepo" rel="nofollow">Submit a plugin</a>
 </div></nav>
 <div class="wrap">
-<div class="crumb"><a href="/scenarios.html">场景库</a> / A·迁移与上手</div>
+<div class="crumb"><a href="/scenarios.html">Scenarios</a> / A · Migration &amp; onboarding</div>
 <header class="hero" style="padding:22px 0 8px">
-  <div class="sym">SYMPTOM · 场景 01 · 已开方</div>
-  <h1 style="font-size:36px;margin-top:8px;line-height:1.3">Claude Code / Codex 迁移到 DSH</h1>
-  <p class="lede" style="margin-top:12px;max-width:660px">本页面向从 Claude Code / Codex 迁移的用户,解决两件事:在 dsh 中还原原有操作习惯(@file、批注、全屏 TUI),以及完整迁移会话历史。</p>
-  <p class="en-line"><b>EN</b> Migrating from Claude Code / Codex? These audited plugins restore your workflow (@file, annotations, fullscreen TUI) and import your session history into dsh.</p>
+  <div class="sym">SYMPTOM · SCENARIO 01 · LIVE</div>
+  <h1 style="font-size:36px;margin-top:8px;line-height:1.3">Migrating from Claude Code / Codex</h1>
+  <p class="lede" style="margin-top:12px;max-width:660px">For users coming from Claude Code or Codex, this page covers two things: recreating your existing workflow in dsh (@file, annotations, fullscreen TUI), and importing your session history in full.</p>
   <div class="triage">
-    <button class="chip on" data-t="all">全部处方</button>
-    <button class="chip" data-t="cc">Claude Code 用户</button>
-    <button class="chip" data-t="codex">Codex 用户</button>
-    <button class="chip" data-t="move">迁移会话历史</button></div>
-  <div class="chip-hint" id="chipHint">选择迁移来源,筛选相关处方</div>
+    <button class="chip on" data-t="all">All prescriptions</button>
+    <button class="chip" data-t="cc">Coming from Claude Code</button>
+    <button class="chip" data-t="codex">Coming from Codex</button>
+    <button class="chip" data-t="move">Bringing session history</button></div>
+  <div class="chip-hint" id="chipHint">Pick where you're coming from to filter the prescriptions</div>
 </header>
-<section class="sec"><div class="sec-h"><span class="no">壹</span><h2>功能对照:原工具功能与 dsh 对应插件</h2></div>
-<div class="habit"><div class="h">Claude Code / Codex 功能</div><div class="h">dsh 对应插件</div><div>全屏终端界面,流式输出,Esc 回滚</div><div class='p'>dsh-cc-tui</div><div>@file 引用工作区文件进 prompt</div><div class='p'>dsh-at-file</div><div>选中文本添加批注后发送(Codex 式)</div><div class='p'>dsh-annotation</div><div>Codex 风格界面主题</div><div class='p'>dsh-skin</div><div>检索历史会话</div><div class='p'>dsh-session-search</div><div>导入 Claude Code 会话并继续运行</div><div class='p'>dsh-chat-import</div></div></section>
-<section class="sec"><div class="sec-h"><span class="no">贰</span><h2>操作习惯还原</h2><span class="sub">按需安装</span></div><div class="rx-card" data-t="cc codex">
+<section class="sec"><div class="sec-h"><span class="no">I</span><h2>Feature map: what you used, what replaces it</h2></div>
+<div class="habit"><div class="h">In Claude Code / Codex</div><div class="h">The dsh equivalent</div><div>Fullscreen terminal UI, streaming output, Esc to roll back</div><div class='p'>dsh-cc-tui</div><div>@file references that pull workspace files into the prompt</div><div class='p'>dsh-at-file</div><div>Select text, annotate, then send (Codex-style)</div><div class='p'>dsh-annotation</div><div>Codex-style interface theme</div><div class='p'>dsh-skin</div><div>Searching old sessions</div><div class='p'>dsh-session-search</div><div>Importing Claude Code sessions and continuing them</div><div class='p'>dsh-chat-import</div></div></section>
+<section class="sec"><div class="sec-h"><span class="no">II</span><h2>Recreating your workflow</h2><span class="sub">Install only what you need</span></div><div class="rx-card" data-t="cc codex">
   <div class="rx-head">
-    <span class="name">dsh-cc-tui</span><span class="tag top">本场景首选</span>
-    <a class="stamp pend" href="/plugins/dsh-cc-tui.html">待复核</a>
+    <span class="name">dsh-cc-tui</span><span class="tag top">Top pick</span>
+    <a class="stamp pend" style="font-size:10px;letter-spacing:.5px" href="/plugins/dsh-cc-tui.html">PENDING</a>
   </div>
   <div class="rx-body">
-    <div class="desc"><b>Claude Code 风格全屏 TUI。</b>流式思考展开、回滚控制、context/TPS 指示器。迁移后可基本保留原有操作习惯。</div>
-    <div class="checks"><span><i class="dot p"></i>权限:待人工复核 · 未见网络/执行类依赖线索</span><span><i class="dot g"></i>维护:今天更新</span><span><i class="dot g"></i>dsh.bundle 已声明,可激活</span><span><i class="dot y"></i>有 CI,未见测试</span><a class="card-link" href="/plugins/dsh-cc-tui.html">完整体检卡 →</a></div>
+    <div class="desc"><b>A Claude Code-style fullscreen TUI.</b> Streaming thought expansion, rollback controls, context/TPS indicators. Your muscle memory mostly carries over.</div>
+    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated today</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot y"></i>CI, no tests</span><a class="card-link" href="/plugins/dsh-cc-tui.html">Full audit report →</a></div>
   </div>
-  <div class="install"><span>dsh plugin --profile web add github:ccch1mneyyy/dsh-cc-tui</span><button class="cp">复制</button></div>
-  <div class="install-hint">安装后需 <b>重启 dsh</b> 方可生效(官方文档:the plugin becomes active after restarting dsh)</div>
+  <div class="install"><span>dsh plugin --profile web add github:ccch1mneyyy/dsh-cc-tui</span><button class="cp">Copy</button></div>
+  <div class="install-hint">Restart <b>dsh</b> after installing — per the official docs, "the plugin becomes active after restarting dsh"</div>
 </div><div class="rx-card" data-t="cc codex">
   <div class="rx-head">
-    <span class="name">dsh-at-file</span><span class="tag">输入习惯</span>
-    <a class="stamp pend" href="/plugins/dsh-at-file.html">待复核</a>
+    <span class="name">dsh-at-file</span><span class="tag">Input habits</span>
+    <a class="stamp pend" style="font-size:10px;letter-spacing:.5px" href="/plugins/dsh-at-file.html">PENDING</a>
   </div>
   <div class="rx-body">
-    <div class="desc"><b>Codex 式 @file 文件引用。</b>输入 @ 检索工作区文件,选中后随 prompt 附上。与 dsh-annotation(选中批注)配合使用,建议同时安装。</div>
-    <div class="checks"><span><i class="dot p"></i>权限:待人工复核 · 未见网络/执行类依赖线索</span><span><i class="dot g"></i>维护:今天更新</span><span><i class="dot g"></i>dsh.bundle 已声明,可激活</span><span><i class="dot y"></i>有测试,无 CI</span><a class="card-link" href="/plugins/dsh-at-file.html">完整体检卡 →</a></div>
+    <div class="desc"><b>Codex-style @file references.</b> Type @ to search workspace files and attach them to your prompt. Pairs with dsh-annotation (select-and-annotate) — worth installing together.</div>
+    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated today</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot y"></i>Tests, no CI</span><a class="card-link" href="/plugins/dsh-at-file.html">Full audit report →</a></div>
   </div>
-  <div class="install"><span>dsh plugin --profile web add github:FSMargoo/dsh-at-file</span><button class="cp">复制</button></div>
-  <div class="install-hint">安装后需 <b>重启 dsh</b> 方可生效(官方文档:the plugin becomes active after restarting dsh)</div>
+  <div class="install"><span>dsh plugin --profile web add github:FSMargoo/dsh-at-file</span><button class="cp">Copy</button></div>
+  <div class="install-hint">Restart <b>dsh</b> after installing — per the official docs, "the plugin becomes active after restarting dsh"</div>
 </div><div class="rx-card" data-t="codex">
   <div class="rx-head">
-    <span class="name">dsh-annotation</span><span class="tag">输入习惯</span>
-    <a class="stamp pend" href="/plugins/dsh-annotation.html">待复核</a>
+    <span class="name">dsh-annotation</span><span class="tag">Input habits</span>
+    <a class="stamp pend" style="font-size:10px;letter-spacing:.5px" href="/plugins/dsh-annotation.html">PENDING</a>
   </div>
   <div class="rx-body">
-    <div class="desc"><b>选中文本添加批注后发送。</b>Codex 用户的核心输入方式,dsh-external 官方系插件。体检显示当前未见测试与 CI。</div>
-    <div class="checks"><span><i class="dot p"></i>权限:待人工复核 · 未见网络/执行类依赖线索</span><span><i class="dot g"></i>维护:今天更新</span><span><i class="dot g"></i>dsh.bundle 已声明,可激活</span><span><i class="dot r"></i>未见测试与 CI</span><a class="card-link" href="/plugins/dsh-annotation.html">完整体检卡 →</a></div>
+    <div class="desc"><b>Select text, annotate, send.</b> The core input pattern for Codex users, from the dsh-external org. The audit found no tests or CI in the current version.</div>
+    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated today</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot r"></i>No tests or CI</span><a class="card-link" href="/plugins/dsh-annotation.html">Full audit report →</a></div>
   </div>
-  <div class="install"><span>dsh plugin --profile web add github:dsh-external/dsh-annotation</span><button class="cp">复制</button></div>
-  <div class="install-hint">安装后需 <b>重启 dsh</b> 方可生效(官方文档:the plugin becomes active after restarting dsh)</div>
+  <div class="install"><span>dsh plugin --profile web add github:dsh-external/dsh-annotation</span><button class="cp">Copy</button></div>
+  <div class="install-hint">Restart <b>dsh</b> after installing — per the official docs, "the plugin becomes active after restarting dsh"</div>
 </div><div class="rx-card" data-t="codex">
   <div class="rx-head">
-    <span class="name">dsh-skin</span><span class="tag">外观</span>
-    <a class="stamp pend" href="/plugins/dsh-skin.html">待复核</a>
+    <span class="name">dsh-skin</span><span class="tag">Appearance</span>
+    <a class="stamp pend" style="font-size:10px;letter-spacing:.5px" href="/plugins/dsh-skin.html">PENDING</a>
   </div>
   <div class="rx-body">
-    <div class="desc"><b>Codex 风格主题切换器。</b>纯视觉层插件,风险较低;更新频率一般,大版本后可能需等待适配,安装前请确认维护状态。</div>
-    <div class="checks"><span><i class="dot p"></i>权限:待人工复核 · 未见网络/执行类依赖线索</span><span><i class="dot g"></i>维护:1 天前更新</span><span><i class="dot g"></i>dsh.bundle 已声明,可激活</span><span><i class="dot r"></i>未见测试与 CI</span><a class="card-link" href="/plugins/dsh-skin.html">完整体检卡 →</a></div>
+    <div class="desc"><b>A Codex-style theme switcher.</b> Purely visual, so low risk — but updates are infrequent, and major dsh releases may need an adaptation window. Check maintenance status before installing.</div>
+    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated yesterday</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot r"></i>No tests or CI</span><a class="card-link" href="/plugins/dsh-skin.html">Full audit report →</a></div>
   </div>
-  <div class="install"><span>dsh plugin --profile web add github:KinGao294/dsh-skin</span><button class="cp">复制</button></div>
-  <div class="install-hint">安装后需 <b>重启 dsh</b> 方可生效(官方文档:the plugin becomes active after restarting dsh)</div>
+  <div class="install"><span>dsh plugin --profile web add github:KinGao294/dsh-skin</span><button class="cp">Copy</button></div>
+  <div class="install-hint">Restart <b>dsh</b> after installing — per the official docs, "the plugin becomes active after restarting dsh"</div>
 </div></section>
-<section class="sec"><div class="sec-h"><span class="no">叁</span><h2>会话历史迁移</h2><span class="sub">历史会话可完整保留</span></div><div class="rx-card" data-t="move cc">
+<section class="sec"><div class="sec-h"><span class="no">III</span><h2>Bringing your session history</h2><span class="sub">Old sessions don't get left behind</span></div><div class="rx-card" data-t="move cc">
   <div class="rx-head">
-    <span class="name">dsh-chat-import</span><span class="tag top">迁移核心</span>
-    <a class="stamp " href="/plugins/dsh-chat-import.html">合格</a>
+    <span class="name">dsh-chat-import</span><span class="tag top">Migration core</span>
+    <a class="stamp " href="/plugins/dsh-chat-import.html">PASS</a>
   </div>
   <div class="rx-body">
-    <div class="desc"><b>导入 Claude Code / Codex / ChatGPT / Cursor 等 12 种工具的会话历史</b>,含工具调用与推理块,导入为可继续运行的 session,而非只读归档。源文件只读不修改。本站首个四项全绿插件。</div>
-    <div class="checks"><span><i class="dot g"></i>权限:读指定 JSONL 文件 · 不联网(人工复核 08-14)</span><span><i class="dot g"></i>维护:今天更新</span><span><i class="dot g"></i>dsh.bundle 已声明,可激活</span><span><i class="dot g"></i>测试 + CI 齐全</span><a class="card-link" href="/plugins/dsh-chat-import.html">完整体检卡 →</a></div>
+    <div class="desc"><b>Imports session history from Claude Code, Codex, ChatGPT, Cursor and 8 other tools</b> — tool calls and reasoning blocks included — as fully resumable dsh sessions, not read-only archives. Source files are never modified. The first plugin on this site to pass all four checks.</div>
+    <div class="checks"><span><i class="dot g"></i>Permissions: Reads user-specified JSONL files only · no network access (reviewed 2026-08-14)</span><span><i class="dot g"></i>Maintenance: Updated today</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot g"></i>Tests + CI present</span><a class="card-link" href="/plugins/dsh-chat-import.html">Full audit report →</a></div>
   </div>
-  <div class="install"><span>dsh plugin --profile web add github:Nwflower/dsh-chat-import</span><button class="cp">复制</button></div>
-  <div class="install-hint">安装后需 <b>重启 dsh</b> 方可生效(官方文档:the plugin becomes active after restarting dsh)</div>
+  <div class="install"><span>dsh plugin --profile web add github:Nwflower/dsh-chat-import</span><button class="cp">Copy</button></div>
+  <div class="install-hint">Restart <b>dsh</b> after installing — per the official docs, "the plugin becomes active after restarting dsh"</div>
 </div><div class="rx-card" data-t="move">
   <div class="rx-head">
-    <span class="name">dsh-session-search</span><span class="tag">跨工具检索</span>
-    <a class="stamp warn" href="/plugins/dsh-session-search.html">注意</a>
+    <span class="name">dsh-session-search</span><span class="tag">Cross-tool search</span>
+    <a class="stamp warn" href="/plugins/dsh-session-search.html">WATCH</a>
   </div>
   <div class="rx-body">
-    <div class="desc"><b>跨工具会话搜索。</b>无需迁移即可检索历史记录。<b>注意:</b>体检发现当前版本未声明 dsh.bundle,按官方文档该包安装后不会激活;请关注作者修复进展或按其 README 指引使用。</div>
-    <div class="checks"><span><i class="dot p"></i>权限:待人工复核 · 未见网络/执行类依赖线索</span><span><i class="dot g"></i>维护:1 天前更新</span><span><i class="dot r"></i>未声明 dsh.bundle — 安装后不会激活</span><span><i class="dot y"></i>有测试,无 CI</span><a class="card-link" href="/plugins/dsh-session-search.html">完整体检卡 →</a></div>
+    <div class="desc"><b>Search sessions across tools.</b> Works without migrating anything. <b>Caution:</b> the audit found the current version does not declare dsh.bundle — per the official docs it won't activate after install. Watch for a fix, or follow the README's own instructions.</div>
+    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated 2 days ago</span><span><i class="dot r"></i>dsh.bundle not declared — won&#x27;t activate after install</span><span><i class="dot y"></i>Tests, no CI</span><a class="card-link" href="/plugins/dsh-session-search.html">Full audit report →</a></div>
   </div>
-  <div class="install"><span>dsh plugin --profile web add github:Tieboyh/dsh-session-search</span><button class="cp">复制</button></div>
-  <div class="install-hint">安装后需 <b>重启 dsh</b> 方可生效(官方文档:the plugin becomes active after restarting dsh)</div>
+  <div class="install"><span>dsh plugin --profile web add github:Tieboyh/dsh-session-search</span><button class="cp">Copy</button></div>
+  <div class="install-hint">Restart <b>dsh</b> after installing — per the official docs, "the plugin becomes active after restarting dsh"</div>
 </div></section>
-<section class="sec"><div class="sec-h"><span class="no">肆</span><h2>迁移常见问题</h2><span class="sub">依据官方文档与真实体检</span></div>
-<div class="pit"><h3>安装后未生效:检查 dsh.bundle 声明</h3>
-<p>官方文档:没有 <code>dsh.bundle</code> 声明的包"仍然可以安装,但只作为普通依赖……不激活任何层"。本站体检卡包含该检查项——本页处方中即有一个插件当前未声明,体检卡已标红。</p></div>
-<div class="pit"><h3>安装命令以官方文档为准</h3>
-<p>当前官方流程仅有包规格写法:<code>dsh plugin --profile web add &lt;npm包名 | github:owner/repo&gt;</code>(本地开发用 <code>link:</code>)。早期文章流传的其他安装形式在官方文档中已不存在,按旧写法安装会失败。<a href="/breaking-changes.html">版本变更追踪 →</a></p></div>
-<div class="pit"><h3>安装后需重启</h3>
-<p>插件作者与官方文档一致确认:安装后<b>重启 dsh 方可生效</b>("the plugin becomes active after restarting dsh")。未重启时插件不生效,并非安装失败。</p></div></section>
-<section class="sec"><div class="sec-h"><span class="no">伍</span><h2>相关场景</h2></div>
-<div class="rel"><a href="/scenarios.html"><span class="s">SYMPTOM 05</span>context / token 超限</a><a href="/scenarios.html"><span class="s">SYMPTOM 10</span>成本控制与用量监控</a><a href="/scenarios.html"><span class="s">SYMPTOM 21</span>界面替换与增强</a><a href="/scenarios.html"><span class="s">SYMPTOM 03</span>插件安装失败排查</a></div></section>
-<div class="data-note"><span>本页体检数据 2026-08-15 采集 · 权限项人工复核中,完成后逐项更新</span>
-<a href="/about-audit.html">体检方法说明</a></div>
-<div class="pager"><a href="/scenarios.html"><span class="lbl">← 返回</span><b>场景库 · 分诊台</b></a>
-<a class="next" href="/scenarios.html"><span class="lbl">下一个场景</span><b>SYM 02 SillyTavern 迁移到 DSH(开方中)</b></a></div>
+<section class="sec"><div class="sec-h"><span class="no">IV</span><h2>Common migration pitfalls</h2><span class="sub">Sourced from the official docs and real audits</span></div>
+<div class="pit"><h3>Installed but nothing happens? Check the dsh.bundle declaration</h3>
+<p>From the official docs: a package without a <code>dsh.bundle</code> declaration "still installs, but only as a plain dependency … and activates no layer". Our audits check for this — one plugin on this very page currently lacks the declaration, and its report is flagged red.</p></div>
+<div class="pit"><h3>Use the install command from the official docs</h3>
+<p>The only current official flow is the package-spec form: <code>dsh plugin --profile web add &lt;npm-package | github:owner/repo&gt;</code> (use <code>link:</code> for local development). Other install forms that circulate in early write-ups no longer exist in the official docs and will fail.<a href="/breaking-changes.html"> Release tracker →</a></p></div>
+<div class="pit"><h3>Restart after installing</h3>
+<p>Plugin authors and the official docs agree: a plugin <b>becomes active after restarting dsh</b>. If nothing changes before a restart, that's expected — not a broken install.</p></div></section>
+<section class="sec"><div class="sec-h"><span class="no">V</span><h2>Related scenarios</h2></div>
+<div class="rel"><a href="/scenarios.html"><span class="s">SYMPTOM 05</span>Context / token overruns</a><a href="/scenarios.html"><span class="s">SYMPTOM 10</span>Cost control &amp; usage tracking</a><a href="/scenarios.html"><span class="s">SYMPTOM 21</span>Interface upgrades</a><a href="/scenarios.html"><span class="s">SYMPTOM 03</span>Plugin install troubleshooting</a></div></section>
+<div class="data-note"><span>Audit data on this page collected 2026-08-15 · permission reviews in progress, updated as they complete</span>
+<a href="/about-audit.html">Audit methodology</a></div>
+<div class="pager"><a href="/scenarios.html"><span class="lbl">← Back</span><b>Scenarios · Triage</b></a>
+<a class="next" href="/scenarios.html"><span class="lbl">Next scenario</span><b>SYM 02 Migrating from SillyTavern (in progress)</b></a></div>
 </div>
 <script>
 const chips=document.querySelectorAll('.chip'),cards=document.querySelectorAll('.rx-card'),hint=document.getElementById('chipHint');
 chips.forEach(c=>c.addEventListener('click',()=>{chips.forEach(x=>x.classList.remove('on'));c.classList.add('on');
 const t=c.dataset.t;cards.forEach(k=>k.classList.toggle('dim',t!=='all'&&!(k.dataset.t||'').split(' ').includes(t)));
-hint.textContent=(t==='all')?'选择迁移来源,筛选相关处方':'高亮为相关处方,其余可跳过'}));
+hint.textContent=(t==='all')?'Pick where you\'re coming from to filter the prescriptions':'Highlighted prescriptions apply to you; dimmed ones can be skipped'}));
 document.querySelectorAll('.cp').forEach(b=>b.addEventListener('click',()=>{
 const cmd=b.parentElement.querySelector('span').textContent;
 if(navigator.clipboard)navigator.clipboard.writeText(cmd);
-b.textContent='已复制';setTimeout(()=>b.textContent='复制',1500)}));
+b.textContent='Copied';setTimeout(()=>b.textContent='Copy',1500)}));
 </script>
 <footer><div class="wrap">
-  <span class="mark">dsh-plugin-hub<span style="color:var(--seal)">.com</span> · 与 DeepSeek 无关联的社区站</span>
-  <a href="/scenarios.html">场景库</a>
-  <a href="/opc.html">OPC 工具箱</a>
-  <a href="/breaking-changes.html">破坏性变更</a>
-  <a href="/about-audit.html">体检方法</a>
-  <a href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5B%E6%8F%90%E4%BA%A4%E6%8F%92%E4%BB%B6%5D+owner%2Frepo" rel="nofollow">提交插件</a>
+  <span class="mark">dsh-plugin-hub<span style="color:var(--seal)">.com</span> · Community site, not affiliated with DeepSeek</span>
+  <a href="/scenarios.html">Scenarios</a>
+  <a href="/opc.html">OPC toolkits</a>
+  <a href="/breaking-changes.html">Breaking changes</a>
+  <a href="/about-audit.html">Audit methodology</a>
+  <a href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5BSubmit%5D+owner%2Frepo" rel="nofollow">Submit a plugin</a>
 </div></footer>
 </body>
 </html>

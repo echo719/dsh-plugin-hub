@@ -76,6 +76,10 @@
   "name": "dsh-milestone"
  },
  {
+  "name": "dsh-office",
+  "repo": "Fayelin12/dsh-office"
+ },
+ {
   "repo": "Moeblack/dsh-payload-capture",
   "name": "dsh-payload-capture"
  },

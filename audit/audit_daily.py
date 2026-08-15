@@ -39,12 +39,12 @@ def audit(entry):
         has_ci=os.path.isdir(wf) and any(f.endswith(('.yml','.yaml')) for f in os.listdir(wf))
         out["checks"]["tests_ci"]={"status":"g" if has_test and has_ci else "y" if (has_test or has_ci) else "r",
             "tests":has_test,"ci":has_ci}
-        perm={"status":"pending","note":"待人工复核","hints":hints}
+        perm={"status":"pending","note":"Pending manual review","hints":hints}
         ov=OVR.get(repo,{}).get("permissions")
         if ov and ov.get("status")=="g":
             age=(datetime.now(timezone.utc)-datetime.fromisoformat(ov["reviewed_at"]+"T00:00:00+00:00")).days
             if age>MANUAL_TTL and days<age:
-                perm={"status":"pending","note":f"人工结论已超{MANUAL_TTL}天且仓库有更新,降回待复核","hints":hints}
+                perm={"status":"pending","note":f"Manual review older than {MANUAL_TTL} days with new commits since — reverted to pending","hints":hints}
             else:
                 perm={**ov,"hints":hints}
         out["checks"]["permissions"]=perm
