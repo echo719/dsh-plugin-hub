@@ -1,0 +1,11 @@
+{
+  "dsh-context-doctor": "Context-injection audit for DSH: breaks down the token cost of AGENTS.md instruction chains, skill directories, tool schemas and MCP tools, and flags duplicates and conflicts. Ships a native Context Doctor panel plus a context_audit tool.",
+  "dsh-git-identity": "Profile bundle that pins git commits to the environment's own author identity (gh CLI login first, GitHub noreply email), injecting GIT_AUTHOR_*/GIT_COMMITTER_* variables that override any git config.",
+  "dsh-inspect": "A simple find → fix → re-check loop: checkup (adversarial checks with red-team validation), fix (root cause → patch → verify) and review (adversarial re-review), built on the official workflow engine.",
+  "dsh-milestone": "Git-style milestone timeline for DeepSeek Harness: a dot timeline of the session — hover for metadata, click to jump to any message.",
+  "dsh-office": "Office workspace and session dashboard for DSH: a six-column sprite office visualizing workspaces, sessions and token usage.",
+  "dsh-payload-capture": "Captures every outbound API payload and stores it as JSON in the plugin folder.",
+  "dsh-skins": "Third-party skins for the dsh web GUI — token skins and AI-art backgrounds, installed via config with zero core changes.",
+  "dsh-turn-index": "Turn index sidebar for the dsh web GUI: one entry per user turn, click to jump straight to it.",
+  "dsh-vision": "Gives text-only DeepSeek models eyes: a view_image tool that answers questions about images through any OpenAI-compatible VLM endpoint (free GLM-4.6V-Flash by default, swappable to Qwen3-VL, local Ollama and others)."
+}

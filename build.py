@@ -22,6 +22,11 @@ REPO    = site.get("github_repo","")
 PLUG    = {p["name"]: p for p in audit["plugins"] if not p.get("error")}
 GEN_AT  = audit["meta"]["generated_at"][:10]
 
+# English description overrides for upstream package.json descriptions written in Chinese
+DESC_EN = json.load(open(DATA/"desc_overrides.json", encoding="utf-8")) if (DATA/"desc_overrides.json").exists() else {}
+for _n,_p in PLUG.items():
+    if _n in DESC_EN: _p["desc"] = DESC_EN[_n]
+
 def esc(s): return html.escape(str(s), quote=True)
 
 # ---------------- shell ----------------
