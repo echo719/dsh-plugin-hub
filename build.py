@@ -34,8 +34,9 @@ gtag('js',new Date());gtag('config','{site['ga4_id']}');</script>"""
 def shell(title, desc, path, active, content, extra_head=""):
     nav = ""
     for href, key, label in [
+        ("/","home","首页"),
         ("/scenarios.html","scenarios","场景库"),
-        ("/opc.html","opc","一人公司工具箱"),
+        ("/opc.html","opc","OPC"),
         ("/plugins/","plugins","插件体检"),
         ("/breaking-changes.html","breaking","破坏性变更"),
         ("/scenarios/01-migration.html","guide","上手教程")]:
@@ -68,7 +69,7 @@ def shell(title, desc, path, active, content, extra_head=""):
 <footer><div class="wrap">
   <span class="mark">dsh-plugin-hub<span style="color:var(--seal)">.com</span> · 与 DeepSeek 无关联的社区站</span>
   <a href="/scenarios.html">场景库</a>
-  <a href="/opc.html">一人公司工具箱</a>
+  <a href="/opc.html">OPC 工具箱</a>
   <a href="/breaking-changes.html">破坏性变更</a>
   <a href="/about-audit.html">体检方法</a>
   <a href="{submit}" rel="nofollow">提交插件</a>
@@ -261,7 +262,7 @@ home=f"""<div class="wrap">
 <script>document.getElementById('q').addEventListener('keydown',e=>{{if(e.key==='Enter')location.href='/scenarios.html'}});</script>"""
 write("index.html", shell("DSH Plugin Hub — 按问题场景检索插件,安装前先看体检",
   "按问题场景检索 DeepSeek Harness 插件。每个插件经过四项体检(权限/维护/dsh.bundle/测试CI),破坏性变更持续追踪。",
-  "/", "", home))
+  "/", "home", home))
 
 # ---- 场景索引 ----
 CATS={"A":("迁移与上手","流量入口层"),"B":("排障与诊断","体检定位强关联层"),
