@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="29+ 个 DSH 真实使用场景,七大类,按症状分诊找插件处方。">
+<meta name="description" content="30 个 DSH 真实使用场景,七大类分类,按场景检索插件方案。">
 <link rel="canonical" href="https://dsh-plugin-hub.com/scenarios.html">
 <meta property="og:title" content="场景库 · 分诊台 — DSH Plugin Hub">
-<meta property="og:description" content="29+ 个 DSH 真实使用场景,七大类,按症状分诊找插件处方。">
+<meta property="og:description" content="30 个 DSH 真实使用场景,七大类分类,按场景检索插件方案。">
 <meta property="og:url" content="https://dsh-plugin-hub.com/scenarios.html">
 <meta property="og:type" content="website">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
@@ -25,10 +25,10 @@ gtag('js',new Date());gtag('config','G-BM4048J6E8');</script>
 <div class="wrap">
 <header class="hero" style="padding:52px 0 12px">
   <div class="kicker">TRIAGE · 分诊台</div>
-  <h1 style="font-size:36px;margin-top:8px">30 个场景,你的问题挂哪一科?</h1>
-  <p class="lede" style="margin-top:8px;max-width:660px">七大类按"你在干什么"组织。<b style="color:var(--ink)">已开方</b> = 处方页已上线可直接抄;<b style="color:var(--ink)">开方中 / 整理中</b> = 插件已核验、页面在写;<b style="color:var(--amber)">空位</b> = 生态还没有像样插件,先占位征集。</p>
+  <h1 style="font-size:36px;margin-top:8px">30 个使用场景,按类检索</h1>
+  <p class="lede" style="margin-top:8px;max-width:660px">七大类按使用场景组织。<b style="color:var(--ink)">已开方</b> = 方案页已上线;<b style="color:var(--ink)">开方中 / 整理中</b> = 插件已核验、页面撰写中;<b style="color:var(--amber)">空位</b> = 生态暂无成熟插件,先行收录需求。</p>
   <div class="search" style="margin-top:20px;max-width:560px"><span class="prompt">&gt;_</span>
-    <input id="q" placeholder="搜症状: context / 通知 / 表格 / 记忆 …"></div>
+    <input id="q" placeholder="检索场景:context / 通知 / 表格 / 记忆 …"></div>
   <div class="filters">
     <button class="fchip on" data-f="all">全部</button>
     <button class="fchip" data-f="live">已开方</button>
@@ -39,81 +39,81 @@ gtag('js',new Date());gtag('config','G-BM4048J6E8');</script>
 <section class="cat-sec"><div class="cat-h"><span class="letter">A</span><h2>迁移与上手</h2><span class="sub">流量入口层</span></div>
 <div class="slist"><a class="srow" data-s="live" href="/scenarios/01-migration.html">
   <span class="no">SYM 01</span>
-  <span class="t"><b>从 Claude Code / Codex 迁移过来</b><small>保留 @file、批注、TUI 手感,带历史记录搬家</small></span>
+  <span class="t"><b>Claude Code / Codex 迁移到 DSH</b><small>保留 @file、批注、TUI 操作习惯,并迁移会话历史</small></span>
   <span class="rx">℞ 6</span><span class="badge t1">已开方</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 02</span>
-  <span class="t"><b>从 SillyTavern / 角色扮演工具迁移</b><small>官方 rp 迁移路径 + 角色卡支持</small></span>
+  <span class="t"><b>SillyTavern / 角色扮演工具迁移到 DSH</b><small>官方 rp 迁移路径与角色卡支持</small></span>
   <span class="rx">℞ 1</span><span class="badge t1">开方中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 03</span>
-  <span class="t"><b>第一次装插件就失败</b><small>dsh.bundle 必须声明 / 旧安装写法失效 / 装完要重启</small></span>
+  <span class="t"><b>插件安装失败排查</b><small>dsh.bundle 声明缺失 / 旧安装写法失效 / 安装后需重启</small></span>
   <span class="rx">℞ 3</span><span class="badge t1">开方中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 04</span>
-  <span class="t"><b>给 DSH 写第一个自己的插件</b><small>脚手架、dsh-101、Cordis ctx 模型入门</small></span>
+  <span class="t"><b>开发第一个 DSH 插件</b><small>脚手架、dsh-101、Cordis ctx 模型入门</small></span>
   <span class="badge t2">整理中</span><span class="arrow">→</span></a></div></section><section class="cat-sec"><div class="cat-h"><span class="letter">B</span><h2>排障与诊断</h2><span class="sub">体检定位强关联层</span></div>
 <div class="slist"><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 05</span>
-  <span class="t"><b>context / token 爆了</b><small>context 审计、切片循环、ctx 管理</small></span>
+  <span class="t"><b>context / token 超限</b><small>context 审计、切片循环、ctx 管理</small></span>
   <span class="rx">℞ 3</span><span class="badge t1">开方中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 06</span>
-  <span class="t"><b>session 打不开 / 历史找不到了</b><small>会话体检、免索引搜索</small></span>
+  <span class="t"><b>session 无法打开 / 历史会话检索</b><small>会话体检、免索引搜索</small></span>
   <span class="rx">℞ 2</span><span class="badge t1">开方中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 07</span>
-  <span class="t"><b>装之前想看安不安全</b><small>安全审计、payload 抓包看上行内容</small></span>
+  <span class="t"><b>安装前安全评估</b><small>安全审计、payload 抓包核查上行内容</small></span>
   <span class="rx">℞ 3</span><span class="badge t1">开方中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 08</span>
-  <span class="t"><b>升级后插件全挂了(破坏性变更)</b><small>版本核读 + 本站破坏性变更追踪表联动</small></span>
+  <span class="t"><b>升级后插件失效(破坏性变更)</b><small>版本核读与破坏性变更追踪表联动</small></span>
   <span class="badge t1">开方中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 09</span>
-  <span class="t"><b>想知道模型每一步在干什么</b><small>trace、explain、payload 捕获</small></span>
+  <span class="t"><b>模型执行过程追踪</b><small>trace、explain、payload 捕获</small></span>
   <span class="rx">℞ 2</span><span class="badge t2">整理中</span><span class="arrow">→</span></a></div></section><section class="cat-sec"><div class="cat-h"><span class="letter">C</span><h2>成本与模型</h2><span class="sub">DeepSeek 用户核心关切</span></div>
 <div class="slist"><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 10</span>
-  <span class="t"><b>控制花费 / 看每轮成本</b><small>余额表、TPS 表</small></span>
+  <span class="t"><b>成本控制与用量监控</b><small>余额表、TPS 表</small></span>
   <span class="rx">℞ 2</span><span class="badge t1">开方中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 11</span>
-  <span class="t"><b>双模型编排:便宜模型干活、贵模型思考</b><small>fallback 路由、第二模型旁审</small></span>
+  <span class="t"><b>双模型编排:低成本执行、高能力规划</b><small>fallback 路由、第二模型旁审</small></span>
   <span class="rx">℞ 2</span><span class="badge t1">开方中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 12</span>
-  <span class="t"><b>纯文本模型要处理图片</b><small>视觉桥接、OCR / UI 还原 / 像素 diff</small></span>
+  <span class="t"><b>文本模型的图像处理扩展</b><small>视觉桥接、OCR / UI 还原 / 像素 diff</small></span>
   <span class="rx">℞ 2</span><span class="badge t1">开方中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 13</span>
   <span class="t"><b>跨会话长期记忆</b><small>记忆演化、跨会话接力</small></span>
   <span class="badge t2">整理中</span><span class="arrow">→</span></a></div></section><section class="cat-sec"><div class="cat-h"><span class="letter">D</span><h2>工程工作流</h2><span class="sub">对照 Claude Code 生态最大类</span></div>
 <div class="slist"><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 14</span>
-  <span class="t"><b>Git 工作流武装</b><small>git 工具链、多身份、auto-blame</small></span>
+  <span class="t"><b>Git 工作流增强</b><small>git 工具链、多身份管理、auto-blame</small></span>
   <span class="rx">℞ 3</span><span class="badge t1">开方中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 15</span>
   <span class="t"><b>代码审查 / 测试闭环</b><small>审查循环、测试运行器</small></span>
   <span class="rx">℞ 3</span><span class="badge t1">开方中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 16</span>
-  <span class="t"><b>接自己的沙盒 / 权限控制</b><small>micro / mxc / nono 三种权限后端怎么选</small></span>
+  <span class="t"><b>沙盒接入与权限控制</b><small>micro / mxc / nono 三种权限后端选型对比</small></span>
   <span class="rx">℞ 3</span><span class="badge t1">开方中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 17</span>
   <span class="t"><b>浏览器自动化 / 网页任务</b><small>浏览器面板、browser4 系</small></span>
   <span class="badge t2">整理中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 18</span>
-  <span class="t"><b>接 MCP 生态</b><small>MCP 管理器、反向把 DSH 当 MCP 工具</small></span>
+  <span class="t"><b>MCP 生态接入</b><small>MCP 管理器,及反向将 DSH 作为 MCP 工具</small></span>
   <span class="badge t2">整理中</span><span class="arrow">→</span></a><a class="srow gap-row" data-s="gap" href="#">
   <span class="no">GAP 19</span>
-  <span class="t"><b>部署 / CI-CD</b><small>隔壁生态的大类,DSH 侧近乎空白 — 先占位,出现即收录</small></span>
+  <span class="t"><b>部署 / CI-CD</b><small>对照成熟生态的类目,DSH 侧暂缺 — 先行占位,出现即收录</small></span>
   <span class="badge gap">空位征集</span><span class="arrow">→</span></a><a class="srow gap-row" data-s="gap" href="#">
   <span class="no">GAP 20</span>
-  <span class="t"><b>数据库运维 / SQL</b><small>现仅 dsh-data-agent 一个,这里会长出来</small></span>
+  <span class="t"><b>数据库运维 / SQL</b><small>目前仅 dsh-data-agent 一个,预期将持续增长</small></span>
   <span class="badge gap">空位征集</span><span class="arrow">→</span></a></div></section><section class="cat-sec"><div class="cat-h"><span class="letter">E</span><h2>界面与体验</h2></div>
 <div class="slist"><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 21</span>
-  <span class="t"><b>换个好用的界面(TUI / 侧边栏 / 皮肤)</b><small>侧边栏工作台、pi-tui、Rust TUI、皮肤与里程碑</small></span>
+  <span class="t"><b>界面替换与增强(TUI / 侧边栏 / 主题)</b><small>侧边栏工作台、pi-tui、Rust TUI、主题与里程碑</small></span>
   <span class="rx">℞ 6</span><span class="badge t1">开方中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 22</span>
-  <span class="t"><b>手机 / 远程 / 桌面端用 DSH</b><small>mobile、SSH remote、desktop 实现</small></span>
+  <span class="t"><b>移动端 / 远程 / 桌面端接入</b><small>mobile、SSH remote、desktop 实现</small></span>
   <span class="badge t2">整理中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 23</span>
-  <span class="t"><b>任务完成时提醒我(通知)</b><small>中文 IM 通知是国内刚需,核验中</small></span>
+  <span class="t"><b>任务完成通知</b><small>覆盖中文 IM 的通知渠道,核验中</small></span>
   <span class="badge t2">整理中</span><span class="arrow">→</span></a></div></section><section class="cat-sec"><div class="cat-h"><span class="letter">F</span><h2>办公与知识工作</h2><span class="sub">对照 Claude Code 的非代码扩散趋势</span></div>
 <div class="slist"><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 24</span>
-  <span class="t"><b>处理 Office 文档 / 表格</b><small>docx/pdf 预览编辑、表格皮肤</small></span>
+  <span class="t"><b>Office 文档与表格处理</b><small>docx/pdf 预览编辑、表格皮肤</small></span>
   <span class="rx">℞ 1</span><span class="badge t2">整理中</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 25</span>
   <span class="t"><b>深度调研 / 文献工作流</b><small>deep-research 编排、zotero 系</small></span>
@@ -122,20 +122,20 @@ gtag('js',new Date());gtag('config','G-BM4048J6E8');</script>
   <span class="t"><b>团队协作与分享</b><small>share、teamwork、deeplink</small></span>
   <span class="badge t2">整理中</span><span class="arrow">→</span></a><a class="srow gap-row" data-s="gap" href="#">
   <span class="no">GAP 27</span>
-  <span class="t"><b>写作 / 内容生产</b><small>隔壁有 copywriter 类,DSH 侧未见 — 预建页占词</small></span>
+  <span class="t"><b>写作 / 内容生产</b><small>对照生态存在 copywriter 类插件,DSH 侧暂缺 — 预建占位页</small></span>
   <span class="badge gap">空位征集</span><span class="arrow">→</span></a><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 28</span>
-  <span class="t"><b>学习模式 / 费曼教学</b><small>教→复述→判→再讲</small></span>
+  <span class="t"><b>学习模式 / 费曼教学</b><small>教学、复述、评判的循环式学习</small></span>
   <span class="badge t2">整理中</span><span class="arrow">→</span></a></div></section><section class="cat-sec"><div class="cat-h"><span class="letter">G</span><h2>轻场景</h2><span class="sub">留存与传播</span></div>
 <div class="slist"><a class="srow" data-s="wip" href="#">
   <span class="no">SYM 29</span>
-  <span class="t"><b>桌宠与整活</b><small>鲸鱼桌宠、复古整活 — 社媒引流素材</small></span>
+  <span class="t"><b>桌宠与娱乐插件</b><small>鲸鱼桌宠、复古主题等娱乐向插件</small></span>
   <span class="badge t2">整理中</span><span class="arrow">→</span></a><a class="srow gap-row" data-s="gap" href="#">
   <span class="no">GAP 30</span>
-  <span class="t"><b>下一个空位由你提名</b><small>你觉得缺什么场景?告诉我们,热度高的优先建页</small></span>
+  <span class="t"><b>空位场景征集</b><small>缺少的场景可提交提名,按需求热度优先建页</small></span>
   <span class="badge gap">空位征集</span><span class="arrow">→</span></a></div></section>
 <div class="note"><span class="k">HOW THIS LIST GROWS · 收录节奏</span>
-处方页陆续开放,顺序按真实插件核验进度;<b>处方数只统计已核验存在的插件</b>。空位场景只建轻页占词,插件一出现,第一时间体检收录。每周例行:扫 dsh-plugin topic 增量 → 归入场景或开新场景 → 更新兼容状态。</div>
+方案页按插件核验进度陆续开放;<b>处方数仅统计已核验存在的插件</b>。空位场景仅建立占位页,对应插件出现后第一时间体检收录。每周例行扫描 dsh-plugin topic 增量,归入现有场景或新建场景,并更新兼容状态。</div>
 </div>
 <script>
 const chips=document.querySelectorAll('.fchip'),rows=document.querySelectorAll('.srow'),

@@ -131,7 +131,7 @@ def rx_card(name, tag, tag_top, desc_html, triage=""):
     <div class="checks">{checks_block(p)}</div>
   </div>
   <div class="install"><span>{esc(install_cmd(p))}</span><button class="cp">复制</button></div>
-  <div class="install-hint">装完记得 <b>重启 dsh</b> 才生效(官方文档原话:the plugin becomes active after restarting dsh)</div>
+  <div class="install-hint">安装后需 <b>重启 dsh</b> 方可生效(官方文档:the plugin becomes active after restarting dsh)</div>
 </div>"""
 
 # ---------------- pages ----------------
@@ -163,14 +163,14 @@ for s in scenarios:
     href=f"/scenarios/{s['id']}.html" if s["status"]=="live" else "/scenarios.html"
     if s.get("featured"):
         sc_cards+=f"""<a class="sc featured" href="{href}">
-  <span class="badge">最多人来的入口</span><h3>{esc(s['title'])}</h3>
+  <span class="badge">热门入口</span><h3>{esc(s['title'])}</h3>
   <p>{esc(s['blurb'])}</p>
   <div class="rx"><span>℞ {len([x for x in s['plugins'] if x in PLUG])} 个已核验插件</span><span>{esc(s['star'])}</span></div></a>"""
     elif s["status"]=="gap":
         sc_cards+=f"""<a class="sc gap-card" href="/scenarios.html">
   <div class="top-line"><span class="sym">GAP {s['num']}</span><span class="cat">{esc(s['cat_s'])}</span></div>
   <h3>{esc(s['title'])}</h3><p>{esc(s['blurb'])}</p>
-  <div class="rx"><span>空位 · 征集中</span><span>等你来做 →</span></div></a>"""
+  <div class="rx"><span>空位 · 征集中</span><span>欢迎提交 →</span></div></a>"""
     else:
         n=len([x for x in s['plugins'] if x in PLUG])
         tail=f"℞ {n} 已核验" if n else "整理中"
@@ -192,52 +192,52 @@ home=f"""<div class="wrap">
 <section class="hero">
   <span class="reg tl">┌ EST. 2026-08</span><span class="reg tr">DAILY AUDIT {GEN_AT} ┐</span>
   <div class="hero-tag">DeepSeek Harness (dsh) · 非官方社区站 · 中文为主 / EN summaries</div>
-  <h1>别按分类翻插件,<br>按<span class="u">你卡住的问题</span>找。</h1>
-  <p class="lede">每个场景只推荐 2–4 个体检过的插件:权限、维护状态、能否真正激活,一次看清,再决定装不装。</p>
+  <h1>不必翻遍分类目录,<br>按<span class="u">问题场景</span>检索插件。</h1>
+  <p class="lede">每个场景精选 2–4 个经过体检的插件:权限、维护状态、能否正常激活,安装前一次核对。</p>
   <div class="hero-seal"><span class="b">体检合格</span><span class="s">DSH·PLUGIN·HUB</span></div>
   <div class="search"><span class="prompt">&gt;_</span>
-    <input id="q" placeholder="你现在卡在哪? 比如: context 爆了 / 装了没反应">
+    <input id="q" placeholder="检索问题场景,如:context 超限 / 安装后未生效">
     <button onclick="location.href='/scenarios.html'">找处方</button></div>
-  <div class="hot-q"><span>常见症状:</span>
-    <a href="/scenarios/01-migration.html">从 Claude Code 迁移</a>
-    <a href="/scenarios.html">context 爆了</a>
-    <a href="/scenarios.html">装了没反应</a>
-    <a href="/breaking-changes.html">升级后插件全挂了</a></div>
+  <div class="hot-q"><span>常见问题:</span>
+    <a href="/scenarios/01-migration.html">Claude Code / Codex 迁移</a>
+    <a href="/scenarios.html">context 超限</a>
+    <a href="/scenarios.html">安装后未生效</a>
+    <a href="/breaking-changes.html">升级后插件失效</a></div>
   <div class="hero-stats">
-    <span><b>{len(scenarios)}</b>场景收录 · 首批开方中</span>
-    <span><b>{n_aud}</b>插件已核验体检</span>
+    <span><b>{len(scenarios)}</b>场景收录 · 首批陆续上线</span>
+    <span><b>{n_aud}</b>已核验并体检的插件</span>
     <span><b>每日</b>09:20 数据更新</span></div>
 </section>
 <div class="hooks">
-  <div class="hook"><span class="k">01 · CHECKUP</span><h3>装前先看体检,不是先看 star</h3>
-    <p>权限 / 维护状态 / dsh.bundle / 测试CI 四道检查,不合格直接标出来。全场只有这里做。</p></div>
-  <div class="hook"><span class="k">02 · BREAKING</span><h3>破坏性变更有人替你盯</h3>
-    <p>官方明说 THERE WILL BE COMPATIBILITY-BREAKING CHANGES。每次发版我们核读一次,给出该不该升。</p></div>
-  <div class="hook"><span class="k">03 · 症状 → 处方</span><h3>按你在干的事组织,不是仓库列表</h3>
-    <p>竞品是平铺目录;这里从"你卡住的问题"出发,每页给可直接照抄的处方和避坑。</p></div>
+  <div class="hook"><span class="k">01 · CHECKUP</span><h3>安装前先看体检结果</h3>
+    <p>权限 / 维护状态 / dsh.bundle / 测试CI 四项检查,不合格项直接标注,不以 star 数代替质量判断。</p></div>
+  <div class="hook"><span class="k">02 · BREAKING</span><h3>破坏性变更持续追踪</h3>
+    <p>官方声明 THERE WILL BE COMPATIBILITY-BREAKING CHANGES。每次发版逐项核读,给出升级建议。</p></div>
+  <div class="hook"><span class="k">03 · 症状 → 处方</span><h3>按使用场景组织,而非仓库列表</h3>
+    <p>区别于平铺式目录,每个场景页提供可直接使用的安装方案与常见问题提示。</p></div>
 </div>
-<div class="sec-head"><span class="no">SECTION 01</span><h2>按场景找</h2>
-  <span class="sub">症状 → 处方 · 处方数只统计已核验存在的插件</span>
+<div class="sec-head"><span class="no">SECTION 01</span><h2>按场景检索</h2>
+  <span class="sub">症状 → 处方 · 数量仅统计已核验存在的插件</span>
   <a class="more" href="/scenarios.html">全部 {len(scenarios)} 个场景 →</a></div>
 <div class="grid">{sc_cards}</div>
 <div class="band">
   <div class="band-h"><span class="no">SECTION 02</span><h2>一人公司工具箱</h2>
-    <span class="sub">按你在做的事找,不是按插件分类</span>
+    <span class="sub">按业务方向组织插件方案</span>
     <a class="more" href="/opc.html">全部 10 个方向 →</a></div>
   <div class="roles">{roles_html}</div>
 </div>
 <div class="sec-head"><span class="no">SECTION 03</span><h2>插件体检</h2>
-  <span class="sub">别的目录告诉你有什么,我们告诉你敢不敢装</span>
-  <a class="more" href="/plugins/{site['home_report_plugin']}.html">看一份完整体检卡 →</a></div>
+  <span class="sub">不止列出插件,还给出可安装性结论</span>
+  <a class="more" href="/plugins/{site['home_report_plugin']}.html">查看完整体检卡 →</a></div>
 <div class="checkup">
   <div class="checkup-copy">
-    <p>dsh 还在 developer preview,插件生态鱼龙混杂。每个收录插件都过四道检查,不合格的直接标出来:</p>
-    <ul><li>声明的权限范围 — 读文件?联网?系统资源?</li>
-      <li>维护状态 — 最后一次有效更新距今多久</li>
-      <li>能否真正激活 — 是否声明 dsh.bundle</li>
-      <li>有没有测试 / CI</li></ul>
+    <p>dsh 处于 developer preview 阶段,插件质量参差。每个收录插件均通过四项检查,不合格项直接标注:</p>
+    <ul><li>权限范围 — 文件读写、网络访问、系统资源</li>
+      <li>维护状态 — 最近一次有效更新距今时长</li>
+      <li>能否正常激活 — 是否声明 dsh.bundle</li>
+      <li>测试与 CI 覆盖情况</li></ul>
     <div class="verdicts"><span class="p">体检合格 {n_pass}</span><span class="w">注意 / 待复核 {n_aud-n_pass}</span></div>
-    <p class="pipe-note">维护状态、dsh.bundle、测试CI 三项每日自动采集;权限一项人工复核,复核超 60 天且仓库有更新会自动降回"待复核"——宁可显示待复核,也不乱猜。<a href="/about-audit.html">体检方法说明 →</a></p>
+    <p class="pipe-note">维护状态、dsh.bundle、测试CI 三项每日自动采集;权限一项由人工复核,复核超 60 天且仓库有更新时自动降回"待复核"——未经复核不给出权限结论。<a href="/about-audit.html">体检方法说明 →</a></p>
   </div>
   <div class="report">
     <div class="report-head"><span class="name">{esc(rep['name'])}</span><span class="serial">AUDIT {GEN_AT}</span></div>
@@ -253,14 +253,14 @@ home=f"""<div class="wrap">
     <span class="sub">官方原话:THERE WILL BE COMPATIBILITY-BREAKING CHANGES</span>
     <a class="more" href="/breaking-changes.html" style="color:#8fb3ff">完整时间线 →</a></div>
   <div class="strip">{rel_lines}
-    <div class="strip-foot"><span>升级 dsh 前 30 秒,先来对一眼</span>
+    <div class="strip-foot"><span>升级 dsh 前,建议先核对本表</span>
       <a href="https://github.com/deepseek-ai/deepseek-harness/releases" rel="nofollow">官方 Releases</a>
       <a href="/breaking-changes.html">本站核读</a></div>
   </div>
 </div></div>
 <script>document.getElementById('q').addEventListener('keydown',e=>{{if(e.key==='Enter')location.href='/scenarios.html'}});</script>"""
-write("index.html", shell("DSH Plugin Hub — 按问题找插件,装前先看体检",
-  "按你卡住的问题找 DeepSeek Harness 插件。每个插件过四道体检(权限/维护/dsh.bundle/测试CI),破坏性变更有人盯。",
+write("index.html", shell("DSH Plugin Hub — 按问题场景检索插件,安装前先看体检",
+  "按问题场景检索 DeepSeek Harness 插件。每个插件经过四项体检(权限/维护/dsh.bundle/测试CI),破坏性变更持续追踪。",
   "/", "", home))
 
 # ---- 场景索引 ----
@@ -298,10 +298,10 @@ for c,(cn,cs) in CATS.items():
 scen_page=f"""<div class="wrap">
 <header class="hero" style="padding:52px 0 12px">
   <div class="kicker">TRIAGE · 分诊台</div>
-  <h1 style="font-size:36px;margin-top:8px">{len(scenarios)} 个场景,你的问题挂哪一科?</h1>
-  <p class="lede" style="margin-top:8px;max-width:660px">七大类按"你在干什么"组织。<b style="color:var(--ink)">已开方</b> = 处方页已上线可直接抄;<b style="color:var(--ink)">开方中 / 整理中</b> = 插件已核验、页面在写;<b style="color:var(--amber)">空位</b> = 生态还没有像样插件,先占位征集。</p>
+  <h1 style="font-size:36px;margin-top:8px">{len(scenarios)} 个使用场景,按类检索</h1>
+  <p class="lede" style="margin-top:8px;max-width:660px">七大类按使用场景组织。<b style="color:var(--ink)">已开方</b> = 方案页已上线;<b style="color:var(--ink)">开方中 / 整理中</b> = 插件已核验、页面撰写中;<b style="color:var(--amber)">空位</b> = 生态暂无成熟插件,先行收录需求。</p>
   <div class="search" style="margin-top:20px;max-width:560px"><span class="prompt">&gt;_</span>
-    <input id="q" placeholder="搜症状: context / 通知 / 表格 / 记忆 …"></div>
+    <input id="q" placeholder="检索场景:context / 通知 / 表格 / 记忆 …"></div>
   <div class="filters">
     <button class="fchip on" data-f="all">全部</button>
     <button class="fchip" data-f="live">已开方</button>
@@ -311,7 +311,7 @@ scen_page=f"""<div class="wrap">
 </header>
 {cat_html}
 <div class="note"><span class="k">HOW THIS LIST GROWS · 收录节奏</span>
-处方页陆续开放,顺序按真实插件核验进度;<b>处方数只统计已核验存在的插件</b>。空位场景只建轻页占词,插件一出现,第一时间体检收录。每周例行:扫 dsh-plugin topic 增量 → 归入场景或开新场景 → 更新兼容状态。</div>
+方案页按插件核验进度陆续开放;<b>处方数仅统计已核验存在的插件</b>。空位场景仅建立占位页,对应插件出现后第一时间体检收录。每周例行扫描 dsh-plugin topic 增量,归入现有场景或新建场景,并更新兼容状态。</div>
 </div>
 <script>
 const chips=document.querySelectorAll('.fchip'),rows=document.querySelectorAll('.srow'),
@@ -329,7 +329,7 @@ chips.forEach(c=>{{const n=(c.dataset.f==='all')?rows.length:[...rows].filter(r=
 c.textContent+=` ${{n}}`}});
 </script>"""
 write("scenarios.html", shell("场景库 · 分诊台 — DSH Plugin Hub",
-  "29+ 个 DSH 真实使用场景,七大类,按症状分诊找插件处方。","/scenarios.html","scenarios",scen_page))
+  "30 个 DSH 真实使用场景,七大类分类,按场景检索插件方案。","/scenarios.html","scenarios",scen_page))
 
 # ---- SYM 01 场景页 ----
 s01=next(s for s in scenarios if s["id"]=="01-migration")
@@ -346,42 +346,42 @@ s01_page=f"""<div class="wrap">
   <p class="en-line"><b>EN</b> {esc(s01['en'])}</p>
   <div class="triage">
     <button class="chip on" data-t="all">全部处方</button>
-    <button class="chip" data-t="cc">我从 Claude Code 来</button>
-    <button class="chip" data-t="codex">我从 Codex 来</button>
-    <button class="chip" data-t="move">我要带历史记录搬家</button></div>
-  <div class="chip-hint" id="chipHint">点选你的情况,只看相关处方</div>
+    <button class="chip" data-t="cc">Claude Code 用户</button>
+    <button class="chip" data-t="codex">Codex 用户</button>
+    <button class="chip" data-t="move">迁移会话历史</button></div>
+  <div class="chip-hint" id="chipHint">选择迁移来源,筛选相关处方</div>
 </header>
-<section class="sec"><div class="sec-h"><span class="no">壹</span><h2>先看对照:你的老习惯,dsh 里叫什么</h2></div>
-<div class="habit"><div class="h">你在 Claude Code / Codex 的习惯</div><div class="h">dsh 里的处方</div>{habit_rows}</div></section>
-<section class="sec"><div class="sec-h"><span class="no">贰</span><h2>找回操作手感</h2><span class="sub">按需装,不必全上</span></div>{cards_a}</section>
-<section class="sec"><div class="sec-h"><span class="no">叁</span><h2>带着历史记录搬家</h2><span class="sub">老会话不必扔</span></div>{cards_b}</section>
-<section class="sec"><div class="sec-h"><span class="no">肆</span><h2>迁移常见坑</h2><span class="sub">全部来自官方文档与真实体检</span></div>
-<div class="pit"><h3>装了没反应?看 dsh.bundle</h3>
-<p>官方文档:没有 <code>dsh.bundle</code> 声明的包"仍然可以安装,但只作为普通依赖……不激活任何层"。本站体检卡有这一项——本页处方里就有一个插件当前未声明,卡上直接标红。</p></div>
-<div class="pit"><h3>别照抄旧教程的安装写法</h3>
-<p>当前官方流程只有包规格写法:<code>dsh plugin --profile web add &lt;npm包名 | github:owner/repo&gt;</code>(本地开发用 <code>link:</code>)。早期文章流传的其他安装形式在官方文档中已不存在,照抄会失败。<a href="/breaking-changes.html">版本变更追踪 →</a></p></div>
-<div class="pit"><h3>装完必须重启</h3>
-<p>插件作者与官方文档一致确认:安装后<b>重启 dsh 才生效</b>("the plugin becomes active after restarting dsh")。不重启看不到变化,不是插件坏了。</p></div></section>
-<section class="sec"><div class="sec-h"><span class="no">伍</span><h2>迁过来之后,你大概率会遇到</h2></div>
+<section class="sec"><div class="sec-h"><span class="no">壹</span><h2>功能对照:原工具功能与 dsh 对应插件</h2></div>
+<div class="habit"><div class="h">Claude Code / Codex 功能</div><div class="h">dsh 对应插件</div>{habit_rows}</div></section>
+<section class="sec"><div class="sec-h"><span class="no">贰</span><h2>操作习惯还原</h2><span class="sub">按需安装</span></div>{cards_a}</section>
+<section class="sec"><div class="sec-h"><span class="no">叁</span><h2>会话历史迁移</h2><span class="sub">历史会话可完整保留</span></div>{cards_b}</section>
+<section class="sec"><div class="sec-h"><span class="no">肆</span><h2>迁移常见问题</h2><span class="sub">依据官方文档与真实体检</span></div>
+<div class="pit"><h3>安装后未生效:检查 dsh.bundle 声明</h3>
+<p>官方文档:没有 <code>dsh.bundle</code> 声明的包"仍然可以安装,但只作为普通依赖……不激活任何层"。本站体检卡包含该检查项——本页处方中即有一个插件当前未声明,体检卡已标红。</p></div>
+<div class="pit"><h3>安装命令以官方文档为准</h3>
+<p>当前官方流程仅有包规格写法:<code>dsh plugin --profile web add &lt;npm包名 | github:owner/repo&gt;</code>(本地开发用 <code>link:</code>)。早期文章流传的其他安装形式在官方文档中已不存在,按旧写法安装会失败。<a href="/breaking-changes.html">版本变更追踪 →</a></p></div>
+<div class="pit"><h3>安装后需重启</h3>
+<p>插件作者与官方文档一致确认:安装后<b>重启 dsh 方可生效</b>("the plugin becomes active after restarting dsh")。未重启时插件不生效,并非安装失败。</p></div></section>
+<section class="sec"><div class="sec-h"><span class="no">伍</span><h2>相关场景</h2></div>
 <div class="rel">{rel_links}</div></section>
-<div class="data-note"><span>本页体检数据 {GEN_AT} 采集 · 权限项人工复核中,完成一个亮一个</span>
+<div class="data-note"><span>本页体检数据 {GEN_AT} 采集 · 权限项人工复核中,完成后逐项更新</span>
 <a href="/about-audit.html">体检方法说明</a></div>
 <div class="pager"><a href="/scenarios.html"><span class="lbl">← 返回</span><b>场景库 · 分诊台</b></a>
-<a class="next" href="/scenarios.html"><span class="lbl">下一个场景</span><b>SYM 02 从 SillyTavern 迁移(开方中)</b></a></div>
+<a class="next" href="/scenarios.html"><span class="lbl">下一个场景</span><b>SYM 02 SillyTavern 迁移到 DSH(开方中)</b></a></div>
 </div>
 <script>
 const chips=document.querySelectorAll('.chip'),cards=document.querySelectorAll('.rx-card'),hint=document.getElementById('chipHint');
 chips.forEach(c=>c.addEventListener('click',()=>{{chips.forEach(x=>x.classList.remove('on'));c.classList.add('on');
 const t=c.dataset.t;cards.forEach(k=>k.classList.toggle('dim',t!=='all'&&!(k.dataset.t||'').split(' ').includes(t)));
-hint.textContent=(t==='all')?'点选你的情况,只看相关处方':'高亮 = 与你相关的处方,变淡的可跳过'}}));
+hint.textContent=(t==='all')?'选择迁移来源,筛选相关处方':'高亮为相关处方,其余可跳过'}}));
 document.querySelectorAll('.cp').forEach(b=>b.addEventListener('click',()=>{{
 const cmd=b.parentElement.querySelector('span').textContent;
 if(navigator.clipboard)navigator.clipboard.writeText(cmd);
 b.textContent='已复制';setTimeout(()=>b.textContent='复制',1500)}}));
 </script>"""
 write("scenarios/01-migration.html", shell(
-  "从 Claude Code / Codex 迁移到 DSH:插件处方与避坑 — DSH Plugin Hub",
-  "保留 @file、批注、TUI 手感,带会话历史搬家。全部处方经真实仓库核验体检,含三大迁移坑(官方文档依据)。",
+  "Claude Code / Codex 迁移到 DSH:插件方案与常见问题 — DSH Plugin Hub",
+  "保留 @file、批注、TUI 操作习惯,并迁移会话历史。全部处方经真实仓库核验体检,含三类迁移常见问题(依据官方文档)。",
   "/scenarios/01-migration.html","guide",s01_page))
 
 # ---- 插件页 ----
@@ -411,20 +411,20 @@ for name,p in sorted(PLUG.items()):
   <p class="head-desc">{desc}</p>
   <div class="head-tags">{scen_tags}</div>
   <div class="install"><span>{esc(install_cmd(p))}</span><button class="cp" onclick="const s=this.parentElement.querySelector('span').textContent;if(navigator.clipboard)navigator.clipboard.writeText(s);this.textContent='已复制';setTimeout(()=>this.textContent='复制',1500)">复制</button></div>
-  <p class="install-hint">装完 <b>重启 dsh</b> 才生效 · 不重启看不到变化不是插件坏了</p>
+  <p class="install-hint">安装后需 <b>重启 dsh</b> 方可生效 · 未重启时插件不生效,并非安装失败</p>
   <div class="serial-strip"><span>AUDIT {GEN_AT}</span><span class="barcode"></span></div>
 </div>
 <section class="sec"><div class="sec-h"><h2>四项检查</h2><span class="sub">采集于 {GEN_AT} · 每日自动更新</span></div>
 <div class="check"><div class="check-h"><span class="light {pm[0].replace('p','p')}"></span><span class="t">① 权限范围</span>
   <span class="v"><b>{esc(pm[1])}</b></span></div>
   <div class="check-b"><div class="cell"><span class="k">自动线索</span>{esc(hint_txt)}。</div>{perm_cell2}
-  <div class="policy"><b>为什么权限是人工档:</b>权限没有可靠的自动判定方法,乱猜会砸掉体检的信任感。人工结论超过 60 天且仓库有更新,会自动降回"待人工复核"。</div></div></div>
+  <div class="policy"><b>权限为何采用人工档:</b>权限范围缺乏可靠的自动判定方法,因此仅由人工复核给出结论。人工结论超过 60 天且仓库有更新时,自动降回"待人工复核"。</div></div></div>
 <div class="check"><div class="check-h"><span class="light {m['status']}"></span><span class="t">② 维护状态</span>
   <span class="v"><b>{esc(maint_txt(p))}</b><br>最近提交 {m['last_commit']}</span></div>
   <div class="check-b single"><div class="cell"><span class="k">判定规则</span>最后提交 ≤ <code>14 天</code> 绿 · ≤ <code>45 天</code> 黄 · 更久或已 archived 红。</div></div></div>
 <div class="check"><div class="check-h"><span class="light {bd[0]}"></span><span class="t">③ dsh.bundle</span>
   <span class="v"><b>{esc(bd[1])}</b></span></div>
-  <div class="check-b single"><div class="cell"><span class="k">为什么查这项</span>官方文档:没有 <code>dsh.bundle</code> 声明的包只作为普通依赖安装,<b>不激活任何层</b>——"装了没反应"一半栽在这。</div></div></div>
+  <div class="check-b single"><div class="cell"><span class="k">检查依据</span>官方文档:没有 <code>dsh.bundle</code> 声明的包只作为普通依赖安装,<b>不激活任何层</b>——安装后未生效的常见原因。</div></div></div>
 <div class="check"><div class="check-h"><span class="light {ts[0]}"></span><span class="t">④ 测试 / CI</span>
   <span class="v"><b>{esc(ts[1])}</b></span></div>
   <div class="check-b"><div class="cell"><span class="k">测试</span>{'发现 test 脚本或测试目录。' if p['checks']['tests_ci']['tests'] else '未发现 test 脚本或测试目录。'}</div>
@@ -434,7 +434,7 @@ for name,p in sorted(PLUG.items()):
 <div class="hist"><div class="h-item"><span class="d">{GEN_AT}</span> · <b>首次收录体检</b>(判定:{st});兼容追踪随每日体检持续更新</div></div></section>
 <div class="cta-row">
   <a class="pri" href="{'/scenarios/01-migration.html' if any(name in s.get('plugins',[]) and s['status']=='live' for s in scenarios) else '/scenarios.html'}">看它所在的场景处方 →</a>
-  <a href="https://github.com/{esc(p['repo'])}/issues" rel="nofollow">结论有误?向作者/本站反馈</a>
+  <a href="https://github.com/{esc(p['repo'])}/issues" rel="nofollow">结论有误?提交反馈</a>
   <a href="/about-audit.html">体检方法说明</a></div>
 </div>"""
     write(f"plugins/{name}.html", shell(f"{name} · 完整体检卡 — DSH Plugin Hub",
@@ -449,8 +449,8 @@ for name,p in sorted(PLUG.items()):
 plist=f"""<div class="wrap">
 <header class="hero" style="padding:52px 0 12px">
   <div class="kicker">CHECKUP · 体检大厅</div>
-  <h1 style="font-size:36px;margin-top:8px">{n_aud} 个插件,四道检查</h1>
-  <p class="lede" style="margin-top:8px;max-width:660px">全部收录插件的体检结果。<b style="color:var(--ink)">合格</b> = 四项全绿含人工权限复核;<b style="color:var(--ink)">待复核</b> = 自动三项已过、权限排队人工复核;<b style="color:var(--amber)">注意</b> = 有红项,装前看清。</p>
+  <h1 style="font-size:36px;margin-top:8px">{n_aud} 个插件,四项检查</h1>
+  <p class="lede" style="margin-top:8px;max-width:660px">全部收录插件的体检结果。<b style="color:var(--ink)">合格</b> = 四项全绿且完成人工权限复核;<b style="color:var(--ink)">待复核</b> = 自动三项通过、权限待人工复核;<b style="color:var(--amber)">注意</b> = 存在红项,安装前请确认。</p>
   <div class="search" style="margin-top:20px;max-width:560px"><span class="prompt">&gt;_</span>
     <input id="pq" placeholder="搜插件名或功能 …"></div>
 </header>
@@ -497,8 +497,8 @@ for i,r in enumerate(releases["timeline"]):
 brk=f"""<div class="wrap">
 <header class="hero" style="padding:52px 0 8px">
   <div class="kicker">BREAKING CHANGES · 追踪</div>
-  <h1 style="font-size:36px;margin-top:8px">升级 dsh 前,先来对一眼</h1>
-  <p class="lede" style="margin-top:12px;max-width:660px">dsh 还在 developer preview,官方把丑话说在了前头。我们盯每次发版,把变更翻译成人话:变了什么、影响谁、该不该升。</p>
+  <h1 style="font-size:36px;margin-top:8px">dsh 版本变更核读</h1>
+  <p class="lede" style="margin-top:12px;max-width:660px">dsh 处于 developer preview 阶段,官方已明确提示兼容性风险。本页跟踪每次发版并核读变更内容:改动范围、受影响插件、升级建议。</p>
   <div class="quote">"DeepSeek Harness is currently in developer preview and is iterating rapidly. <b>THERE WILL BE COMPATIBILITY-BREAKING CHANGES.</b>"<small>— deepseek-ai/deepseek-harness 官方 README(2026-08 实录)</small></div>
   <div class="sub-row">
     <a class="pri" href="https://github.com/deepseek-ai/deepseek-harness/releases" rel="nofollow">Watch 官方 Releases</a>
@@ -506,19 +506,19 @@ brk=f"""<div class="wrap">
 </header>
 <div class="selfcheck"><span class="k">30-SECOND CHECK</span><h2>升级前 30 秒自查</h2>
 <div class="steps">
-  <div class="step"><span class="n">第一步</span><br>跑 <code>dsh --version</code>,记下当前版本。</div>
-  <div class="step"><span class="n">第二步</span><br>在下面时间线里找你要升到的版本,看有没有 <b style="color:var(--seal)">BREAKING</b> 标。</div>
-  <div class="step"><span class="n">第三步</span><br>有 BREAKING?先查你装的插件的<a href="/plugins/" style="color:var(--blue)">体检卡</a>再动手。</div></div></div>
-<section class="sec"><div class="sec-h"><h2>版本时间线</h2><span class="sub">数据来自 npm registry · 每日更新 · "核读中"=尚未逐项核对变更内容,不乱标</span></div>
+  <div class="step"><span class="n">第一步</span><br>执行 <code>dsh --version</code>,记录当前版本。</div>
+  <div class="step"><span class="n">第二步</span><br>在下方时间线中找到目标版本,确认是否带 <b style="color:var(--seal)">BREAKING</b> 标注。</div>
+  <div class="step"><span class="n">第三步</span><br>存在 BREAKING 时,先核对已装插件的<a href="/plugins/" style="color:var(--blue)">体检卡</a>再升级。</div></div></div>
+<section class="sec"><div class="sec-h"><h2>版本时间线</h2><span class="sub">数据来自 npm registry · 每日更新 · "核读中" = 变更内容尚未逐项核对,暂不标注结论</span></div>
 {tl}</section>
-<section class="sec"><div class="sec-h"><h2>已核实的安装迁移坑</h2><span class="sub">依据:官方文档 + 真实插件仓库</span></div>
-<div class="pit"><h3>没声明 dsh.bundle 的包,装了不激活</h3><p>官方文档原文:此类包"仍然可以安装,但只作为普通依赖……不激活任何层"。<a href="/plugins/">体检大厅</a>里未声明的插件已全部标红。</p></div>
-<div class="pit"><h3>安装写法以官方文档为准</h3><p>当前唯一官方流程:<code>dsh plugin --profile &lt;name&gt; add &lt;npm包 | github:owner/repo | link:本地路径&gt;</code>。旧文章里的其他安装形式在官方文档中已不存在。</p></div>
-<div class="pit"><h3>装完必须重启 dsh</h3><p>插件激活发生在重启后。装完没反应,先重启再排查。</p></div></section>
-<div class="how"><b>我们怎么盯:</b>每日自动抓 npm 发版与官方仓库变动;出现新版本先挂"核读中",人工核对变更后才标 BREAKING / 非破坏,同一天对全部收录插件重跑体检。<b>不核读完,不下结论。</b></div>
+<section class="sec"><div class="sec-h"><h2>已核实的安装迁移问题</h2><span class="sub">依据:官方文档与真实插件仓库</span></div>
+<div class="pit"><h3>未声明 dsh.bundle 的包,安装后不激活</h3><p>官方文档原文:此类包"仍然可以安装,但只作为普通依赖……不激活任何层"。<a href="/plugins/">体检大厅</a>中未声明的插件已全部标红。</p></div>
+<div class="pit"><h3>安装命令以官方文档为准</h3><p>当前唯一官方流程:<code>dsh plugin --profile &lt;name&gt; add &lt;npm包 | github:owner/repo | link:本地路径&gt;</code>。早期文章中的其他安装形式在官方文档中已不存在。</p></div>
+<div class="pit"><h3>安装后需重启 dsh</h3><p>插件激活发生在重启之后。安装后未生效时,先重启再排查。</p></div></section>
+<div class="how"><b>跟踪机制:</b>每日自动抓取 npm 发版与官方仓库变动;新版本先标"核读中",人工核对变更后再标注 BREAKING / 非破坏,同日对全部收录插件重跑体检。<b>核读完成前不给出结论。</b></div>
 </div>"""
 write("breaking-changes.html", shell("破坏性变更追踪 — DSH Plugin Hub",
-  "DSH 官方明说 THERE WILL BE COMPATIBILITY-BREAKING CHANGES。每个版本变了什么、该不该升,核读后才下结论。",
+  "DSH 官方声明 THERE WILL BE COMPATIBILITY-BREAKING CHANGES。每个版本的变更内容核读与升级建议。",
   "/breaking-changes.html","breaking",brk))
 
 # ---- OPC ----
@@ -541,49 +541,49 @@ issue_base=f"https://github.com/{REPO}/issues" if REPO else "https://github.com/
 votes=""
 for v in opc["gaps"]:
     votes+=f"""<div class="vote"><span class="t">{esc(v['t'])}<small>{esc(v['s'])}</small></span>
-  <a class="btn" href="{issue_base}" rel="nofollow">想要 · 去 GitHub 点 👍</a></div>"""
+  <a class="btn" href="{issue_base}" rel="nofollow">+1 · GitHub issue</a></div>"""
 guides="".join(f"""<div class="bridge"><span class="k">GUIDE {i+1:02d}</span><p>{g}</p><span style="font-family:var(--mono);font-size:12px;color:#8a8f98">撰写中 · 即将上线</span></div>""" for i,g in enumerate(opc["guides"]))
 opc_page=f"""<div class="wrap">
 <header class="hero" style="padding:52px 0 8px">
   <div class="kicker">ONE-PERSON COMPANY · 工具箱</div>
-  <h1 style="font-size:36px;margin-top:8px">你在做什么,决定你装什么</h1>
-  <p class="lede" style="margin-top:10px;max-width:680px">十个一人公司方向,每个 = <b style="color:var(--ink)">精选处方 + 相关场景组合 + 空位征集</b>。这不是第二套目录——每个工具箱都映射到场景库的组合,只是按"你的生意"重新打包。</p>
+  <h1 style="font-size:36px;margin-top:8px">按业务方向选择插件方案</h1>
+  <p class="lede" style="margin-top:10px;max-width:680px">十个一人公司方向,每个方向 = <b style="color:var(--ink)">精选处方 + 相关场景组合 + 空位征集</b>。工具箱并非独立目录,而是场景库组合按业务方向的重新编排。</p>
   <div class="role-grid">{role_cards}</div>
-  <p class="idx-note">带"空位"标的方向,DSH 生态还没长出对口插件——这些页将由站长实操教程顶上(用现有插件拼流水线),同时开着征集收需求,插件一出现就体检收录。其余方向的落地页按处方核验进度陆续开放,先开跨境电商。</p>
+  <p class="idx-note">带"空位"标注的方向暂无对口插件,先以站长实操教程补位(基于现有插件搭建流水线),同时公开征集需求;对应插件出现后第一时间体检收录。其余方向落地页按核验进度陆续开放,首个为跨境电商。</p>
 </header>
 <hr style="border:0;border-top:2px dashed var(--hair);margin:42px 0 0">
 <div id="landing" class="crumb">一人公司工具箱 / 跨境电商</div>
 <header class="hero" style="padding:18px 0 6px">
   <div class="role-tag" style="font-family:var(--mono);font-size:12px;color:var(--seal);letter-spacing:2.5px">TOOLBOX · 跨境电商</div>
-  <h1 style="font-size:32px;max-width:720px;line-height:1.32">一个人打理店铺,把重复的活儿交给 DSH</h1>
-  <p class="lede" style="max-width:680px">竞品与订单数据、报表、产品图检查——这些每天吃掉你几小时的事,已核验的 DSH 插件能接走一部分。<b style="color:var(--ink)">能用的先用起来,缺的告诉我们。</b></p>
+  <h1 style="font-size:32px;max-width:720px;line-height:1.32">跨境电商运营中的 DSH 插件方案</h1>
+  <p class="lede" style="max-width:680px">竞品与订单数据、报表、产品图检查等重复性运营工作,已核验的 DSH 插件可承接一部分。<b style="color:var(--ink)">可用方案如下,缺失能力可通过征集反馈。</b></p>
   <p class="en-line"><b>EN</b> Running a cross-border e-commerce store solo? Audited DSH plugins to offload data pulls, spreadsheets and image QA.</p>
 </header>
-<section class="sec"><div class="sec-h"><span class="no">壹</span><h2>现在就能用的处方</h2><span class="sub">只列已核验存在并过体检的</span></div>
+<section class="sec"><div class="sec-h"><span class="no">壹</span><h2>当前可用的处方</h2><span class="sub">仅列已核验存在并通过体检的插件</span></div>
 <div class="rx-grid">{rx_cards}</div></section>
-<section class="sec"><div class="sec-h"><span class="no">贰</span><h2>你大概率会用到的场景</h2><span class="sub">来自场景库的组合</span></div>
+<section class="sec"><div class="sec-h"><span class="no">贰</span><h2>相关场景</h2><span class="sub">来自场景库的组合</span></div>
 <div class="flow">
-  <a href="/scenarios.html"><span class="s">SYMPTOM 10</span>控制花费,看每轮成本</a>
-  <a href="/scenarios.html"><span class="s">SYMPTOM 23</span>任务完成时提醒我</a>
-  <a href="/scenarios/01-migration.html"><span class="s">SYMPTOM 01</span>从别的工具迁移过来</a></div></section>
-<section class="sec"><div class="sec-h"><span class="no">叁</span><h2>还缺什么 — 告诉我们先盯哪个</h2><span class="sub">征集 = 需求收集器,不造票数</span></div>
+  <a href="/scenarios.html"><span class="s">SYMPTOM 10</span>成本控制与用量监控</a>
+  <a href="/scenarios.html"><span class="s">SYMPTOM 23</span>任务完成通知</a>
+  <a href="/scenarios/01-migration.html"><span class="s">SYMPTOM 01</span>从其他工具迁移到 DSH</a></div></section>
+<section class="sec"><div class="sec-h"><span class="no">叁</span><h2>能力缺口征集</h2><span class="sub">征集数据公开可查</span></div>
 <div class="gap-box">
-  <p class="intro">这些是跨境卖家常要、但 <b>DSH 生态还没有像样插件</b>(或本站尚未核验到)的能力。想要哪个,去 GitHub 给对应 issue 点 👍——票数公开可查,我们按热度追踪:插件一出现,第一时间体检收录。</p>
+  <p class="intro">以下能力需求常见,但 <b>DSH 生态暂无成熟插件</b>(或本站尚未核验到)。可在 GitHub 对应 issue 点 👍 表达需求,数据公开;按需求热度优先追踪,对应插件出现后第一时间体检收录。</p>
   <div class="votes">{votes}</div>
-  <p class="gap-cta">你在做插件?正好做到了这些方向 → <a href="{issue_base}" rel="nofollow">提交给我们优先体检</a></p></div></section>
-<section class="sec"><div class="sec-h"><span class="no">肆</span><h2>等插件的日子,先这么干</h2><span class="sub">站长实操系列</span></div>
+  <p class="gap-cta">插件作者可提交对应方向的作品 → <a href="{issue_base}" rel="nofollow">优先安排体检</a></p></div></section>
+<section class="sec"><div class="sec-h"><span class="no">肆</span><h2>过渡方案:站长实操教程</h2><span class="sub">基于现有插件的组合方案</span></div>
 {guides}
-<p class="bridge-sub">教程来自站长自己的跨境/SEO 实操;同样的套路也会顶在 SEO 内容站、视频自媒体两个空位方向上。</p></section>
+<p class="bridge-sub">教程基于站长的跨境 / SEO 实操经验;同一方式亦用于 SEO 内容站、视频自媒体两个空位方向。</p></section>
 </div>"""
 write("opc.html", shell("一人公司工具箱 · 跨境电商 — DSH Plugin Hub",
-  "按你在做的事(跨境电商/SEO内容站/视频自媒体…)组合 DSH 插件处方,只列核验过的,缺的公开征集。",
+  "按业务方向(跨境电商/SEO内容站/视频自媒体等)组合 DSH 插件方案,仅收录经核验的插件,缺口公开征集。",
   "/opc.html","opc",opc_page))
 
 # ---- 404 ----
 write("404.html", shell("页面不存在 — DSH Plugin Hub","页面不存在。","/404.html","",
-"""<div class="wrap"><header class="hero"><div class="kicker">404 · 查无此症</div>
-<h1 style="font-size:40px;margin-top:8px">这个症状还没建档</h1>
-<p class="lede" style="margin-top:12px">要么链接旧了,要么这个场景还在开方。去<a href="/scenarios.html" style="color:var(--blue)">分诊台</a>看看,或回<a href="/" style="color:var(--blue)">首页</a>。</p></header></div>"""))
+"""<div class="wrap"><header class="hero"><div class="kicker">404 · NOT FOUND</div>
+<h1 style="font-size:40px;margin-top:8px">页面不存在</h1>
+<p class="lede" style="margin-top:12px">链接可能已失效,或对应场景页尚未上线。可前往<a href="/scenarios.html" style="color:var(--blue)">场景库</a>检索,或返回<a href="/" style="color:var(--blue)">首页</a>。</p></header></div>"""))
 
 # ---- favicon / robots / sitemap ----
 (PUB/"assets").mkdir(parents=True,exist_ok=True)
