@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-08-15T15:38:44Z",
+  "generated_at": "2026-08-16T02:35:29Z",
   "count": 40,
   "source": "daily-git-clone"
  },
@@ -12,12 +12,12 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-15",
+     "last_commit": "2026-08-16",
      "days": 0
     },
     "bundle": {
-     "status": "r",
-     "declared": false
+     "status": "g",
+     "declared": true
     },
     "tests_ci": {
      "status": "g",
@@ -31,8 +31,8 @@
     }
    },
    "desc": "Active Context Pruning (ACP) for the DeepSeek Harness — model-driven context management as a CompactionEngine backend.",
-   "version": "0.1.9",
-   "verdict": "watch"
+   "version": "0.2.1",
+   "verdict": "watch_pending"
   },
   {
    "name": "deepseek-harness-tui",
@@ -158,7 +158,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-15",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -276,7 +276,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-15",
+     "last_commit": "2026-08-16",
      "days": 0
     },
     "bundle": {
@@ -305,7 +305,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-15",
+     "last_commit": "2026-08-16",
      "days": 0
     },
     "bundle": {
@@ -336,7 +336,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -394,7 +394,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-13",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "r",
@@ -423,7 +423,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "r",
@@ -509,7 +509,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-15",
+     "last_commit": "2026-08-16",
      "days": 0
     },
     "bundle": {
@@ -528,7 +528,7 @@
     }
    },
    "desc": "Automatic provider/model fallback chains for DeepSeek Harness agents when LLM requests keep failing (retry exhausted, auth, quota, rate limit)",
-   "version": "0.1.4",
+   "version": "0.1.7",
    "verdict": "watch_pending"
   },
   {
@@ -625,7 +625,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-15",
+     "last_commit": "2026-08-16",
      "days": 0
     },
     "bundle": {
@@ -684,7 +684,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -799,8 +799,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-14",
-     "days": 1
+     "last_commit": "2026-08-16",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -818,7 +818,7 @@
     }
    },
    "desc": "Skin switcher + custom wallpaper for DeepSeek Harness: curated --dsw-alias-* palettes, translucent wallpaper with opacity/blur controls, and durable per-user persistence (like Codex themes)",
-   "version": "0.2.0",
+   "version": "0.3.1",
    "verdict": "watch_pending"
   },
   {
@@ -887,7 +887,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -916,7 +916,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-15",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -974,7 +974,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -1003,7 +1003,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-13",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "r",
@@ -1032,7 +1032,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-15",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -1063,7 +1063,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "r",
