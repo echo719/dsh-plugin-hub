@@ -200,7 +200,7 @@ for r in releases["timeline"][:3]:
 home=f"""<div class="wrap">
 <section class="hero">
   <span class="reg tl">┌ EST. 2026-08</span><span class="reg tr">DAILY AUDIT {GEN_AT} ┐</span>
-  <div class="hero-tag">DeepSeek Harness (dsh) · 非官方社区站 · 中文为主 / EN summaries</div>
+  <div class="hero-tag">DeepSeek Harness (dsh) · 非官方社区站 · 中 / EN 双语</div>
   <h1>不必翻遍分类目录,<br>按<span class="u">问题场景</span>检索插件。</h1>
   <p class="lede">每个场景精选 2–4 个经过体检的插件:权限、维护状态、能否正常激活,安装前一次核对。</p>
   <div class="hero-seal"><span class="b">体检合格</span><span class="s">DSH·PLUGIN·HUB</span></div>
