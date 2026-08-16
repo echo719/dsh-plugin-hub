@@ -40,7 +40,7 @@ for f in pages:
         if p.endswith("/"): tgt=tgt/"index.html"
         if not tgt.exists(): problems.append(f"{rel}: 死内链 {p}")
     # 虚构 dsh 版本拦截:只查展示 dsh 版本时间线的页面(插件自身版本号可能合法地是 0.4.x)
-    if rel in ("/index.html","/breaking-changes.html") and re.search(r'v0\.4\.[0-2]',src):
+    if rel in ("/index.html","/breaking-changes.html","/zh/index.html","/zh/breaking-changes.html") and re.search(r'v0\.4\.[0-2]',src):
         problems.append(f"{rel}: 出现虚构 dsh 版本号 v0.4.x")
 
 # 数值来源抽查:首页体检卡行数必须与 audit.json 对得上

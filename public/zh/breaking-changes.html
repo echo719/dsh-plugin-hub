@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DSH 官方声明 THERE WILL BE COMPATIBILITY-BREAKING CHANGES。每个版本的变更内容核读与升级建议。">
+<link rel="canonical" href="https://dsh-plugin-hub.com/zh/breaking-changes.html">
+<link rel="alternate" hreflang="en" href="https://dsh-plugin-hub.com/breaking-changes.html">
+<link rel="alternate" hreflang="zh-CN" href="https://dsh-plugin-hub.com/zh/breaking-changes.html">
+<link rel="alternate" hreflang="x-default" href="https://dsh-plugin-hub.com/breaking-changes.html">
+<meta property="og:title" content="破坏性变更追踪 — DSH Plugin Hub">
+<meta property="og:description" content="DSH 官方声明 THERE WILL BE COMPATIBILITY-BREAKING CHANGES。每个版本的变更内容核读与升级建议。">
+<meta property="og:url" content="https://dsh-plugin-hub.com/zh/breaking-changes.html">
+<meta property="og:type" content="website">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<title>破坏性变更追踪 — DSH Plugin Hub</title>
+<link rel="stylesheet" href="/assets/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM4048J6E8"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());gtag('config','G-BM4048J6E8');</script>
+</head>
+<body>
+<nav><div class="wrap nav-in">
+  <a class="logo" href="/zh/">dsh-plugin-hub<span class="tld">.com</span></a>
+  <div class="nav-links"><a href="/zh/">首页</a><a href="/zh/scenarios.html">场景库</a><a href="/zh/opc.html">OPC</a><a href="/zh/plugins/">插件体检</a><a href="/zh/breaking-changes.html" class="on">破坏性变更</a><a href="/zh/scenarios/01-migration.html">上手教程</a></div>
+  <a class="lang-switch" href="/breaking-changes.html" title="English">EN</a>
+  <a class="nav-cta" href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5BSubmit%5D+owner%2Frepo" rel="nofollow">提交插件</a>
+</div></nav>
+<div class="wrap">
+<header class="hero" style="padding:52px 0 8px">
+  <div class="kicker">BREAKING CHANGES · 追踪</div>
+  <h1 style="font-size:36px;margin-top:8px">dsh 版本变更核读</h1>
+  <p class="lede" style="margin-top:12px;max-width:660px">dsh 处于 developer preview 阶段,官方已明确提示兼容性风险。本页跟踪每次发版并核读变更内容:改动范围、受影响插件、升级建议。</p>
+  <div class="quote">"DeepSeek Harness is currently in developer preview and is iterating rapidly. <b>THERE WILL BE COMPATIBILITY-BREAKING CHANGES.</b>"<small>— deepseek-ai/deepseek-harness 官方 README(2026-08 实录)</small></div>
+  <div class="sub-row">
+    <a class="pri" href="https://github.com/deepseek-ai/deepseek-harness/releases" rel="nofollow">Watch 官方 Releases</a>
+    <a href="https://github.com/deepseek-ai/deepseek-harness/discussions" rel="nofollow">官方 Discussions</a></div>
+</header>
+<div class="selfcheck"><span class="k">30-SECOND CHECK</span><h2>升级前 30 秒自查</h2>
+<div class="steps">
+  <div class="step"><span class="n">第一步</span><br>执行 <code>dsh --version</code>,记录当前版本。</div>
+  <div class="step"><span class="n">第二步</span><br>在下方时间线中找到目标版本,确认是否带 <b style="color:var(--seal)">BREAKING</b> 标注。</div>
+  <div class="step"><span class="n">第三步</span><br>存在 BREAKING 时,先核对已装插件的<a href="/zh/plugins/" style="color:var(--blue)">体检卡</a>再升级。</div></div></div>
+<section class="sec"><div class="sec-h"><h2>版本时间线</h2><span class="sub">数据来自 npm registry · 每日更新 · "核读中" = 变更内容尚未逐项核对,暂不标注结论</span></div>
+<div class="ver-block"><div class="ver-head">
+<span class="ver">v0.1.0-rc.6</span><span class="pendtag">核读中</span>
+<span class="date">2026-08-13 发布 · 当前最新</span></div>
+<p class="what">当前最新版。变更内容核读中——核读完成前不下 BREAKING / 非破坏结论。升级前建议先看 <a href="https://github.com/deepseek-ai/deepseek-harness/releases" rel="nofollow">官方 release note</a>。</p></div><div class="ver-block"><div class="ver-head">
+<span class="ver">v0.1.0-rc.3</span><span class="pendtag">核读中</span>
+<span class="date">2026-08-13 发布</span></div>
+<p class="what">变更内容核读中。</p></div><div class="ver-block"><div class="ver-head">
+<span class="ver">v0.1.0-rc.2</span><span class="pendtag">核读中</span>
+<span class="date">2026-08-13 发布</span></div>
+<p class="what">从 0.0.x 跃迁到 0.1.0 版本线。<b>版本线跃迁通常伴随接口调整</b>,核读完成前建议按可能不兼容对待,升级前先核对已装插件的维护动态。</p></div><div class="ver-block"><div class="ver-head">
+<span class="ver">v0.0.1-rc.5</span><span class="pendtag">核读中</span>
+<span class="date">2026-08-12 发布</span></div>
+<p class="what">变更内容核读中。</p></div><div class="ver-block"><div class="ver-head">
+<span class="ver">v0.0.1-rc.2</span><span class="pendtag">核读中</span>
+<span class="date">2026-08-11 发布</span></div>
+<p class="what">变更内容核读中。</p></div><div class="ver-block"><div class="ver-head">
+<span class="ver">v0.0.1-rc.1</span><span class="safe">非破坏</span>
+<span class="date">2026-08-10 发布</span></div>
+<p class="what">npm 上的首个公开版本(developer preview 起点)。</p></div></section>
+<section class="sec"><div class="sec-h"><h2>已核实的安装迁移问题</h2><span class="sub">依据:官方文档与真实插件仓库</span></div>
+<div class="pit"><h3>未声明 dsh.bundle 的包,安装后不激活</h3><p>官方文档原文:此类包"仍然可以安装,但只作为普通依赖……不激活任何层"。<a href="/zh/plugins/">体检大厅</a>中未声明的插件已全部标红。</p></div>
+<div class="pit"><h3>安装命令以官方文档为准</h3><p>当前唯一官方流程:<code>dsh plugin --profile &lt;name&gt; add &lt;npm包 | github:owner/repo | link:本地路径&gt;</code>。早期文章中的其他安装形式在官方文档中已不存在。</p></div>
+<div class="pit"><h3>安装后需重启 dsh</h3><p>插件激活发生在重启之后。安装后未生效时,先重启再排查。</p></div></section>
+<div class="how"><b>跟踪机制:</b>每日自动抓取 npm 发版与官方仓库变动;新版本先标"核读中",人工核对变更后再标注 BREAKING / 非破坏,同日对全部收录插件重跑体检。<b>核读完成前不给出结论。</b></div>
+</div>
+<footer><div class="wrap">
+  <span class="mark">dsh-plugin-hub<span style="color:var(--seal)">.com</span> · 与 DeepSeek 无关联的社区站</span>
+  <a href="/zh/scenarios.html">场景库</a>
+  <a href="/zh/opc.html">OPC 工具箱</a>
+  <a href="/zh/breaking-changes.html">破坏性变更</a>
+  <a href="/zh/about-audit.html">体检方法</a>
+  <a href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5BSubmit%5D+owner%2Frepo" rel="nofollow">提交插件</a>
+</div></footer>
+</body>
+</html>

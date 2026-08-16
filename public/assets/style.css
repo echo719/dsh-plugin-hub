@@ -466,3 +466,7 @@ footer .mark{font-family:var(--mono)}
   .srow .rx{display:none}
   h1{font-size:26px}
 }
+
+/* language switcher */
+.lang-switch{font-family:var(--mono);font-size:12px;border:1px solid var(--hair);border-radius:4px;padding:5px 10px;text-decoration:none;color:var(--ink2);transition:.15s}
+.lang-switch:hover{border-color:var(--seal);color:var(--seal)}
