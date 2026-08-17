@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-08-16T02:35:29Z",
+  "generated_at": "2026-08-17T02:34:47Z",
   "count": 40,
   "source": "daily-git-clone"
  },
@@ -13,7 +13,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-16",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -41,7 +41,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-15",
+     "last_commit": "2026-08-16",
      "days": 0
     },
     "bundle": {
@@ -60,7 +60,7 @@
     }
    },
    "desc": "DSH Mini TUI: a minimalist terminal interface plugin for DeepSeek Harness",
-   "version": "0.2.0",
+   "version": "0.2.1",
    "verdict": "watch_pending"
   },
   {
@@ -70,7 +70,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-15",
+     "last_commit": "2026-08-16",
      "days": 0
     },
     "bundle": {
@@ -89,7 +89,7 @@
     }
    },
    "desc": "dsh plugin bundle porting the omp advisor subsystem: a per-session reviewer model that observes the primary transcript and injects severity-ranked advice (nit/concern/blocker).",
-   "version": "0.1.4",
+   "version": "0.2.0",
    "verdict": "watch_pending"
   },
   {
@@ -100,7 +100,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-15",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -128,7 +128,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-15",
+     "last_commit": "2026-08-16",
      "days": 0
     },
     "bundle": {
@@ -147,7 +147,7 @@
     }
    },
    "desc": "DSH Web selection-annotation plugin: select assistant text, annotate (optional), and press Enter to send the annotation block with your message — the model replies to each annotation by number, with hoverable chips in th",
-   "version": "1.3.15",
+   "version": "1.3.16",
    "verdict": "watch_pending"
   },
   {
@@ -157,8 +157,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-15",
-     "days": 1
+     "last_commit": "2026-08-16",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -176,7 +176,7 @@
     }
    },
    "desc": "Codex-style @path references for the DeepSeek Harness web GUI: search workspace paths without injecting file content",
-   "version": "0.6.0",
+   "version": "0.6.1",
    "verdict": "watch_pending"
   },
   {
@@ -187,7 +187,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-15",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -216,7 +216,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -244,7 +244,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-15",
+     "last_commit": "2026-08-17",
      "days": 0
     },
     "bundle": {
@@ -266,7 +266,7 @@
     }
    },
    "desc": "DSH web plugin: a VSCode-like right sidebar (explorer / editor / terminal / git / browser), isolated per conversation session. Exposes a service for other plugins to register sidebar tabs and file viewers.",
-   "version": "0.12.2",
+   "version": "0.12.3",
    "verdict": "watch_pending"
   },
   {
@@ -276,7 +276,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-16",
+     "last_commit": "2026-08-17",
      "days": 0
     },
     "bundle": {
@@ -295,7 +295,7 @@
     }
    },
    "desc": "Claude Code style interactive TUI front door for DeepSeek Harness agents, built on the ported Ink core.",
-   "version": "0.6.1",
+   "version": "0.8.0",
    "verdict": "watch_pending"
   },
   {
@@ -325,7 +325,7 @@
     }
    },
    "desc": "Import Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / Pi Coding Agent / opencode / ZCode / Grok Build / OpenClaw / Hermes / Kimi CLI conversation histories as resumable DeepSeek Harness sessions",
-   "version": "0.3.1",
+   "version": "0.5.1",
    "verdict": "pass"
   },
   {
@@ -336,7 +336,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -364,7 +364,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-15",
+     "last_commit": "2026-08-16",
      "days": 0
     },
     "bundle": {
@@ -382,8 +382,8 @@
      "hints": []
     }
    },
-   "desc": "Data Agent for the dsh web GUI: session-scoped database connections (MySQL/PostgreSQL/SQLite), the sqlcmd tool, the data-agent agent preset, and the database conversation-view tab",
-   "version": "0.0.6",
+   "desc": "Data Agent for DSH Web and TUI: shared database connections, a masked TUI form, secure credential references, SQL tools, and the data-agent preset",
+   "version": "0.0.9",
    "verdict": "watch_pending"
   },
   {
@@ -394,7 +394,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-13",
-     "days": 3
+     "days": 4
     },
     "bundle": {
      "status": "r",
@@ -422,12 +422,12 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-14",
-     "days": 2
+     "last_commit": "2026-08-16",
+     "days": 0
     },
     "bundle": {
-     "status": "r",
-     "declared": false
+     "status": "g",
+     "declared": true
     },
     "tests_ci": {
      "status": "g",
@@ -442,7 +442,7 @@
    },
    "desc": "Health check for your DeepSeek Harness (dsh) profile — finds config fields your patches silently dropped, dead patches, and unmaintained plugins.",
    "version": "0.1.0",
-   "verdict": "watch"
+   "verdict": "watch_pending"
   },
   {
    "name": "dsh-git-identity",
@@ -452,7 +452,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-13",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -481,7 +481,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-12",
-     "days": 3
+     "days": 4
     },
     "bundle": {
      "status": "g",
@@ -509,7 +509,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-16",
+     "last_commit": "2026-08-17",
      "days": 0
     },
     "bundle": {
@@ -528,7 +528,7 @@
     }
    },
    "desc": "Automatic provider/model fallback chains for DeepSeek Harness agents when LLM requests keep failing (retry exhausted, auth, quota, rate limit)",
-   "version": "0.1.7",
+   "version": "0.2.1",
    "verdict": "watch_pending"
   },
   {
@@ -539,7 +539,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -567,7 +567,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-15",
+     "last_commit": "2026-08-17",
      "days": 0
     },
     "bundle": {
@@ -585,8 +585,8 @@
      "hints": []
     }
    },
-   "desc": "Office workspace & session dashboard plugin for DeepSeek Harness (DSH): a 6-column sprite office visualizing workspaces, sessions, token usage and subagents. 给 DeepSeek Harness 的「办公室」工作区/会话/子代理可视化插件。",
-   "version": "0.1.0",
+   "desc": "Agent-office dashboard for DeepSeek Harness (DSH): a 6-column sprite office visualizing workspaces, sessions, token usage and subagents — with a built-in Agent Mail inbox to read, send & reply right in the panel. 给 DeepS",
+   "version": "0.2.0",
    "verdict": "watch_pending"
   },
   {
@@ -597,7 +597,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-13",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -644,7 +644,7 @@
     }
    },
    "desc": "pi-tui based interactive terminal front door for DeepSeek Harness agents",
-   "version": "0.1.0",
+   "version": "0.1.1",
    "verdict": "watch_pending"
   },
   {
@@ -655,7 +655,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -684,7 +684,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -713,7 +713,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -742,7 +742,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -771,7 +771,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-13",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "r",
@@ -800,7 +800,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-16",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -829,7 +829,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-13",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -858,7 +858,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -887,7 +887,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -916,7 +916,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-15",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -945,7 +945,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-11",
-     "days": 4
+     "days": 5
     },
     "bundle": {
      "status": "g",
@@ -974,7 +974,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -1003,7 +1003,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-13",
-     "days": 3
+     "days": 4
     },
     "bundle": {
      "status": "r",
@@ -1031,8 +1031,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-15",
-     "days": 1
+     "last_commit": "2026-08-17",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -1052,7 +1052,7 @@
     }
    },
    "desc": "DeepSeek Harness-native integration for agent-vision-toolkit: image Q&A, OCR, grounding, UI restoration, pixel diff, Artifacts, and Web UI.",
-   "version": "0.1.7",
+   "version": "0.1.20",
    "verdict": "watch_pending"
   },
   {
@@ -1062,12 +1062,12 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-14",
-     "days": 2
+     "last_commit": "2026-08-16",
+     "days": 0
     },
     "bundle": {
-     "status": "r",
-     "declared": false
+     "status": "g",
+     "declared": true
     },
     "tests_ci": {
      "status": "g",
@@ -1082,7 +1082,7 @@
    },
    "desc": "Manage DeepSeek Harness profiles — list, create, clone, and share a whole dsh setup as one portable file.",
    "version": "0.1.0",
-   "verdict": "watch"
+   "verdict": "watch_pending"
   },
   {
    "name": "sandbox-micro",
@@ -1092,7 +1092,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-09",
-     "days": 6
+     "days": 7
     },
     "bundle": {
      "status": "g",
@@ -1121,7 +1121,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-09",
-     "days": 6
+     "days": 7
     },
     "bundle": {
      "status": "g",
@@ -1150,7 +1150,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-11",
-     "days": 4
+     "days": 5
     },
     "bundle": {
      "status": "g",
