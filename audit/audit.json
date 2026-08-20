@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-08-20T02:31:02Z",
+  "generated_at": "2026-08-20T06:17:36Z",
   "count": 40,
   "source": "daily-git-clone"
  },
@@ -89,7 +89,7 @@
     }
    },
    "desc": "dsh plugin bundle porting the omp advisor subsystem: a per-session reviewer model that observes the primary transcript and injects severity-ranked advice (nit/concern/blocker).",
-   "version": "0.2.2",
+   "version": "0.2.3",
    "verdict": "watch_pending"
   },
   {
@@ -136,9 +136,9 @@
      "declared": true
     },
     "tests_ci": {
-     "status": "y",
+     "status": "g",
      "tests": true,
-     "ci": false
+     "ci": true
     },
     "permissions": {
      "status": "pending",
@@ -187,7 +187,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-15",
-     "days": 4
+     "days": 5
     },
     "bundle": {
      "status": "g",
@@ -216,7 +216,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 5
+     "days": 6
     },
     "bundle": {
      "status": "g",
@@ -423,7 +423,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-16",
-     "days": 3
+     "days": 4
     },
     "bundle": {
      "status": "g",
@@ -481,7 +481,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-17",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -528,7 +528,7 @@
     }
    },
    "desc": "Automatic provider/model fallback chains for DeepSeek Harness agents when LLM requests keep failing (retry exhausted, auth, quota, rate limit)",
-   "version": "0.3.0",
+   "version": "0.3.1",
    "verdict": "watch_pending"
   },
   {
@@ -539,7 +539,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 5
+     "days": 6
     },
     "bundle": {
      "status": "g",
@@ -858,7 +858,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 5
+     "days": 6
     },
     "bundle": {
      "status": "g",
@@ -1064,7 +1064,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-16",
-     "days": 3
+     "days": 4
     },
     "bundle": {
      "status": "g",
