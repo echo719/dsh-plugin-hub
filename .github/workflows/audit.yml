@@ -25,3 +25,5 @@ jobs:
           git add -A
           git diff --cached --quiet || git commit -m "daily audit $(date -u +%F)"
           git push
+      - name: trigger Cloudflare Pages deploy
+        run: curl -fsS -X POST "${{ secrets.CF_DEPLOY_HOOK }}"
