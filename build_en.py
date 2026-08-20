@@ -5,7 +5,7 @@ dsh-plugin-hub.com static site generator
 Reads data/*.json + audit/audit.json → renders public/
 Hard rule: every audit value on every page comes from the data files. Nothing hand-written.
 """
-import json, os, html, datetime
+import json, os, html, re, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -153,10 +153,17 @@ os.makedirs(PUB/"plugins", exist_ok=True)
 os.makedirs(PUB/"scenarios", exist_ok=True)
 pages=[]
 
+# Cloudflare Pages 默认 html_handling(auto-trailing-slash)会把 /page.html 重定向到 /page
+# —— canonical/hreflang/og:url/内链若仍声明 .html 版本,会和实际提供服务的网址冲突,
+# 导致 Googlebot 判定为"网页会自动重定向"而不予收录(2026-08-20 GSC 排障确认)。
+# 这里统一把内部 .html 网址改写成对外声明的规范网址(不改磁盘文件名,Cloudflare 仍按 .html 文件提供服务)。
+def strip_html_ext(s):
+    return re.sub(r'((?:href|content)="(?:https?://[^"]*|/[^"]*))\.html"', r'\1"', s)
+
 def write(path, htmlstr):
     p=PUB/path.lstrip("/")
     p.parent.mkdir(parents=True,exist_ok=True)
-    p.write_text(htmlstr,encoding="utf-8")
+    p.write_text(strip_html_ext(htmlstr),encoding="utf-8")
     pages.append("/"+path.lstrip("/"))
 
 # ---- home ----

@@ -14,8 +14,10 @@ for f in ("_pages_en.json","_pages_zh.json"):
 (PUB/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n",encoding="utf-8")
 today=datetime.date.today().isoformat()
 def loc(p):
+    # /page.html 与 /page/index.html 都归一到 Cloudflare 实际提供服务的规范网址
+    # (html_handling: auto-trailing-slash 会把 .html 重定向掉),sitemap 不再自相矛盾。
     if p.endswith("/index.html"): p=p[:-10]
-    elif p=="/index.html": p="/"
+    elif p.endswith(".html"): p=p[:-5]
     return p
 urls="".join(f"<url><loc>{DOMAIN}{loc(p)}</loc><lastmod>{today}</lastmod></url>"
   for p in pages if not p.endswith("/404.html"))

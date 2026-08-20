@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """中文版渲染器 → public/zh/(与英文版共用 audit 数据,文案独立)"""
-import json, os, html, copy, datetime
+import json, os, html, copy, re, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -85,11 +85,16 @@ def shell(title, desc, path, active, content, extra_head=""):
 </body>
 </html>"""
 
+# 同 build_en.py:Cloudflare 默认把 /page.html 重定向到 /page,canonical/内链若仍用 .html
+# 会跟实际服务网址冲突,被 GSC 判定"网页会自动重定向"而不收录(2026-08-20 排障确认)。
+def strip_html_ext(s):
+    return re.sub(r'((?:href|content)="(?:https?://[^"]*|/[^"]*))\.html"', r'\1"', s)
+
 pages=[]
 def write(path, htmlstr):
     p=PUB/"zh"/path.lstrip("/")
     p.parent.mkdir(parents=True,exist_ok=True)
-    p.write_text(htmlstr,encoding="utf-8")
+    p.write_text(strip_html_ext(htmlstr),encoding="utf-8")
     pages.append("/zh/"+path.lstrip("/"))
 
 os.makedirs(PUB/"zh"/"plugins", exist_ok=True)

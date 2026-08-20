@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Keep your @file, annotation and TUI habits and bring your session history to dsh. Every prescription verified against the real repo, with three documented migration pitfalls.">
-<link rel="canonical" href="https://dsh-plugin-hub.com/scenarios/01-migration.html">
-<link rel="alternate" hreflang="en" href="https://dsh-plugin-hub.com/scenarios/01-migration.html">
-<link rel="alternate" hreflang="zh-CN" href="https://dsh-plugin-hub.com/zh/scenarios/01-migration.html">
-<link rel="alternate" hreflang="x-default" href="https://dsh-plugin-hub.com/scenarios/01-migration.html">
+<link rel="canonical" href="https://dsh-plugin-hub.com/scenarios/01-migration">
+<link rel="alternate" hreflang="en" href="https://dsh-plugin-hub.com/scenarios/01-migration">
+<link rel="alternate" hreflang="zh-CN" href="https://dsh-plugin-hub.com/zh/scenarios/01-migration">
+<link rel="alternate" hreflang="x-default" href="https://dsh-plugin-hub.com/scenarios/01-migration">
 <meta property="og:title" content="Migrating from Claude Code / Codex to DSH: plugins and pitfalls — DSH Plugin Hub">
 <meta property="og:description" content="Keep your @file, annotation and TUI habits and bring your session history to dsh. Every prescription verified against the real repo, with three documented migration pitfalls.">
-<meta property="og:url" content="https://dsh-plugin-hub.com/scenarios/01-migration.html">
+<meta property="og:url" content="https://dsh-plugin-hub.com/scenarios/01-migration">
 <meta property="og:type" content="website">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <title>Migrating from Claude Code / Codex to DSH: plugins and pitfalls — DSH Plugin Hub</title>
@@ -22,12 +22,12 @@ gtag('js',new Date());gtag('config','G-BM4048J6E8');</script>
 <body>
 <nav><div class="wrap nav-in">
   <a class="logo" href="/">dsh-plugin-hub<span class="tld">.com</span></a>
-  <div class="nav-links"><a href="/">Home</a><a href="/scenarios.html">Scenarios</a><a href="/opc.html">OPC</a><a href="/plugins/">Plugin audits</a><a href="/breaking-changes.html">Breaking changes</a><a href="/scenarios/01-migration.html" class="on">Guides</a></div>
-  <a class="lang-switch" href="/zh/scenarios/01-migration.html" title="中文版">中文</a>
+  <div class="nav-links"><a href="/">Home</a><a href="/scenarios">Scenarios</a><a href="/opc">OPC</a><a href="/plugins/">Plugin audits</a><a href="/breaking-changes">Breaking changes</a><a href="/scenarios/01-migration" class="on">Guides</a></div>
+  <a class="lang-switch" href="/zh/scenarios/01-migration" title="中文版">中文</a>
   <a class="nav-cta" href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5BSubmit%5D+owner%2Frepo" rel="nofollow">Submit a plugin</a>
 </div></nav>
 <div class="wrap">
-<div class="crumb"><a href="/scenarios.html">Scenarios</a> / A · Migration &amp; onboarding</div>
+<div class="crumb"><a href="/scenarios">Scenarios</a> / A · Migration &amp; onboarding</div>
 <header class="hero" style="padding:22px 0 8px">
   <div class="sym">SYMPTOM · SCENARIO 01 · LIVE</div>
   <h1 style="font-size:36px;margin-top:8px;line-height:1.3">Migrating from Claude Code / Codex</h1>
@@ -44,44 +44,44 @@ gtag('js',new Date());gtag('config','G-BM4048J6E8');</script>
 <section class="sec"><div class="sec-h"><span class="no">II</span><h2>Recreating your workflow</h2><span class="sub">Install only what you need</span></div><div class="rx-card" data-t="cc codex">
   <div class="rx-head">
     <span class="name">dsh-cc-tui</span><span class="tag top">Top pick</span>
-    <a class="stamp pend" style="font-size:10px;letter-spacing:.5px" href="/plugins/dsh-cc-tui.html">PENDING</a>
+    <a class="stamp pend" style="font-size:10px;letter-spacing:.5px" href="/plugins/dsh-cc-tui">PENDING</a>
   </div>
   <div class="rx-body">
     <div class="desc"><b>A Claude Code-style fullscreen TUI.</b> Streaming thought expansion, rollback controls, context/TPS indicators. Your muscle memory mostly carries over.</div>
-    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated today</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot y"></i>CI, no tests</span><a class="card-link" href="/plugins/dsh-cc-tui.html">Full audit report →</a></div>
+    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated today</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot y"></i>CI, no tests</span><a class="card-link" href="/plugins/dsh-cc-tui">Full audit report →</a></div>
   </div>
   <div class="install"><span>dsh plugin --profile web add github:ccch1mneyyy/dsh-cc-tui</span><button class="cp">Copy</button></div>
   <div class="install-hint">Restart <b>dsh</b> after installing — per the official docs, "the plugin becomes active after restarting dsh"</div>
 </div><div class="rx-card" data-t="cc codex">
   <div class="rx-head">
     <span class="name">dsh-at-file</span><span class="tag">Input habits</span>
-    <a class="stamp pend" style="font-size:10px;letter-spacing:.5px" href="/plugins/dsh-at-file.html">PENDING</a>
+    <a class="stamp pend" style="font-size:10px;letter-spacing:.5px" href="/plugins/dsh-at-file">PENDING</a>
   </div>
   <div class="rx-body">
     <div class="desc"><b>Codex-style @file references.</b> Type @ to search workspace files and attach them to your prompt. Pairs with dsh-annotation (select-and-annotate) — worth installing together.</div>
-    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated today</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot y"></i>Tests, no CI</span><a class="card-link" href="/plugins/dsh-at-file.html">Full audit report →</a></div>
+    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated today</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot y"></i>Tests, no CI</span><a class="card-link" href="/plugins/dsh-at-file">Full audit report →</a></div>
   </div>
   <div class="install"><span>dsh plugin --profile web add github:FSMargoo/dsh-at-file</span><button class="cp">Copy</button></div>
   <div class="install-hint">Restart <b>dsh</b> after installing — per the official docs, "the plugin becomes active after restarting dsh"</div>
 </div><div class="rx-card" data-t="codex">
   <div class="rx-head">
     <span class="name">dsh-annotation</span><span class="tag">Input habits</span>
-    <a class="stamp pend" style="font-size:10px;letter-spacing:.5px" href="/plugins/dsh-annotation.html">PENDING</a>
+    <a class="stamp pend" style="font-size:10px;letter-spacing:.5px" href="/plugins/dsh-annotation">PENDING</a>
   </div>
   <div class="rx-body">
     <div class="desc"><b>Select text, annotate, send.</b> The core input pattern for Codex users, from the dsh-external org. The audit found no tests or CI in the current version.</div>
-    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated today</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot y"></i>Tests, no CI</span><a class="card-link" href="/plugins/dsh-annotation.html">Full audit report →</a></div>
+    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated today</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot y"></i>Tests, no CI</span><a class="card-link" href="/plugins/dsh-annotation">Full audit report →</a></div>
   </div>
   <div class="install"><span>dsh plugin --profile web add github:dsh-external/dsh-annotation</span><button class="cp">Copy</button></div>
   <div class="install-hint">Restart <b>dsh</b> after installing — per the official docs, "the plugin becomes active after restarting dsh"</div>
 </div><div class="rx-card" data-t="codex">
   <div class="rx-head">
     <span class="name">dsh-skin</span><span class="tag">Appearance</span>
-    <a class="stamp pend" style="font-size:10px;letter-spacing:.5px" href="/plugins/dsh-skin.html">PENDING</a>
+    <a class="stamp pend" style="font-size:10px;letter-spacing:.5px" href="/plugins/dsh-skin">PENDING</a>
   </div>
   <div class="rx-body">
     <div class="desc"><b>A Codex-style theme switcher.</b> Purely visual, so low risk — but updates are infrequent, and major dsh releases may need an adaptation window. Check maintenance status before installing.</div>
-    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated yesterday</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot r"></i>No tests or CI</span><a class="card-link" href="/plugins/dsh-skin.html">Full audit report →</a></div>
+    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated yesterday</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot r"></i>No tests or CI</span><a class="card-link" href="/plugins/dsh-skin">Full audit report →</a></div>
   </div>
   <div class="install"><span>dsh plugin --profile web add github:KinGao294/dsh-skin</span><button class="cp">Copy</button></div>
   <div class="install-hint">Restart <b>dsh</b> after installing — per the official docs, "the plugin becomes active after restarting dsh"</div>
@@ -89,22 +89,22 @@ gtag('js',new Date());gtag('config','G-BM4048J6E8');</script>
 <section class="sec"><div class="sec-h"><span class="no">III</span><h2>Bringing your session history</h2><span class="sub">Old sessions don't get left behind</span></div><div class="rx-card" data-t="move cc">
   <div class="rx-head">
     <span class="name">dsh-chat-import</span><span class="tag top">Migration core</span>
-    <a class="stamp " href="/plugins/dsh-chat-import.html">PASS</a>
+    <a class="stamp " href="/plugins/dsh-chat-import">PASS</a>
   </div>
   <div class="rx-body">
     <div class="desc"><b>Imports session history from Claude Code, Codex, ChatGPT, Cursor and 8 other tools</b> — tool calls and reasoning blocks included — as fully resumable dsh sessions, not read-only archives. Source files are never modified. The first plugin on this site to pass all four checks.</div>
-    <div class="checks"><span><i class="dot g"></i>Permissions: Reads user-specified JSONL files only · no network access (reviewed 2026-08-14)</span><span><i class="dot g"></i>Maintenance: Updated today</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot g"></i>Tests + CI present</span><a class="card-link" href="/plugins/dsh-chat-import.html">Full audit report →</a></div>
+    <div class="checks"><span><i class="dot g"></i>Permissions: Reads user-specified JSONL files only · no network access (reviewed 2026-08-14)</span><span><i class="dot g"></i>Maintenance: Updated today</span><span><i class="dot g"></i>dsh.bundle declared — activates properly</span><span><i class="dot g"></i>Tests + CI present</span><a class="card-link" href="/plugins/dsh-chat-import">Full audit report →</a></div>
   </div>
   <div class="install"><span>dsh plugin --profile web add github:Nwflower/dsh-chat-import</span><button class="cp">Copy</button></div>
   <div class="install-hint">Restart <b>dsh</b> after installing — per the official docs, "the plugin becomes active after restarting dsh"</div>
 </div><div class="rx-card" data-t="move">
   <div class="rx-head">
     <span class="name">dsh-session-search</span><span class="tag">Cross-tool search</span>
-    <a class="stamp warn" href="/plugins/dsh-session-search.html">WATCH</a>
+    <a class="stamp warn" href="/plugins/dsh-session-search">WATCH</a>
   </div>
   <div class="rx-body">
     <div class="desc"><b>Search sessions across tools.</b> Works without migrating anything. <b>Caution:</b> the audit found the current version does not declare dsh.bundle — per the official docs it won't activate after install. Watch for a fix, or follow the README's own instructions.</div>
-    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated 6 days ago</span><span><i class="dot r"></i>dsh.bundle not declared — won&#x27;t activate after install</span><span><i class="dot y"></i>Tests, no CI</span><a class="card-link" href="/plugins/dsh-session-search.html">Full audit report →</a></div>
+    <div class="checks"><span><i class="dot p"></i>Permissions: Pending manual review · no network or exec dependency hints</span><span><i class="dot g"></i>Maintenance: Updated 6 days ago</span><span><i class="dot r"></i>dsh.bundle not declared — won&#x27;t activate after install</span><span><i class="dot y"></i>Tests, no CI</span><a class="card-link" href="/plugins/dsh-session-search">Full audit report →</a></div>
   </div>
   <div class="install"><span>dsh plugin --profile web add github:Tieboyh/dsh-session-search</span><button class="cp">Copy</button></div>
   <div class="install-hint">Restart <b>dsh</b> after installing — per the official docs, "the plugin becomes active after restarting dsh"</div>
@@ -113,15 +113,15 @@ gtag('js',new Date());gtag('config','G-BM4048J6E8');</script>
 <div class="pit"><h3>Installed but nothing happens? Check the dsh.bundle declaration</h3>
 <p>From the official docs: a package without a <code>dsh.bundle</code> declaration "still installs, but only as a plain dependency … and activates no layer". Our audits check for this — one plugin on this very page currently lacks the declaration, and its report is flagged red.</p></div>
 <div class="pit"><h3>Use the install command from the official docs</h3>
-<p>The only current official flow is the package-spec form: <code>dsh plugin --profile web add &lt;npm-package | github:owner/repo&gt;</code> (use <code>link:</code> for local development). Other install forms that circulate in early write-ups no longer exist in the official docs and will fail.<a href="/breaking-changes.html"> Release tracker →</a></p></div>
+<p>The only current official flow is the package-spec form: <code>dsh plugin --profile web add &lt;npm-package | github:owner/repo&gt;</code> (use <code>link:</code> for local development). Other install forms that circulate in early write-ups no longer exist in the official docs and will fail.<a href="/breaking-changes"> Release tracker →</a></p></div>
 <div class="pit"><h3>Restart after installing</h3>
 <p>Plugin authors and the official docs agree: a plugin <b>becomes active after restarting dsh</b>. If nothing changes before a restart, that's expected — not a broken install.</p></div></section>
 <section class="sec"><div class="sec-h"><span class="no">V</span><h2>Related scenarios</h2></div>
-<div class="rel"><a href="/scenarios.html"><span class="s">SYMPTOM 05</span>Context / token overruns</a><a href="/scenarios.html"><span class="s">SYMPTOM 10</span>Cost control &amp; usage tracking</a><a href="/scenarios.html"><span class="s">SYMPTOM 21</span>Interface upgrades</a><a href="/scenarios.html"><span class="s">SYMPTOM 03</span>Plugin install troubleshooting</a></div></section>
+<div class="rel"><a href="/scenarios"><span class="s">SYMPTOM 05</span>Context / token overruns</a><a href="/scenarios"><span class="s">SYMPTOM 10</span>Cost control &amp; usage tracking</a><a href="/scenarios"><span class="s">SYMPTOM 21</span>Interface upgrades</a><a href="/scenarios"><span class="s">SYMPTOM 03</span>Plugin install troubleshooting</a></div></section>
 <div class="data-note"><span>Audit data on this page collected 2026-08-20 · permission reviews in progress, updated as they complete</span>
-<a href="/about-audit.html">Audit methodology</a></div>
-<div class="pager"><a href="/scenarios.html"><span class="lbl">← Back</span><b>Scenarios · Triage</b></a>
-<a class="next" href="/scenarios.html"><span class="lbl">Next scenario</span><b>SYM 02 Migrating from SillyTavern (in progress)</b></a></div>
+<a href="/about-audit">Audit methodology</a></div>
+<div class="pager"><a href="/scenarios"><span class="lbl">← Back</span><b>Scenarios · Triage</b></a>
+<a class="next" href="/scenarios"><span class="lbl">Next scenario</span><b>SYM 02 Migrating from SillyTavern (in progress)</b></a></div>
 </div>
 <script>
 const chips=document.querySelectorAll('.chip'),cards=document.querySelectorAll('.rx-card'),hint=document.getElementById('chipHint');
@@ -135,10 +135,10 @@ b.textContent='Copied';setTimeout(()=>b.textContent='Copy',1500)}));
 </script>
 <footer><div class="wrap">
   <span class="mark">dsh-plugin-hub<span style="color:var(--seal)">.com</span> · Community site, not affiliated with DeepSeek</span>
-  <a href="/scenarios.html">Scenarios</a>
-  <a href="/opc.html">OPC toolkits</a>
-  <a href="/breaking-changes.html">Breaking changes</a>
-  <a href="/about-audit.html">Audit methodology</a>
+  <a href="/scenarios">Scenarios</a>
+  <a href="/opc">OPC toolkits</a>
+  <a href="/breaking-changes">Breaking changes</a>
+  <a href="/about-audit">Audit methodology</a>
   <a href="https://github.com/echo719/dsh-plugin-hub/issues/new?labels=plugin-submit&title=%5BSubmit%5D+owner%2Frepo" rel="nofollow">Submit a plugin</a>
 </div></footer>
 </body>

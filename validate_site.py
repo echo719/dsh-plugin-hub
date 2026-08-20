@@ -37,7 +37,11 @@ for f in pages:
     for m in re.finditer(r'href="(/[^"#]*)"',src):
         p=m.group(1)
         tgt=PUB/p.lstrip("/")
-        if p.endswith("/"): tgt=tgt/"index.html"
+        if p.endswith("/"):
+            tgt=tgt/"index.html"
+        elif not tgt.exists():
+            # 无扩展名的规范网址(Cloudflare auto-trailing-slash 实际提供服务的 .html 文件)
+            tgt=Path(str(tgt)+".html")
         if not tgt.exists(): problems.append(f"{rel}: 死内链 {p}")
     # 虚构 dsh 版本拦截:只查展示 dsh 版本时间线的页面(插件自身版本号可能合法地是 0.4.x)
     if rel in ("/index.html","/breaking-changes.html","/zh/index.html","/zh/breaking-changes.html") and re.search(r'v0\.4\.[0-2]',src):
