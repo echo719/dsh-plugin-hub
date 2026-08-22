@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-08-21T02:37:20Z",
+  "generated_at": "2026-08-22T02:29:23Z",
   "count": 40,
   "source": "daily-git-clone"
  },
@@ -31,7 +31,7 @@
     }
    },
    "desc": "Active Context Pruning (ACP) for the DeepSeek Harness — model-driven context management as a CompactionEngine backend.",
-   "version": "0.2.7",
+   "version": "0.2.9",
    "verdict": "watch_pending"
   },
   {
@@ -42,7 +42,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-16",
-     "days": 4
+     "days": 5
     },
     "bundle": {
      "status": "g",
@@ -70,7 +70,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-20",
+     "last_commit": "2026-08-21",
      "days": 0
     },
     "bundle": {
@@ -89,7 +89,7 @@
     }
    },
    "desc": "dsh plugin bundle porting the omp advisor subsystem: a per-session reviewer model that observes the primary transcript and injects severity-ranked advice (nit/concern/blocker).",
-   "version": "0.2.3",
+   "version": "0.2.4",
    "verdict": "watch_pending"
   },
   {
@@ -99,7 +99,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-21",
+     "last_commit": "2026-08-22",
      "days": 0
     },
     "bundle": {
@@ -118,7 +118,7 @@
     }
    },
    "desc": "",
-   "version": "0.0.0-rc.161",
+   "version": "0.0.0-rc.178",
    "verdict": "watch_pending"
   },
   {
@@ -128,7 +128,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-20",
+     "last_commit": "2026-08-21",
      "days": 0
     },
     "bundle": {
@@ -158,7 +158,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-20",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -187,7 +187,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-15",
-     "days": 5
+     "days": 6
     },
     "bundle": {
      "status": "g",
@@ -216,7 +216,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-20",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -244,7 +244,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-21",
+     "last_commit": "2026-08-22",
      "days": 0
     },
     "bundle": {
@@ -266,7 +266,7 @@
     }
    },
    "desc": "DSH web plugin: a VSCode-like right sidebar (explorer / editor / terminal / git / browser), isolated per conversation session. Exposes a service for other plugins to register sidebar tabs and file viewers.",
-   "version": "0.14.1",
+   "version": "0.15.0",
    "verdict": "watch_pending"
   },
   {
@@ -276,7 +276,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-21",
+     "last_commit": "2026-08-22",
      "days": 0
     },
     "bundle": {
@@ -295,7 +295,7 @@
     }
    },
    "desc": "Claude Code style interactive TUI front door for DeepSeek Harness agents, built on the ported Ink core.",
-   "version": "0.8.6",
+   "version": "0.8.8",
    "verdict": "watch_pending"
   },
   {
@@ -305,7 +305,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-20",
+     "last_commit": "2026-08-21",
      "days": 0
     },
     "bundle": {
@@ -335,8 +335,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-17",
-     "days": 3
+     "last_commit": "2026-08-21",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -354,7 +354,7 @@
     }
    },
    "desc": "DSH 上下文注入审计插件：统计 AGENTS.md 指令链 / 技能目录 / 工具 schema / MCP 工具的 token 成本，检测重复与冲突；原生 Context Doctor 面板 + context_audit 工具。",
-   "version": "0.5.0",
+   "version": "0.5.2",
    "verdict": "watch_pending"
   },
   {
@@ -365,7 +365,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-20",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -394,7 +394,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-13",
-     "days": 8
+     "days": 9
     },
     "bundle": {
      "status": "r",
@@ -423,7 +423,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-16",
-     "days": 4
+     "days": 5
     },
     "bundle": {
      "status": "g",
@@ -452,7 +452,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-13",
-     "days": 7
+     "days": 8
     },
     "bundle": {
      "status": "g",
@@ -481,7 +481,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-17",
-     "days": 3
+     "days": 4
     },
     "bundle": {
      "status": "g",
@@ -509,7 +509,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-20",
+     "last_commit": "2026-08-21",
      "days": 0
     },
     "bundle": {
@@ -528,7 +528,7 @@
     }
    },
    "desc": "Automatic provider/model fallback chains for DeepSeek Harness agents when LLM requests keep failing (retry exhausted, auth, quota, rate limit)",
-   "version": "0.3.2",
+   "version": "0.3.3",
    "verdict": "watch_pending"
   },
   {
@@ -539,7 +539,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 6
+     "days": 7
     },
     "bundle": {
      "status": "g",
@@ -568,7 +568,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-18",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -597,7 +597,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-13",
-     "days": 7
+     "days": 8
     },
     "bundle": {
      "status": "g",
@@ -626,7 +626,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-17",
-     "days": 3
+     "days": 4
     },
     "bundle": {
      "status": "g",
@@ -654,8 +654,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-20",
-     "days": 1
+     "last_commit": "2026-08-21",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -673,7 +673,7 @@
     }
    },
    "desc": "DSH plugin health checker: scan plugin repos for manifest protocol / patch format / build pitfalls / hub registration, zero-dependency read-only diagnostics",
-   "version": "0.0.1",
+   "version": "0.1.0",
    "verdict": "watch_pending"
   },
   {
@@ -683,8 +683,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-14",
-     "days": 7
+     "last_commit": "2026-08-21",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -712,8 +712,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-20",
-     "days": 1
+     "last_commit": "2026-08-21",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -741,8 +741,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-20",
-     "days": 1
+     "last_commit": "2026-08-21",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -771,7 +771,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-13",
-     "days": 7
+     "days": 8
     },
     "bundle": {
      "status": "r",
@@ -800,7 +800,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-18",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -829,7 +829,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-13",
-     "days": 7
+     "days": 8
     },
     "bundle": {
      "status": "g",
@@ -858,7 +858,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 6
+     "days": 7
     },
     "bundle": {
      "status": "g",
@@ -887,7 +887,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 7
+     "days": 8
     },
     "bundle": {
      "status": "g",
@@ -916,7 +916,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-15",
-     "days": 6
+     "days": 7
     },
     "bundle": {
      "status": "g",
@@ -945,7 +945,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-11",
-     "days": 9
+     "days": 10
     },
     "bundle": {
      "status": "g",
@@ -974,7 +974,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-14",
-     "days": 7
+     "days": 8
     },
     "bundle": {
      "status": "g",
@@ -1003,7 +1003,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-13",
-     "days": 8
+     "days": 9
     },
     "bundle": {
      "status": "r",
@@ -1031,7 +1031,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-21",
+     "last_commit": "2026-08-22",
      "days": 0
     },
     "bundle": {
@@ -1064,7 +1064,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-16",
-     "days": 4
+     "days": 5
     },
     "bundle": {
      "status": "g",
@@ -1093,7 +1093,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-09",
-     "days": 11
+     "days": 12
     },
     "bundle": {
      "status": "g",
@@ -1121,17 +1121,17 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-09",
-     "days": 11
+     "last_commit": "2026-08-22",
+     "days": 0
     },
     "bundle": {
      "status": "g",
      "declared": true
     },
     "tests_ci": {
-     "status": "y",
+     "status": "g",
      "tests": true,
-     "ci": false
+     "ci": true
     },
     "permissions": {
      "status": "pending",
@@ -1139,8 +1139,8 @@
      "hints": []
     }
    },
-   "desc": "Microsoft eXecution Containers (MXC) backend for the DeepSeek Harness sandbox seam",
-   "version": "0.0.2",
+   "desc": "Stent MXC sandbox sidecar for the DeepSeek Harness",
+   "version": "0.1.0",
    "verdict": "watch_pending"
   },
   {
@@ -1151,7 +1151,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-11",
-     "days": 9
+     "days": 10
     },
     "bundle": {
      "status": "g",
