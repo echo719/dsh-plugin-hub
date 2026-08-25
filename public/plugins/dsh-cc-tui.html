@@ -17,7 +17,37 @@
 <link rel="stylesheet" href="/assets/style.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BM4048J6E8"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
-gtag('js',new Date());gtag('config','G-BM4048J6E8');</script>
+gtag('js',new Date());gtag('config','G-BM4048J6E8');</script><script>(function(){
+function ev(n,p){try{if(window.gtag)gtag('event',n,p)}catch(e){}}
+var PATH=location.pathname;
+document.addEventListener('click',function(e){
+  var t=e.target.closest('a,button.cp');
+  if(!t)return;
+  if(t.tagName==='BUTTON'){ev('copy_install',{page_path:PATH});return;}
+  var h=t.getAttribute('href')||'';
+  if(t.hostname&&t.hostname!==location.hostname){
+    ev('outbound_click',{link_domain:t.hostname,link_url:h,page_path:PATH});
+  }else if(t.closest('.cta-row,.sub-row')||t.classList.contains('pri')||t.classList.contains('nav-cta')){
+    ev('cta_click',{link_text:(t.textContent||'').trim().slice(0,60),link_url:h,page_path:PATH});
+  }
+},true);
+if('IntersectionObserver' in window){
+  var seen={};
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(x){
+      if(!x.isIntersecting)return;
+      var m=x.target.getAttribute('data-mod')||x.target.className||'cta';
+      m=String(m).split(' ')[0];
+      if(seen[m])return; seen[m]=1;
+      ev('cta_impression',{module:m,page_path:PATH});
+      io.unobserve(x.target);
+    });
+  },{threshold:0.5});
+  document.addEventListener('DOMContentLoaded',function(){
+    document.querySelectorAll('.cta-row,.sub-row,.install').forEach(function(n){io.observe(n)});
+  });
+}
+})();</script>
 </head>
 <body>
 <nav><div class="wrap nav-in">
@@ -30,7 +60,7 @@ gtag('js',new Date());gtag('config','G-BM4048J6E8');</script>
 <div class="crumb"><a href="/">Home</a> / <a href="/plugins/">Plugin audits</a> / dsh-cc-tui</div>
 <div class="head-card">
   <div class="head-top">
-    <div class="name">dsh-cc-tui<small><a href="https://github.com/ccch1mneyyy/dsh-cc-tui" rel="nofollow">github.com/ccch1mneyyy/dsh-cc-tui</a> · v0.9.0</small></div>
+    <h1 class="name">dsh-cc-tui<small><a href="https://github.com/ccch1mneyyy/dsh-cc-tui" rel="nofollow">github.com/ccch1mneyyy/dsh-cc-tui</a> · v0.9.0</small></h1>
     <div class="big-seal pend"><span class="b" style="font-size:14px;letter-spacing:2px">PENDING</span><span class="s">DSH·PLUGIN·HUB</span></div>
   </div>
   <p class="head-desc">Claude Code style interactive TUI front door for DeepSeek Harness agents, built on the ported Ink core.</p>

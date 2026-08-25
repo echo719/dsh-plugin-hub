@@ -36,6 +36,38 @@ if site.get("ga4_id"):
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}
 gtag('js',new Date());gtag('config','{site['ga4_id']}');</script>"""
 
+EVENTS_JS = """<script>(function(){
+function ev(n,p){try{if(window.gtag)gtag('event',n,p)}catch(e){}}
+var PATH=location.pathname;
+document.addEventListener('click',function(e){
+  var t=e.target.closest('a,button.cp');
+  if(!t)return;
+  if(t.tagName==='BUTTON'){ev('copy_install',{page_path:PATH});return;}
+  var h=t.getAttribute('href')||'';
+  if(t.hostname&&t.hostname!==location.hostname){
+    ev('outbound_click',{link_domain:t.hostname,link_url:h,page_path:PATH});
+  }else if(t.closest('.cta-row,.sub-row')||t.classList.contains('pri')||t.classList.contains('nav-cta')){
+    ev('cta_click',{link_text:(t.textContent||'').trim().slice(0,60),link_url:h,page_path:PATH});
+  }
+},true);
+if('IntersectionObserver' in window){
+  var seen={};
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(x){
+      if(!x.isIntersecting)return;
+      var m=x.target.getAttribute('data-mod')||x.target.className||'cta';
+      m=String(m).split(' ')[0];
+      if(seen[m])return; seen[m]=1;
+      ev('cta_impression',{module:m,page_path:PATH});
+      io.unobserve(x.target);
+    });
+  },{threshold:0.5});
+  document.addEventListener('DOMContentLoaded',function(){
+    document.querySelectorAll('.cta-row,.sub-row,.install').forEach(function(n){io.observe(n)});
+  });
+}
+})();</script>"""
+
 def shell(title, desc, path, active, content, extra_head=""):
     nav = ""
     for href, key, label in [
@@ -65,7 +97,7 @@ def shell(title, desc, path, active, content, extra_head=""):
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <title>{esc(title)}</title>
 <link rel="stylesheet" href="/assets/style.css">
-{GA4}{extra_head}
+{GA4}{EVENTS_JS if GA4 else ""}{extra_head}
 </head>
 <body>
 <nav><div class="wrap nav-in">
@@ -428,7 +460,7 @@ for name,p in sorted(PLUG.items()):
 <div class="crumb"><a href="/">Home</a> / <a href="/plugins/">Plugin audits</a> / {esc(name)}</div>
 <div class="head-card">
   <div class="head-top">
-    <div class="name">{esc(name)}<small><a href="https://github.com/{esc(p['repo'])}" rel="nofollow">github.com/{esc(p['repo'])}</a>{ver}</small></div>
+    <h1 class="name">{esc(name)}<small><a href="https://github.com/{esc(p['repo'])}" rel="nofollow">github.com/{esc(p['repo'])}</a>{ver}</small></h1>
     <div class="big-seal {sc}"><span class="b"{' style="font-size:14px;letter-spacing:2px"' if len(label)>5 else ''}>{label}</span><span class="s">DSH·PLUGIN·HUB</span></div>
   </div>
   <p class="head-desc">{desc}</p>
@@ -520,8 +552,9 @@ for i,r in enumerate(releases["timeline"]):
 brk=f"""<div class="wrap">
 <header class="hero" style="padding:52px 0 8px">
   <div class="kicker">BREAKING CHANGES</div>
-  <h1 style="font-size:36px;margin-top:8px">dsh release reviews</h1>
-  <p class="lede" style="margin-top:12px;max-width:660px">dsh is in developer preview, and the maintainers have been upfront about compatibility risk. This page tracks every release and reviews what changed, what's affected, and whether to upgrade.</p>
+  <h1 style="font-size:36px;margin-top:8px">dsh breaking changes: every release, dated</h1>
+  <p class="status-line" style="margin-top:12px;font-family:var(--mono);font-size:13px;color:var(--ink2)">Latest <b style="color:var(--ink)">v{esc(releases['timeline'][0]['version'])}</b> released {esc(releases['timeline'][0]['date'])} · {len(releases['timeline'])} releases tracked · {sum(1 for x in releases['timeline'] if x.get('pending'))} still under review · page checked {GEN_AT}</p>
+  <p class="lede" style="margin-top:12px;max-width:660px">dsh is in developer preview and the maintainers have been upfront about compatibility risk. Every release is listed here with its date. Where a review is finished you get a verdict; where it isn't, we say so rather than guess.</p>
   <div class="quote">"DeepSeek Harness is currently in developer preview and is iterating rapidly. <b>THERE WILL BE COMPATIBILITY-BREAKING CHANGES.</b>"<small>— deepseek-ai/deepseek-harness official README, August 2026</small></div>
   <div class="sub-row">
     <a class="pri" href="https://github.com/deepseek-ai/deepseek-harness/releases" rel="nofollow">Watch official releases</a>
@@ -540,8 +573,9 @@ brk=f"""<div class="wrap">
 <div class="pit"><h3>Restart dsh after installing</h3><p>Activation happens on restart. If a plugin seems dead right after install, restart before debugging.</p></div></section>
 <div class="how"><b>How we track this:</b> npm releases and official repo activity are pulled automatically every day. New versions start as "In review"; only after a human verifies the changes do we tag them BREAKING or Non-breaking, and every listed plugin is re-audited the same day. <b>No finished review, no verdict.</b></div>
 </div>"""
-write("breaking-changes.html", shell("Breaking changes tracker — DSH Plugin Hub",
-  "DSH says it plainly: THERE WILL BE COMPATIBILITY-BREAKING CHANGES. Every release reviewed, with upgrade guidance.",
+write("breaking-changes.html", shell(
+  f"dsh breaking changes: every release up to {releases['timeline'][0]['version']}",
+  f"Every dsh release in one dated timeline — latest v{releases['timeline'][0]['version']}, released {releases['timeline'][0]['date']}. Change reviews are still in progress: no release is tagged breaking or safe until it is verified.",
   "/breaking-changes.html","breaking",brk))
 
 # ---- OPC ----

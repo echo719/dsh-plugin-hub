@@ -74,3 +74,52 @@ if len(ok) < len(PLUGINS)*0.7:
 meta={"generated_at":datetime.now(timezone.utc).isoformat()[:19]+"Z","count":len(ok),"source":"daily-git-clone"}
 json.dump({"meta":meta,"plugins":results},open(HERE/"audit.json","w"),ensure_ascii=False,indent=1)
 print("audited",len(ok),"/",len(PLUGINS))
+
+# ---- dsh 版本时间线:每天从 npm registry 实录一次,人工写的说明按版本号保留 ----
+# 不加这一步的话 data/releases.json 就是一张死快照,而页面上"每日更新"那句话是假的
+# (2026-08-25 发现它停在 8/15、漏了 4 个版本,其中含一次 0.1.0 -> 0.1.1 的版本线跃迁)。
+import urllib.request, urllib.parse
+
+NPM_PKG = "@deepseek-ai/dsh"
+SITE = HERE.parent
+EN_DEFAULT = {"pending": True, "note": "Review in progress", "note_html": "Change review in progress."}
+ZH_DEFAULT = {"pending": True, "note": "变更核读中", "note_html": "变更内容核读中。"}
+EN_LATEST = {"pending": True, "auto_latest": True, "note": "Current latest · review in progress",
+             "note_html": 'Current latest release on npm. Change review in progress — we do not label a release BREAKING or safe until the review is done. Before upgrading, see the <a href="https://github.com/deepseek-ai/deepseek-harness/releases" rel="nofollow">official release notes</a>.'}
+ZH_LATEST = {"pending": True, "auto_latest": True, "note": "当前最新版 · 变更核读中",
+             "note_html": 'npm 上的当前最新版。变更内容核读中——核读完成前不下 BREAKING / 非破坏结论。升级前建议先看 <a href="https://github.com/deepseek-ai/deepseek-harness/releases" rel="nofollow">官方 release note</a>。'}
+
+
+def refresh_releases():
+    url = "https://registry.npmjs.org/" + urllib.parse.quote(NPM_PKG, safe="")
+    with urllib.request.urlopen(url, timeout=30) as r:
+        d = json.loads(r.read().decode("utf-8"))
+    tm = d.get("time", {})
+    vs = sorted(((ts, v) for v, ts in tm.items() if v not in ("created", "modified")), reverse=True)
+    if not vs:
+        raise RuntimeError("npm time 字段为空")
+    day = datetime.now(timezone.utc).date().isoformat()
+    for rel, default, latest, src in (
+        ("data/releases.json", EN_DEFAULT, EN_LATEST,
+         "npm registry %s · time field · refreshed daily, last fetch %s" % (NPM_PKG, day)),
+        ("data/zh/releases.json", ZH_DEFAULT, ZH_LATEST,
+         "npm registry %s · time 字段 · 每日自动刷新,最近一次 %s" % (NPM_PKG, day)),
+    ):
+        f = SITE / rel
+        doc = json.load(open(f, encoding="utf-8"))
+        # auto_latest 那条属于"第一名"这个位置,不属于某个版本号,重建时先丢掉再重新贴
+        keep = {x["version"]: x for x in doc.get("timeline", []) if not x.get("auto_latest")}
+        doc["source"] = src
+        doc["timeline"] = [dict(default, **dict(
+            {k: val for k, val in keep.get(v, {}).items() if k != "date"}, version=v, date=ts[:10]))
+            for ts, v in vs]
+        doc["timeline"][0] = dict(doc["timeline"][0], **dict(
+            latest, version=vs[0][1], date=vs[0][0][:10]))
+        json.dump(doc, open(f, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    return len(vs)
+
+
+try:
+    print("releases refreshed:", refresh_releases(), "versions")
+except Exception as e:
+    print("releases refresh FAILED, keeping previous file:", str(e)[:150])

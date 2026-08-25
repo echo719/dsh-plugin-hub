@@ -1,23 +1,77 @@
 {
-  "source": "npm registry @deepseek-ai/dsh · time 字段实录 2026-08-14",
-  "timeline": [
-    {"version": "0.1.0-rc.6", "date": "2026-08-13", "pending": true,
-     "note": "当前最新版 · 变更核读中",
-     "note_html": "当前最新版。变更内容核读中——核读完成前不下 BREAKING / 非破坏结论。升级前建议先看 <a href=\"https://github.com/deepseek-ai/deepseek-harness/releases\" rel=\"nofollow\">官方 release note</a>。"},
-    {"version": "0.1.0-rc.3", "date": "2026-08-13", "pending": true,
-     "note": "变更核读中",
-     "note_html": "变更内容核读中。"},
-    {"version": "0.1.0-rc.2", "date": "2026-08-13", "pending": true,
-     "note": "0.0.x → 0.1.0 版本线跃迁 · 核读中",
-     "note_html": "从 0.0.x 跃迁到 0.1.0 版本线。<b>版本线跃迁通常伴随接口调整</b>,核读完成前建议按可能不兼容对待,升级前先核对已装插件的维护动态。"},
-    {"version": "0.0.1-rc.5", "date": "2026-08-12", "pending": true,
-     "note": "变更核读中",
-     "note_html": "变更内容核读中。"},
-    {"version": "0.0.1-rc.2", "date": "2026-08-11", "pending": true,
-     "note": "变更核读中",
-     "note_html": "变更内容核读中。"},
-    {"version": "0.0.1-rc.1", "date": "2026-08-10", "pending": false, "breaking": false,
-     "note": "首个公开版本",
-     "note_html": "npm 上的首个公开版本(developer preview 起点)。"}
-  ]
+ "source": "npm registry @deepseek-ai/dsh · time 字段 · 每日自动刷新,快照 2026-08-25",
+ "timeline": [
+  {
+   "pending": true,
+   "note": "当前最新版 · 变更核读中",
+   "note_html": "npm 上的当前最新版。变更内容核读中——核读完成前不下 BREAKING / 非破坏结论。升级前建议先看 <a href=\"https://github.com/deepseek-ai/deepseek-harness/releases\" rel=\"nofollow\">官方 release note</a>。",
+   "version": "0.1.1-rc.2",
+   "date": "2026-08-21",
+   "auto_latest": true
+  },
+  {
+   "pending": true,
+   "note": "0.1.0 → 0.1.1 版本线跃迁 · 核读中",
+   "note_html": "从 0.1.0 跃迁到 0.1.1 版本线。<b>版本线跃迁通常伴随接口调整</b>,核读完成前建议按可能不兼容对待,升级前先核对已装插件的维护动态。",
+   "version": "0.1.1-rc.1",
+   "date": "2026-08-21"
+  },
+  {
+   "pending": true,
+   "note": "变更核读中",
+   "note_html": "变更内容核读中。",
+   "version": "0.1.0-rc.8",
+   "date": "2026-08-19"
+  },
+  {
+   "pending": true,
+   "note": "变更核读中",
+   "note_html": "变更内容核读中。",
+   "version": "0.1.0-rc.7",
+   "date": "2026-08-17"
+  },
+  {
+   "pending": true,
+   "note": "变更核读中",
+   "note_html": "变更内容核读中。",
+   "version": "0.1.0-rc.6",
+   "date": "2026-08-13"
+  },
+  {
+   "pending": true,
+   "note": "变更核读中",
+   "note_html": "变更内容核读中。",
+   "version": "0.1.0-rc.3",
+   "date": "2026-08-13"
+  },
+  {
+   "pending": true,
+   "note": "0.0.x → 0.1.0 版本线跃迁 · 核读中",
+   "note_html": "从 0.0.x 跃迁到 0.1.0 版本线。<b>版本线跃迁通常伴随接口调整</b>,核读完成前建议按可能不兼容对待,升级前先核对已装插件的维护动态。",
+   "version": "0.1.0-rc.2",
+   "date": "2026-08-13"
+  },
+  {
+   "pending": true,
+   "note": "变更核读中",
+   "note_html": "变更内容核读中。",
+   "version": "0.0.1-rc.5",
+   "date": "2026-08-12"
+  },
+  {
+   "pending": true,
+   "note": "变更核读中",
+   "note_html": "变更内容核读中。",
+   "version": "0.0.1-rc.2",
+   "date": "2026-08-11"
+  },
+  {
+   "pending": false,
+   "note": "首个公开版本",
+   "note_html": "npm 上的首个公开版本(developer preview 起点)。",
+   "breaking": false,
+   "version": "0.0.1-rc.1",
+   "date": "2026-08-10"
+  }
+ ]
 }

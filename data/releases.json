@@ -1,23 +1,77 @@
 {
-  "source": "npm registry @deepseek-ai/dsh · time field, captured 2026-08-15",
-  "timeline": [
-    {"version": "0.1.0-rc.6", "date": "2026-08-13", "pending": true,
-     "note": "Current latest · review in progress",
-     "note_html": "Current latest release. Change review in progress — we don't label a release BREAKING or safe until the review is done. Before upgrading, see the <a href=\"https://github.com/deepseek-ai/deepseek-harness/releases\" rel=\"nofollow\">official release notes</a>."},
-    {"version": "0.1.0-rc.3", "date": "2026-08-13", "pending": true,
-     "note": "Review in progress",
-     "note_html": "Change review in progress."},
-    {"version": "0.1.0-rc.2", "date": "2026-08-13", "pending": true,
-     "note": "0.0.x → 0.1.0 line jump · review in progress",
-     "note_html": "Jump from the 0.0.x line to 0.1.0. <b>Version-line jumps usually come with interface changes</b> — until the review is done, treat this as potentially incompatible and check the maintenance status of your installed plugins first."},
-    {"version": "0.0.1-rc.5", "date": "2026-08-12", "pending": true,
-     "note": "Review in progress",
-     "note_html": "Change review in progress."},
-    {"version": "0.0.1-rc.2", "date": "2026-08-11", "pending": true,
-     "note": "Review in progress",
-     "note_html": "Change review in progress."},
-    {"version": "0.0.1-rc.1", "date": "2026-08-10", "pending": false, "breaking": false,
-     "note": "First public release",
-     "note_html": "First public release on npm (start of the developer preview)."}
-  ]
+ "source": "npm registry @deepseek-ai/dsh · time field · refreshed daily, snapshot 2026-08-25",
+ "timeline": [
+  {
+   "pending": true,
+   "note": "Current latest · review in progress",
+   "note_html": "Current latest release on npm. Change review in progress — we do not label a release BREAKING or safe until the review is done. Before upgrading, see the <a href=\"https://github.com/deepseek-ai/deepseek-harness/releases\" rel=\"nofollow\">official release notes</a>.",
+   "version": "0.1.1-rc.2",
+   "date": "2026-08-21",
+   "auto_latest": true
+  },
+  {
+   "pending": true,
+   "note": "0.1.0 → 0.1.1 line jump · review in progress",
+   "note_html": "Jump from the 0.1.0 line to 0.1.1. <b>Version-line jumps usually come with interface changes</b> — until the review is done, treat this as potentially incompatible and check the maintenance status of your installed plugins first.",
+   "version": "0.1.1-rc.1",
+   "date": "2026-08-21"
+  },
+  {
+   "pending": true,
+   "note": "Review in progress",
+   "note_html": "Change review in progress.",
+   "version": "0.1.0-rc.8",
+   "date": "2026-08-19"
+  },
+  {
+   "pending": true,
+   "note": "Review in progress",
+   "note_html": "Change review in progress.",
+   "version": "0.1.0-rc.7",
+   "date": "2026-08-17"
+  },
+  {
+   "pending": true,
+   "note": "Review in progress",
+   "note_html": "Change review in progress.",
+   "version": "0.1.0-rc.6",
+   "date": "2026-08-13"
+  },
+  {
+   "pending": true,
+   "note": "Review in progress",
+   "note_html": "Change review in progress.",
+   "version": "0.1.0-rc.3",
+   "date": "2026-08-13"
+  },
+  {
+   "pending": true,
+   "note": "0.0.x → 0.1.0 line jump · review in progress",
+   "note_html": "Jump from the 0.0.x line to 0.1.0. <b>Version-line jumps usually come with interface changes</b> — until the review is done, treat this as potentially incompatible and check the maintenance status of your installed plugins first.",
+   "version": "0.1.0-rc.2",
+   "date": "2026-08-13"
+  },
+  {
+   "pending": true,
+   "note": "Review in progress",
+   "note_html": "Change review in progress.",
+   "version": "0.0.1-rc.5",
+   "date": "2026-08-12"
+  },
+  {
+   "pending": true,
+   "note": "Review in progress",
+   "note_html": "Change review in progress.",
+   "version": "0.0.1-rc.2",
+   "date": "2026-08-11"
+  },
+  {
+   "pending": false,
+   "note": "First public release",
+   "note_html": "First public release on npm (start of the developer preview).",
+   "breaking": false,
+   "version": "0.0.1-rc.1",
+   "date": "2026-08-10"
+  }
+ ]
 }

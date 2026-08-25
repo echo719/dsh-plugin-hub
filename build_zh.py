@@ -34,6 +34,38 @@ if site.get("ga4_id"):
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}
 gtag('js',new Date());gtag('config','{site['ga4_id']}');</script>"""
 
+EVENTS_JS = """<script>(function(){
+function ev(n,p){try{if(window.gtag)gtag('event',n,p)}catch(e){}}
+var PATH=location.pathname;
+document.addEventListener('click',function(e){
+  var t=e.target.closest('a,button.cp');
+  if(!t)return;
+  if(t.tagName==='BUTTON'){ev('copy_install',{page_path:PATH});return;}
+  var h=t.getAttribute('href')||'';
+  if(t.hostname&&t.hostname!==location.hostname){
+    ev('outbound_click',{link_domain:t.hostname,link_url:h,page_path:PATH});
+  }else if(t.closest('.cta-row,.sub-row')||t.classList.contains('pri')||t.classList.contains('nav-cta')){
+    ev('cta_click',{link_text:(t.textContent||'').trim().slice(0,60),link_url:h,page_path:PATH});
+  }
+},true);
+if('IntersectionObserver' in window){
+  var seen={};
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(x){
+      if(!x.isIntersecting)return;
+      var m=x.target.getAttribute('data-mod')||x.target.className||'cta';
+      m=String(m).split(' ')[0];
+      if(seen[m])return; seen[m]=1;
+      ev('cta_impression',{module:m,page_path:PATH});
+      io.unobserve(x.target);
+    });
+  },{threshold:0.5});
+  document.addEventListener('DOMContentLoaded',function(){
+    document.querySelectorAll('.cta-row,.sub-row,.install').forEach(function(n){io.observe(n)});
+  });
+}
+})();</script>"""
+
 def shell(title, desc, path, active, content, extra_head=""):
     nav = ""
     for href, key, label in [
@@ -64,7 +96,7 @@ def shell(title, desc, path, active, content, extra_head=""):
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <title>{esc(title)}</title>
 <link rel="stylesheet" href="/assets/style.css">
-{GA4}{extra_head}
+{GA4}{EVENTS_JS if GA4 else ""}{extra_head}
 </head>
 <body>
 <nav><div class="wrap nav-in">
@@ -419,7 +451,7 @@ for name,p in sorted(PLUG.items()):
 <div class="crumb"><a href="/zh/">首页</a> / <a href="/zh/plugins/">插件体检</a> / {esc(name)}</div>
 <div class="head-card">
   <div class="head-top">
-    <div class="name">{esc(name)}<small><a href="https://github.com/{esc(p['repo'])}" rel="nofollow">github.com/{esc(p['repo'])}</a>{ver}</small></div>
+    <h1 class="name">{esc(name)}<small><a href="https://github.com/{esc(p['repo'])}" rel="nofollow">github.com/{esc(p['repo'])}</a>{ver}</small></h1>
     <div class="big-seal {sc}"><span class="b">{st}</span><span class="s">DSH·PLUGIN·HUB</span></div>
   </div>
   <p class="head-desc">{desc}</p>
@@ -511,8 +543,9 @@ for i,r in enumerate(releases["timeline"]):
 brk=f"""<div class="wrap">
 <header class="hero" style="padding:52px 0 8px">
   <div class="kicker">BREAKING CHANGES · 追踪</div>
-  <h1 style="font-size:36px;margin-top:8px">dsh 版本变更核读</h1>
-  <p class="lede" style="margin-top:12px;max-width:660px">dsh 处于 developer preview 阶段,官方已明确提示兼容性风险。本页跟踪每次发版并核读变更内容:改动范围、受影响插件、升级建议。</p>
+  <h1 style="font-size:36px;margin-top:8px">dsh 破坏性变更:每个版本,带日期</h1>
+  <p class="status-line" style="margin-top:12px;font-family:var(--mono);font-size:13px;color:var(--ink2)">最新 <b style="color:var(--ink)">v{esc(releases['timeline'][0]['version'])}</b> 发布于 {esc(releases['timeline'][0]['date'])} · 已跟踪 {len(releases['timeline'])} 个版本 · 其中 {sum(1 for x in releases['timeline'] if x.get('pending'))} 个仍在核读 · 本页核验日期 {GEN_AT}</p>
+  <p class="lede" style="margin-top:12px;max-width:660px">dsh 处于 developer preview 阶段,官方已明确提示兼容性风险。本页把每次发版和发版日期都列出来:核读完成的给结论,没核完的直接说没核完,不猜。</p>
   <div class="quote">"DeepSeek Harness is currently in developer preview and is iterating rapidly. <b>THERE WILL BE COMPATIBILITY-BREAKING CHANGES.</b>"<small>— deepseek-ai/deepseek-harness 官方 README(2026-08 实录)</small></div>
   <div class="sub-row">
     <a class="pri" href="https://github.com/deepseek-ai/deepseek-harness/releases" rel="nofollow">Watch 官方 Releases</a>
@@ -531,8 +564,9 @@ brk=f"""<div class="wrap">
 <div class="pit"><h3>安装后需重启 dsh</h3><p>插件激活发生在重启之后。安装后未生效时,先重启再排查。</p></div></section>
 <div class="how"><b>跟踪机制:</b>每日自动抓取 npm 发版与官方仓库变动;新版本先标"核读中",人工核对变更后再标注 BREAKING / 非破坏,同日对全部收录插件重跑体检。<b>核读完成前不给出结论。</b></div>
 </div>"""
-write("breaking-changes.html", shell("破坏性变更追踪 — DSH Plugin Hub",
-  "DSH 官方声明 THERE WILL BE COMPATIBILITY-BREAKING CHANGES。每个版本的变更内容核读与升级建议。",
+write("breaking-changes.html", shell(
+  f"dsh 破坏性变更追踪:每个版本,截至 {releases['timeline'][0]['version']}",
+  f"dsh 每次发版的时间线和日期,最新 v{releases['timeline'][0]['version']}({releases['timeline'][0]['date']} 发布)。变更核读仍在进行中:核完之前不标 BREAKING,也不标安全。",
   "/breaking-changes.html","breaking",brk))
 
 # ---- OPC ----

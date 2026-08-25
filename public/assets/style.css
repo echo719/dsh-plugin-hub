@@ -314,7 +314,7 @@ h1{font-family:var(--serif);font-weight:900;letter-spacing:.5px}
 .head-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;
   background:repeating-linear-gradient(90deg,var(--seal) 0 18px,transparent 18px 26px)}
 .head-top{display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap}
-.head-top .name{font-family:var(--mono);font-weight:800;font-size:25px;letter-spacing:-.5px}
+.head-top .name{font-family:var(--mono);font-weight:800;font-size:25px;letter-spacing:-.5px;margin:0;line-height:1.25}
 .head-top .name small{display:block;font-size:12.5px;font-weight:400;color:var(--ink2);margin-top:4px;font-family:var(--mono)}
 .head-top .name small a{color:var(--blue);text-decoration:none}
 .head-desc{margin-top:14px;font-size:14.5px;color:var(--ink2);max-width:620px}
