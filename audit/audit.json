@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-08-28T12:48:00Z",
+  "generated_at": "2026-08-29T07:53:35Z",
   "count": 40,
   "source": "daily-git-clone"
  },
@@ -42,7 +42,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-16",
-     "days": 11
+     "days": 12
     },
     "bundle": {
      "status": "g",
@@ -71,7 +71,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-26",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -99,8 +99,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-27",
-     "days": 1
+     "last_commit": "2026-08-29",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -128,7 +128,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-28",
+     "last_commit": "2026-08-29",
      "days": 0
     },
     "bundle": {
@@ -147,7 +147,7 @@
     }
    },
    "desc": "DSH Web selection-annotation plugin: select assistant text, annotate (optional), and press Enter to send the annotation block with your message — the model replies to each annotation by number, with hoverable chips in th",
-   "version": "1.4.4",
+   "version": "1.4.5",
    "verdict": "watch_pending"
   },
   {
@@ -157,8 +157,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-23",
-     "days": 5
+     "last_commit": "2026-08-29",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -176,7 +176,7 @@
     }
    },
    "desc": "Codex-style @path references for the DeepSeek Harness web GUI: search workspace paths without injecting file content",
-   "version": "0.6.8",
+   "version": "0.6.9",
    "verdict": "watch_pending"
   },
   {
@@ -244,7 +244,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-28",
+     "last_commit": "2026-08-29",
      "days": 0
     },
     "bundle": {
@@ -276,7 +276,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-28",
+     "last_commit": "2026-08-29",
      "days": 0
     },
     "bundle": {
@@ -305,7 +305,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-28",
+     "last_commit": "2026-08-29",
      "days": 0
     },
     "bundle": {
@@ -336,7 +336,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-22",
-     "days": 6
+     "days": 7
     },
     "bundle": {
      "status": "g",
@@ -365,7 +365,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-27",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -394,7 +394,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-13",
-     "days": 15
+     "days": 16
     },
     "bundle": {
      "status": "r",
@@ -423,7 +423,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-16",
-     "days": 12
+     "days": 13
     },
     "bundle": {
      "status": "g",
@@ -450,9 +450,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "g",
+     "status": "y",
      "last_commit": "2026-08-13",
-     "days": 14
+     "days": 15
     },
     "bundle": {
      "status": "g",
@@ -481,7 +481,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-17",
-     "days": 11
+     "days": 12
     },
     "bundle": {
      "status": "g",
@@ -510,7 +510,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-26",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -568,7 +568,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-18",
-     "days": 10
+     "days": 11
     },
     "bundle": {
      "status": "g",
@@ -595,9 +595,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "g",
+     "status": "y",
      "last_commit": "2026-08-13",
-     "days": 14
+     "days": 15
     },
     "bundle": {
      "status": "g",
@@ -626,7 +626,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-17",
-     "days": 10
+     "days": 11
     },
     "bundle": {
      "status": "g",
@@ -654,8 +654,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-25",
-     "days": 3
+     "last_commit": "2026-08-29",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -712,8 +712,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-25",
-     "days": 3
+     "last_commit": "2026-08-29",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -741,8 +741,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-25",
-     "days": 3
+     "last_commit": "2026-08-29",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -769,9 +769,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "g",
+     "status": "y",
      "last_commit": "2026-08-13",
-     "days": 14
+     "days": 15
     },
     "bundle": {
      "status": "r",
@@ -827,9 +827,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "g",
+     "status": "y",
      "last_commit": "2026-08-13",
-     "days": 14
+     "days": 15
     },
     "bundle": {
      "status": "g",
@@ -858,7 +858,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-25",
-     "days": 3
+     "days": 4
     },
     "bundle": {
      "status": "g",
@@ -885,9 +885,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "g",
+     "status": "y",
      "last_commit": "2026-08-14",
-     "days": 14
+     "days": 15
     },
     "bundle": {
      "status": "g",
@@ -916,7 +916,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-15",
-     "days": 13
+     "days": 14
     },
     "bundle": {
      "status": "g",
@@ -945,7 +945,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-23",
-     "days": 5
+     "days": 6
     },
     "bundle": {
      "status": "g",
@@ -972,9 +972,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "g",
+     "status": "y",
      "last_commit": "2026-08-14",
-     "days": 14
+     "days": 15
     },
     "bundle": {
      "status": "g",
@@ -1003,7 +1003,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-13",
-     "days": 15
+     "days": 16
     },
     "bundle": {
      "status": "r",
@@ -1032,7 +1032,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-27",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -1064,7 +1064,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-16",
-     "days": 12
+     "days": 13
     },
     "bundle": {
      "status": "g",
@@ -1122,7 +1122,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-22",
-     "days": 6
+     "days": 7
     },
     "bundle": {
      "status": "g",
@@ -1151,7 +1151,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-11",
-     "days": 17
+     "days": 18
     },
     "bundle": {
      "status": "g",
