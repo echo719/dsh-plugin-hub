@@ -1,13 +1,20 @@
 {
- "source": "npm registry @deepseek-ai/dsh · time field · refreshed daily, last fetch 2026-08-31",
+ "source": "npm registry @deepseek-ai/dsh · time field · refreshed daily, last fetch 2026-09-01",
  "timeline": [
   {
    "pending": true,
    "note": "Current latest · review in progress",
    "note_html": "Current latest release on npm. Change review in progress — we do not label a release BREAKING or safe until the review is done. Before upgrading, see the <a href=\"https://github.com/deepseek-ai/deepseek-harness/releases\" rel=\"nofollow\">official release notes</a>.",
-   "version": "0.1.2-alpha.2",
-   "date": "2026-08-30",
+   "version": "0.1.2-alpha.3",
+   "date": "2026-08-31",
    "auto_latest": true
+  },
+  {
+   "pending": true,
+   "note": "Review in progress",
+   "note_html": "Change review in progress.",
+   "version": "0.1.2-alpha.2",
+   "date": "2026-08-30"
   },
   {
    "pending": true,
