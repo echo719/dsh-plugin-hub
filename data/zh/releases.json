@@ -1,13 +1,20 @@
 {
- "source": "npm registry @deepseek-ai/dsh · time 字段 · 每日自动刷新,最近一次 2026-09-01",
+ "source": "npm registry @deepseek-ai/dsh · time 字段 · 每日自动刷新,最近一次 2026-09-02",
  "timeline": [
   {
    "pending": true,
    "note": "当前最新版 · 变更核读中",
    "note_html": "npm 上的当前最新版。变更内容核读中——核读完成前不下 BREAKING / 非破坏结论。升级前建议先看 <a href=\"https://github.com/deepseek-ai/deepseek-harness/releases\" rel=\"nofollow\">官方 release note</a>。",
-   "version": "0.1.2-alpha.3",
-   "date": "2026-08-31",
+   "version": "0.1.2-alpha.4",
+   "date": "2026-09-01",
    "auto_latest": true
+  },
+  {
+   "pending": true,
+   "note": "变更核读中",
+   "note_html": "变更内容核读中。",
+   "version": "0.1.2-alpha.3",
+   "date": "2026-08-31"
   },
   {
    "pending": true,

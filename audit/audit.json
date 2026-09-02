@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-09-01T06:15:39Z",
+  "generated_at": "2026-09-02T05:51:29Z",
   "count": 40,
   "source": "daily-git-clone"
  },
@@ -31,7 +31,7 @@
     }
    },
    "desc": "Active Context Pruning (ACP) for the DeepSeek Harness — model-driven context management as a CompactionEngine backend.",
-   "version": "0.2.16",
+   "version": "0.2.17",
    "verdict": "watch_pending"
   },
   {
@@ -42,7 +42,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-16",
-     "days": 15
+     "days": 16
     },
     "bundle": {
      "status": "g",
@@ -70,7 +70,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-09-01",
+     "last_commit": "2026-09-02",
      "days": 0
     },
     "bundle": {
@@ -100,7 +100,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-31",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -129,7 +129,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-31",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -158,7 +158,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-01",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -187,7 +187,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-23",
-     "days": 8
+     "days": 9
     },
     "bundle": {
      "status": "g",
@@ -216,7 +216,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-20",
-     "days": 11
+     "days": 12
     },
     "bundle": {
      "status": "g",
@@ -244,7 +244,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-31",
+     "last_commit": "2026-09-02",
      "days": 0
     },
     "bundle": {
@@ -266,7 +266,7 @@
     }
    },
    "desc": "DSH web plugin: a VSCode-like right sidebar (explorer / editor / terminal / git / browser), isolated per conversation session. Exposes a service for other plugins to register sidebar tabs and file viewers.",
-   "version": "0.18.0-alpha.0",
+   "version": "0.18.1-alpha.0",
    "verdict": "watch_pending"
   },
   {
@@ -276,7 +276,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-09-01",
+     "last_commit": "2026-09-02",
      "days": 0
     },
     "bundle": {
@@ -295,7 +295,7 @@
     }
    },
    "desc": "Claude Code style interactive TUI front door for DeepSeek Harness agents, built on the ported Ink core.",
-   "version": "0.10.0-beta.1",
+   "version": "0.10.0-beta.4",
    "verdict": "watch_pending"
   },
   {
@@ -306,7 +306,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-01",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -336,7 +336,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-22",
-     "days": 9
+     "days": 10
     },
     "bundle": {
      "status": "g",
@@ -365,7 +365,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-31",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -394,7 +394,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-13",
-     "days": 19
+     "days": 20
     },
     "bundle": {
      "status": "r",
@@ -423,7 +423,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-29",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -452,7 +452,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-13",
-     "days": 18
+     "days": 19
     },
     "bundle": {
      "status": "g",
@@ -481,7 +481,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-17",
-     "days": 15
+     "days": 16
     },
     "bundle": {
      "status": "g",
@@ -509,7 +509,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-09-01",
+     "last_commit": "2026-09-02",
      "days": 0
     },
     "bundle": {
@@ -539,7 +539,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-26",
-     "days": 5
+     "days": 6
     },
     "bundle": {
      "status": "g",
@@ -568,7 +568,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-18",
-     "days": 13
+     "days": 14
     },
     "bundle": {
      "status": "g",
@@ -597,7 +597,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-13",
-     "days": 18
+     "days": 19
     },
     "bundle": {
      "status": "g",
@@ -624,9 +624,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "g",
+     "status": "y",
      "last_commit": "2026-08-17",
-     "days": 14
+     "days": 15
     },
     "bundle": {
      "status": "g",
@@ -654,8 +654,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-30",
-     "days": 1
+     "last_commit": "2026-09-01",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -684,7 +684,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-21",
-     "days": 10
+     "days": 11
     },
     "bundle": {
      "status": "g",
@@ -712,8 +712,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-30",
-     "days": 1
+     "last_commit": "2026-09-01",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -741,8 +741,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-08-30",
-     "days": 1
+     "last_commit": "2026-09-01",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -771,7 +771,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-13",
-     "days": 18
+     "days": 19
     },
     "bundle": {
      "status": "r",
@@ -800,7 +800,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-18",
-     "days": 13
+     "days": 14
     },
     "bundle": {
      "status": "g",
@@ -829,7 +829,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-13",
-     "days": 18
+     "days": 19
     },
     "bundle": {
      "status": "g",
@@ -887,7 +887,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-14",
-     "days": 18
+     "days": 19
     },
     "bundle": {
      "status": "g",
@@ -916,7 +916,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-15",
-     "days": 17
+     "days": 18
     },
     "bundle": {
      "status": "g",
@@ -945,7 +945,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-23",
-     "days": 9
+     "days": 10
     },
     "bundle": {
      "status": "g",
@@ -974,7 +974,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-14",
-     "days": 18
+     "days": 19
     },
     "bundle": {
      "status": "g",
@@ -1003,7 +1003,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-13",
-     "days": 19
+     "days": 20
     },
     "bundle": {
      "status": "r",
@@ -1032,7 +1032,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-01",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -1064,7 +1064,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-29",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -1093,7 +1093,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-09",
-     "days": 22
+     "days": 23
     },
     "bundle": {
      "status": "g",
@@ -1122,7 +1122,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-08-22",
-     "days": 10
+     "days": 11
     },
     "bundle": {
      "status": "g",
@@ -1151,7 +1151,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-11",
-     "days": 20
+     "days": 21
     },
     "bundle": {
      "status": "g",
