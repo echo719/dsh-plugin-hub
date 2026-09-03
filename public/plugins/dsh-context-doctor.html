@@ -67,15 +67,15 @@ if('IntersectionObserver' in window){
   <div class="head-tags"><a href="/scenarios"><span class="s">SYM 05</span>Context / token overruns</a></div>
   <div class="install"><span>dsh plugin --profile web add github:Zhenyu98/dsh-context-doctor</span><button class="cp" onclick="const s=this.parentElement.querySelector('span').textContent;if(navigator.clipboard)navigator.clipboard.writeText(s);this.textContent='Copied';setTimeout(()=>this.textContent='Copy',1500)">Copy</button></div>
   <p class="install-hint">Restart <b>dsh</b> after installing — no change before a restart is expected, not a broken install</p>
-  <div class="serial-strip"><span>AUDIT 2026-09-02</span><span class="barcode"></span></div>
+  <div class="serial-strip"><span>AUDIT 2026-09-03</span><span class="barcode"></span></div>
 </div>
-<section class="sec"><div class="sec-h"><h2>The four checks</h2><span class="sub">Collected 2026-09-02 · refreshed daily</span></div>
+<section class="sec"><div class="sec-h"><h2>The four checks</h2><span class="sub">Collected 2026-09-03 · refreshed daily</span></div>
 <div class="check"><div class="check-h"><span class="light p"></span><span class="t">① Permissions</span>
   <span class="v"><b>Pending manual review · no network or exec dependency hints</b></span></div>
   <div class="check-b"><div class="cell"><span class="k">Automated hints</span>No network libraries (axios / node-fetch / ws …) or exec libraries (execa / shelljs …) among the dependencies.</div><div class='cell'><span class='k'>Manual verdict</span>Queued for review — once complete, the confirmed permission scope and review date appear here.</div>
   <div class="policy"><b>Why permissions are reviewed by hand:</b> there's no reliable way to determine permission scope automatically, so only a human review produces a verdict. If a review is over 60 days old and the repo has changed since, the verdict drops back to Pending automatically.</div></div></div>
 <div class="check"><div class="check-h"><span class="light g"></span><span class="t">② Maintenance</span>
-  <span class="v"><b>Updated 10 days ago</b><br>last commit 2026-08-22</span></div>
+  <span class="v"><b>Updated 11 days ago</b><br>last commit 2026-08-22</span></div>
   <div class="check-b single"><div class="cell"><span class="k">Rule</span>Last commit ≤ <code>14 days</code> green · ≤ <code>45 days</code> amber · older (or archived) red.</div></div></div>
 <div class="check"><div class="check-h"><span class="light g"></span><span class="t">③ dsh.bundle</span>
   <span class="v"><b>dsh.bundle declared — activates properly</b></span></div>
@@ -86,7 +86,7 @@ if('IntersectionObserver' in window){
   <div class="cell"><span class="k">CI</span>No CI workflows found.</div></div></div>
 </section>
 <section class="sec"><div class="sec-h"><h2>Audit history</h2></div>
-<div class="hist"><div class="h-item"><span class="d">2026-09-02</span> · <b>Latest audit</b> (verdict: Pending); compatibility tracking updates with each daily run</div></div></section>
+<div class="hist"><div class="h-item"><span class="d">2026-09-03</span> · <b>Latest audit</b> (verdict: Pending); compatibility tracking updates with each daily run</div></div></section>
 <div class="cta-row">
   <a class="pri" href="/scenarios">See its scenario prescription →</a>
   <a href="https://github.com/Zhenyu98/dsh-context-doctor/issues" rel="nofollow">Spot an error? Send feedback</a>
