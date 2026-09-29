@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-09-28T06:56:51Z",
+  "generated_at": "2026-09-29T06:56:55Z",
   "count": 40,
   "source": "daily-git-clone"
  },
@@ -13,7 +13,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-24",
-     "days": 3
+     "days": 4
     },
     "bundle": {
      "status": "g",
@@ -42,7 +42,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-16",
-     "days": 42
+     "days": 43
     },
     "bundle": {
      "status": "g",
@@ -70,8 +70,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-09-27",
-     "days": 1
+     "last_commit": "2026-09-28",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -89,7 +89,7 @@
     }
    },
    "desc": "dsh plugin bundle porting the omp advisor subsystem: a per-session reviewer model that observes the primary transcript and injects severity-ranked advice (nit/concern/blocker).",
-   "version": "0.5.2",
+   "version": "0.5.3",
    "verdict": "watch_pending"
   },
   {
@@ -100,7 +100,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-31",
-     "days": 28
+     "days": 29
     },
     "bundle": {
      "status": "g",
@@ -129,7 +129,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-14",
-     "days": 13
+     "days": 14
     },
     "bundle": {
      "status": "g",
@@ -158,7 +158,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-01",
-     "days": 27
+     "days": 28
     },
     "bundle": {
      "status": "g",
@@ -187,7 +187,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-23",
-     "days": 35
+     "days": 36
     },
     "bundle": {
      "status": "g",
@@ -216,7 +216,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-20",
-     "days": 38
+     "days": 39
     },
     "bundle": {
      "status": "g",
@@ -244,7 +244,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-09-28",
+     "last_commit": "2026-09-29",
      "days": 0
     },
     "bundle": {
@@ -265,7 +265,7 @@
     }
    },
    "desc": "Better Sidebar for DSH — file tree, editor, changes, tasks and side chat in one column, separate for every conversation. Also exposes a service other plugins use to register sidebar tabs and file viewers.",
-   "version": "0.22.1",
+   "version": "0.24.1",
    "verdict": "watch_pending"
   },
   {
@@ -275,7 +275,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-09-28",
+     "last_commit": "2026-09-29",
      "days": 0
     },
     "bundle": {
@@ -294,7 +294,7 @@
     }
    },
    "desc": "Interactive terminal interface for DeepSeek Harness agents, sessions and tools.",
-   "version": "0.11.1",
+   "version": "0.11.2",
    "verdict": "watch_pending"
   },
   {
@@ -304,7 +304,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-09-27",
+     "last_commit": "2026-09-28",
      "days": 0
     },
     "bundle": {
@@ -324,7 +324,7 @@
     }
    },
    "desc": "Import conversation history from 25+ AI coding agents into DeepSeek Harness as resumable sessions — tool calls, reasoning and results kept intact, with reverse export. | 把 25+ AI 编程 Agent 的聊天记录导入 DeepSeek Harness 继续对话，保留",
-   "version": "0.21.0",
+   "version": "0.22.2",
    "verdict": "pass"
   },
   {
@@ -335,7 +335,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-06",
-     "days": 22
+     "days": 23
     },
     "bundle": {
      "status": "g",
@@ -363,8 +363,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-09-24",
-     "days": 3
+     "last_commit": "2026-09-28",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -382,7 +382,7 @@
     }
    },
    "desc": "Data Agent for DSH Web and TUI: shared database connections, versioned metadata Catalog governance, secure credentials, SQL and Catalog tools, and the data-agent preset",
-   "version": "0.2.0",
+   "version": "0.2.1",
    "verdict": "watch_pending"
   },
   {
@@ -391,9 +391,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "y",
-     "last_commit": "2026-09-07",
-     "days": 20
+     "status": "g",
+     "last_commit": "2026-09-29",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -410,7 +410,7 @@
      "hints": []
     }
    },
-   "desc": "一款模仿 excel 的 dsh 皮肤",
+   "desc": "A worksheet skin that lays DSH out as a spreadsheet: ribbon, formula bar, cell grid and workbook tabs.",
    "version": "0.0.1",
    "verdict": "watch_pending"
   },
@@ -422,7 +422,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-29",
-     "days": 29
+     "days": 30
     },
     "bundle": {
      "status": "g",
@@ -449,9 +449,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "y",
+     "status": "r",
      "last_commit": "2026-08-13",
-     "days": 45
+     "days": 46
     },
     "bundle": {
      "status": "g",
@@ -470,7 +470,7 @@
    },
    "desc": "DSH profile bundle：git 提交固定使用环境自身作者身份（优先 gh CLI 登录账号，GitHub noreply 邮箱），GIT_AUTHOR_*/GIT_COMMITTER_* 环境变量注入压过一切 git config",
    "version": "0.1.0",
-   "verdict": "watch_pending"
+   "verdict": "watch"
   },
   {
    "name": "dsh-inspect",
@@ -480,7 +480,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-17",
-     "days": 42
+     "days": 43
     },
     "bundle": {
      "status": "g",
@@ -527,7 +527,7 @@
     }
    },
    "desc": "Automatic provider/model fallback chains for DeepSeek Harness agents when LLM requests keep failing (retry exhausted, auth, quota, rate limit)",
-   "version": "0.6.2",
+   "version": "0.6.4",
    "verdict": "watch_pending"
   },
   {
@@ -538,7 +538,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-12",
-     "days": 15
+     "days": 16
     },
     "bundle": {
      "status": "g",
@@ -567,7 +567,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-06",
-     "days": 22
+     "days": 23
     },
     "bundle": {
      "status": "g",
@@ -594,9 +594,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "y",
+     "status": "r",
      "last_commit": "2026-08-13",
-     "days": 45
+     "days": 46
     },
     "bundle": {
      "status": "g",
@@ -615,7 +615,7 @@
    },
    "desc": "DeepSeek Harness 插件：捕捉每一次上行 API payload，JSON 存储到插件文件夹",
    "version": "0.1.0",
-   "verdict": "watch_pending"
+   "verdict": "watch"
   },
   {
    "name": "dsh-pi-tui",
@@ -625,7 +625,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-17",
-     "days": 41
+     "days": 42
     },
     "bundle": {
      "status": "g",
@@ -654,7 +654,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 18
+     "days": 19
     },
     "bundle": {
      "status": "g",
@@ -683,7 +683,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-21",
-     "days": 37
+     "days": 38
     },
     "bundle": {
      "status": "g",
@@ -712,7 +712,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 18
+     "days": 19
     },
     "bundle": {
      "status": "g",
@@ -741,7 +741,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 18
+     "days": 19
     },
     "bundle": {
      "status": "g",
@@ -768,9 +768,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "y",
+     "status": "r",
      "last_commit": "2026-08-13",
-     "days": 45
+     "days": 46
     },
     "bundle": {
      "status": "r",
@@ -799,7 +799,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-18",
-     "days": 40
+     "days": 41
     },
     "bundle": {
      "status": "g",
@@ -826,9 +826,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "y",
+     "status": "r",
      "last_commit": "2026-08-13",
-     "days": 45
+     "days": 46
     },
     "bundle": {
      "status": "g",
@@ -847,7 +847,7 @@
    },
    "desc": "DSH Web 换肤仓库 / DSH Web skins repo — third-party skins for the dsh web GUI (token skins + AI-art backgrounds), install by config, zero core changes",
    "version": "0.1.0",
-   "verdict": "watch_pending"
+   "verdict": "watch"
   },
   {
    "name": "dsh-slice-agent-loop",
@@ -857,7 +857,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-27",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -884,9 +884,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "y",
+     "status": "r",
      "last_commit": "2026-08-14",
-     "days": 45
+     "days": 46
     },
     "bundle": {
      "status": "g",
@@ -905,7 +905,7 @@
    },
    "desc": "DSH plugin: structured test runner tool (test_run) — auto-detect vitest/jest/pytest/node:test, run tests, parse failure summaries for the model.",
    "version": "0.1.0",
-   "verdict": "watch_pending"
+   "verdict": "watch"
   },
   {
    "name": "dsh-tool-git",
@@ -915,7 +915,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-15",
-     "days": 44
+     "days": 45
     },
     "bundle": {
      "status": "g",
@@ -944,7 +944,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-06",
-     "days": 22
+     "days": 23
     },
     "bundle": {
      "status": "g",
@@ -971,9 +971,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "y",
+     "status": "r",
      "last_commit": "2026-08-14",
-     "days": 45
+     "days": 46
     },
     "bundle": {
      "status": "g",
@@ -992,7 +992,7 @@
    },
    "desc": "对话轮次索引：Web GUI 右侧边栏列出每一轮用户提问，点击跳转到对应位置 (Turn index sidebar for the DeepSeek Harness web GUI: one entry per user turn, click to jump)",
    "version": "0.1.1",
-   "verdict": "watch_pending"
+   "verdict": "watch"
   },
   {
    "name": "dsh-vision",
@@ -1002,7 +1002,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 46
+     "days": 47
     },
     "bundle": {
      "status": "r",
@@ -1031,7 +1031,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-26",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -1063,7 +1063,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-29",
-     "days": 29
+     "days": 30
     },
     "bundle": {
      "status": "g",
@@ -1092,7 +1092,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-09",
-     "days": 49
+     "days": 50
     },
     "bundle": {
      "status": "g",
@@ -1121,7 +1121,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-22",
-     "days": 37
+     "days": 38
     },
     "bundle": {
      "status": "g",
@@ -1150,7 +1150,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-11",
-     "days": 48
+     "days": 49
     },
     "bundle": {
      "status": "g",
