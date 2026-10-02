@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-10-01T07:11:47Z",
+  "generated_at": "2026-10-02T07:01:30Z",
   "count": 40,
   "source": "daily-git-clone"
  },
@@ -13,7 +13,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-24",
-     "days": 6
+     "days": 7
     },
     "bundle": {
      "status": "g",
@@ -40,9 +40,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "y",
+     "status": "r",
      "last_commit": "2026-08-16",
-     "days": 45
+     "days": 46
     },
     "bundle": {
      "status": "g",
@@ -61,7 +61,7 @@
    },
    "desc": "DSH Mini TUI: a minimalist terminal interface plugin for DeepSeek Harness",
    "version": "0.2.1",
-   "verdict": "watch_pending"
+   "verdict": "watch"
   },
   {
    "name": "dsh-advisor",
@@ -71,7 +71,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-30",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -100,7 +100,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-31",
-     "days": 31
+     "days": 32
     },
     "bundle": {
      "status": "g",
@@ -147,7 +147,7 @@
     }
    },
    "desc": "DSH Web selection-annotation plugin: select assistant text, annotate (optional), and press Enter to send the annotation block with your message — the model replies to each annotation by number, with hoverable chips in th",
-   "version": "1.4.11-preview.1",
+   "version": "1.4.11",
    "verdict": "watch_pending"
   },
   {
@@ -158,7 +158,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-01",
-     "days": 30
+     "days": 31
     },
     "bundle": {
      "status": "g",
@@ -187,7 +187,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-23",
-     "days": 38
+     "days": 39
     },
     "bundle": {
      "status": "g",
@@ -216,7 +216,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-20",
-     "days": 41
+     "days": 42
     },
     "bundle": {
      "status": "g",
@@ -304,7 +304,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-09-30",
+     "last_commit": "2026-10-01",
      "days": 0
     },
     "bundle": {
@@ -324,7 +324,7 @@
     }
    },
    "desc": "Import conversation history from 25+ AI coding agents into DeepSeek Harness as resumable sessions — tool calls, reasoning and results kept intact, with reverse export. | 把 25+ AI 编程 Agent 的聊天记录导入 DeepSeek Harness 继续对话，保留",
-   "version": "0.23.1",
+   "version": "0.23.2",
    "verdict": "pass"
   },
   {
@@ -335,7 +335,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-06",
-     "days": 25
+     "days": 26
     },
     "bundle": {
      "status": "g",
@@ -364,7 +364,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-29",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -393,7 +393,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-29",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -422,7 +422,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-29",
-     "days": 32
+     "days": 33
     },
     "bundle": {
      "status": "g",
@@ -451,7 +451,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 48
+     "days": 49
     },
     "bundle": {
      "status": "g",
@@ -478,9 +478,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "y",
+     "status": "r",
      "last_commit": "2026-08-17",
-     "days": 45
+     "days": 46
     },
     "bundle": {
      "status": "g",
@@ -499,7 +499,7 @@
    },
    "desc": "发现问题 → 修复交付 → 质量复查 的简单闭环插件：checkup（对抗式检查+红队验证）/ fix（根因→修复→验证）/ review（对抗式复查）三个工具，基于官方 workflow 引擎。",
    "version": "0.1.0",
-   "verdict": "watch_pending"
+   "verdict": "watch"
   },
   {
    "name": "dsh-llm-fallbacks",
@@ -509,7 +509,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-29",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -538,7 +538,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-12",
-     "days": 18
+     "days": 19
     },
     "bundle": {
      "status": "g",
@@ -567,7 +567,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-06",
-     "days": 25
+     "days": 26
     },
     "bundle": {
      "status": "g",
@@ -596,7 +596,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 48
+     "days": 49
     },
     "bundle": {
      "status": "g",
@@ -625,7 +625,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-17",
-     "days": 44
+     "days": 45
     },
     "bundle": {
      "status": "g",
@@ -654,7 +654,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 21
+     "days": 22
     },
     "bundle": {
      "status": "g",
@@ -683,7 +683,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-21",
-     "days": 40
+     "days": 41
     },
     "bundle": {
      "status": "g",
@@ -712,7 +712,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 21
+     "days": 22
     },
     "bundle": {
      "status": "g",
@@ -741,7 +741,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 21
+     "days": 22
     },
     "bundle": {
      "status": "g",
@@ -770,7 +770,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 48
+     "days": 49
     },
     "bundle": {
      "status": "r",
@@ -799,7 +799,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-18",
-     "days": 43
+     "days": 44
     },
     "bundle": {
      "status": "g",
@@ -828,7 +828,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 48
+     "days": 49
     },
     "bundle": {
      "status": "g",
@@ -857,7 +857,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-27",
-     "days": 4
+     "days": 5
     },
     "bundle": {
      "status": "g",
@@ -886,7 +886,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-14",
-     "days": 48
+     "days": 49
     },
     "bundle": {
      "status": "g",
@@ -915,7 +915,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-15",
-     "days": 47
+     "days": 48
     },
     "bundle": {
      "status": "g",
@@ -944,7 +944,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-06",
-     "days": 25
+     "days": 26
     },
     "bundle": {
      "status": "g",
@@ -973,7 +973,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-14",
-     "days": 48
+     "days": 49
     },
     "bundle": {
      "status": "g",
@@ -1002,7 +1002,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 49
+     "days": 50
     },
     "bundle": {
      "status": "r",
@@ -1031,7 +1031,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-01",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -1063,7 +1063,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-29",
-     "days": 32
+     "days": 33
     },
     "bundle": {
      "status": "g",
@@ -1092,7 +1092,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-09",
-     "days": 52
+     "days": 53
     },
     "bundle": {
      "status": "g",
@@ -1121,7 +1121,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-22",
-     "days": 40
+     "days": 41
     },
     "bundle": {
      "status": "g",
@@ -1150,7 +1150,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-11",
-     "days": 51
+     "days": 52
     },
     "bundle": {
      "status": "g",
