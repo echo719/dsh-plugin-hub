@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-10-09T07:24:36Z",
+  "generated_at": "2026-10-10T07:10:41Z",
   "count": 40,
   "source": "daily-git-clone"
  },
@@ -13,7 +13,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-08",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -42,7 +42,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-16",
-     "days": 53
+     "days": 54
     },
     "bundle": {
      "status": "g",
@@ -71,7 +71,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-30",
-     "days": 9
+     "days": 10
     },
     "bundle": {
      "status": "g",
@@ -100,7 +100,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-31",
-     "days": 39
+     "days": 40
     },
     "bundle": {
      "status": "g",
@@ -129,7 +129,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-01",
-     "days": 7
+     "days": 8
     },
     "bundle": {
      "status": "g",
@@ -158,7 +158,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-01",
-     "days": 38
+     "days": 39
     },
     "bundle": {
      "status": "g",
@@ -187,7 +187,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-23",
-     "days": 46
+     "days": 47
     },
     "bundle": {
      "status": "g",
@@ -216,7 +216,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-20",
-     "days": 49
+     "days": 50
     },
     "bundle": {
      "status": "g",
@@ -244,8 +244,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-10-05",
-     "days": 4
+     "last_commit": "2026-10-10",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -265,7 +265,7 @@
     }
    },
    "desc": "Better Sidebar for DSH — file tree, editor, changes, tasks and side chat in one column, separate for every conversation. Also exposes a service other plugins use to register sidebar tabs and file viewers.",
-   "version": "0.24.1",
+   "version": "0.25.0",
    "verdict": "watch_pending"
   },
   {
@@ -275,7 +275,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-10-09",
+     "last_commit": "2026-10-10",
      "days": 0
     },
     "bundle": {
@@ -307,7 +307,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-06",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -337,7 +337,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-06",
-     "days": 33
+     "days": 34
     },
     "bundle": {
      "status": "g",
@@ -366,7 +366,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-29",
-     "days": 9
+     "days": 10
     },
     "bundle": {
      "status": "g",
@@ -395,7 +395,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-29",
-     "days": 10
+     "days": 11
     },
     "bundle": {
      "status": "g",
@@ -424,7 +424,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-29",
-     "days": 40
+     "days": 41
     },
     "bundle": {
      "status": "g",
@@ -453,7 +453,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 56
+     "days": 57
     },
     "bundle": {
      "status": "g",
@@ -482,7 +482,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-17",
-     "days": 53
+     "days": 54
     },
     "bundle": {
      "status": "g",
@@ -511,7 +511,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-29",
-     "days": 9
+     "days": 10
     },
     "bundle": {
      "status": "g",
@@ -540,7 +540,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-12",
-     "days": 26
+     "days": 27
     },
     "bundle": {
      "status": "g",
@@ -569,7 +569,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-06",
-     "days": 33
+     "days": 34
     },
     "bundle": {
      "status": "g",
@@ -598,7 +598,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 56
+     "days": 57
     },
     "bundle": {
      "status": "g",
@@ -645,7 +645,7 @@
     }
    },
    "desc": "pi-tui based interactive terminal front door for DeepSeek Harness agents",
-   "version": "0.5.2",
+   "version": "0.5.3",
    "verdict": "watch_pending"
   },
   {
@@ -656,7 +656,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 29
+     "days": 30
     },
     "bundle": {
      "status": "g",
@@ -685,7 +685,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-21",
-     "days": 48
+     "days": 49
     },
     "bundle": {
      "status": "g",
@@ -714,7 +714,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 29
+     "days": 30
     },
     "bundle": {
      "status": "g",
@@ -743,7 +743,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 29
+     "days": 30
     },
     "bundle": {
      "status": "g",
@@ -772,7 +772,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 56
+     "days": 57
     },
     "bundle": {
      "status": "r",
@@ -801,7 +801,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-18",
-     "days": 51
+     "days": 52
     },
     "bundle": {
      "status": "g",
@@ -830,7 +830,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 56
+     "days": 57
     },
     "bundle": {
      "status": "g",
@@ -859,7 +859,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-09-27",
-     "days": 12
+     "days": 13
     },
     "bundle": {
      "status": "g",
@@ -888,7 +888,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-14",
-     "days": 56
+     "days": 57
     },
     "bundle": {
      "status": "g",
@@ -917,7 +917,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-15",
-     "days": 55
+     "days": 56
     },
     "bundle": {
      "status": "g",
@@ -946,7 +946,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-06",
-     "days": 33
+     "days": 34
     },
     "bundle": {
      "status": "g",
@@ -975,7 +975,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-14",
-     "days": 56
+     "days": 57
     },
     "bundle": {
      "status": "g",
@@ -1004,7 +1004,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 57
+     "days": 58
     },
     "bundle": {
      "status": "r",
@@ -1033,7 +1033,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-08",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -1065,7 +1065,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-29",
-     "days": 40
+     "days": 41
     },
     "bundle": {
      "status": "g",
@@ -1094,7 +1094,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-09",
-     "days": 60
+     "days": 61
     },
     "bundle": {
      "status": "g",
@@ -1123,7 +1123,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-22",
-     "days": 48
+     "days": 49
     },
     "bundle": {
      "status": "g",
@@ -1152,7 +1152,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-11",
-     "days": 59
+     "days": 60
     },
     "bundle": {
      "status": "g",
