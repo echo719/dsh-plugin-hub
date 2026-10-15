@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-10-14T06:10:35Z",
+  "generated_at": "2026-10-15T05:55:26Z",
   "count": 40,
   "source": "daily-git-clone"
  },
@@ -13,7 +13,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-08",
-     "days": 5
+     "days": 6
     },
     "bundle": {
      "status": "g",
@@ -42,7 +42,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-16",
-     "days": 58
+     "days": 59
     },
     "bundle": {
      "status": "g",
@@ -69,9 +69,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "g",
+     "status": "y",
      "last_commit": "2026-09-30",
-     "days": 14
+     "days": 15
     },
     "bundle": {
      "status": "g",
@@ -100,7 +100,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-08-31",
-     "days": 44
+     "days": 45
     },
     "bundle": {
      "status": "g",
@@ -129,7 +129,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-01",
-     "days": 12
+     "days": 13
     },
     "bundle": {
      "status": "g",
@@ -158,7 +158,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-01",
-     "days": 43
+     "days": 44
     },
     "bundle": {
      "status": "g",
@@ -187,7 +187,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-23",
-     "days": 51
+     "days": 52
     },
     "bundle": {
      "status": "g",
@@ -216,7 +216,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-20",
-     "days": 54
+     "days": 55
     },
     "bundle": {
      "status": "g",
@@ -244,7 +244,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-10-13",
+     "last_commit": "2026-10-14",
      "days": 0
     },
     "bundle": {
@@ -275,7 +275,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-10-13",
+     "last_commit": "2026-10-15",
      "days": 0
     },
     "bundle": {
@@ -307,7 +307,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-12",
-     "days": 1
+     "days": 2
     },
     "bundle": {
      "status": "g",
@@ -336,7 +336,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-06",
-     "days": 37
+     "days": 38
     },
     "bundle": {
      "status": "g",
@@ -363,9 +363,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "g",
+     "status": "y",
      "last_commit": "2026-09-29",
-     "days": 14
+     "days": 15
     },
     "bundle": {
      "status": "g",
@@ -394,7 +394,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-11",
-     "days": 2
+     "days": 3
     },
     "bundle": {
      "status": "g",
@@ -421,9 +421,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "y",
+     "status": "r",
      "last_commit": "2026-08-29",
-     "days": 45
+     "days": 46
     },
     "bundle": {
      "status": "g",
@@ -442,7 +442,7 @@
    },
    "desc": "Health check for your DeepSeek Harness (dsh) profile — finds config fields your patches silently dropped, dead patches, and unmaintained plugins.",
    "version": "0.1.0",
-   "verdict": "watch_pending"
+   "verdict": "watch"
   },
   {
    "name": "dsh-git-identity",
@@ -452,7 +452,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 61
+     "days": 62
     },
     "bundle": {
      "status": "g",
@@ -481,7 +481,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-17",
-     "days": 58
+     "days": 59
     },
     "bundle": {
      "status": "g",
@@ -508,9 +508,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "g",
+     "status": "y",
      "last_commit": "2026-09-29",
-     "days": 14
+     "days": 15
     },
     "bundle": {
      "status": "g",
@@ -539,7 +539,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-12",
-     "days": 31
+     "days": 32
     },
     "bundle": {
      "status": "g",
@@ -568,7 +568,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-07",
-     "days": 6
+     "days": 7
     },
     "bundle": {
      "status": "g",
@@ -597,7 +597,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 61
+     "days": 62
     },
     "bundle": {
      "status": "g",
@@ -626,7 +626,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-09",
-     "days": 4
+     "days": 5
     },
     "bundle": {
      "status": "g",
@@ -655,7 +655,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 33
+     "days": 34
     },
     "bundle": {
      "status": "g",
@@ -684,7 +684,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-21",
-     "days": 53
+     "days": 54
     },
     "bundle": {
      "status": "g",
@@ -713,7 +713,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 33
+     "days": 34
     },
     "bundle": {
      "status": "g",
@@ -742,7 +742,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 33
+     "days": 34
     },
     "bundle": {
      "status": "g",
@@ -771,7 +771,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 61
+     "days": 62
     },
     "bundle": {
      "status": "r",
@@ -800,7 +800,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-18",
-     "days": 56
+     "days": 57
     },
     "bundle": {
      "status": "g",
@@ -829,7 +829,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 61
+     "days": 62
     },
     "bundle": {
      "status": "g",
@@ -858,7 +858,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-13",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -887,7 +887,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-14",
-     "days": 61
+     "days": 62
     },
     "bundle": {
      "status": "g",
@@ -916,7 +916,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-15",
-     "days": 60
+     "days": 61
     },
     "bundle": {
      "status": "g",
@@ -945,7 +945,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-06",
-     "days": 38
+     "days": 39
     },
     "bundle": {
      "status": "g",
@@ -974,7 +974,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-14",
-     "days": 61
+     "days": 62
     },
     "bundle": {
      "status": "g",
@@ -1003,7 +1003,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 62
+     "days": 63
     },
     "bundle": {
      "status": "r",
@@ -1032,7 +1032,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-13",
-     "days": 0
+     "days": 1
     },
     "bundle": {
      "status": "g",
@@ -1062,9 +1062,9 @@
    "error": null,
    "checks": {
     "maintenance": {
-     "status": "y",
+     "status": "r",
      "last_commit": "2026-08-29",
-     "days": 45
+     "days": 46
     },
     "bundle": {
      "status": "g",
@@ -1083,7 +1083,7 @@
    },
    "desc": "Manage DeepSeek Harness profiles — list, create, clone, and share a whole dsh setup as one portable file.",
    "version": "0.1.0",
-   "verdict": "watch_pending"
+   "verdict": "watch"
   },
   {
    "name": "sandbox-micro",
@@ -1093,7 +1093,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-09",
-     "days": 65
+     "days": 66
     },
     "bundle": {
      "status": "g",
@@ -1122,7 +1122,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-22",
-     "days": 53
+     "days": 54
     },
     "bundle": {
      "status": "g",
@@ -1151,7 +1151,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-11",
-     "days": 63
+     "days": 64
     },
     "bundle": {
      "status": "g",
