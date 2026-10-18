@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-10-17T05:37:06Z",
+  "generated_at": "2026-10-18T05:56:01Z",
   "count": 40,
   "source": "daily-git-clone"
  },
@@ -13,7 +13,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-08",
-     "days": 8
+     "days": 9
     },
     "bundle": {
      "status": "g",
@@ -42,7 +42,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-16",
-     "days": 61
+     "days": 62
     },
     "bundle": {
      "status": "g",
@@ -70,7 +70,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-10-16",
+     "last_commit": "2026-10-17",
      "days": 0
     },
     "bundle": {
@@ -89,7 +89,7 @@
     }
    },
    "desc": "dsh plugin bundle porting the omp advisor subsystem: a per-session reviewer model that observes the primary transcript and injects severity-ranked advice (nit/concern/blocker).",
-   "version": "0.5.4",
+   "version": "0.5.5",
    "verdict": "watch_pending"
   },
   {
@@ -100,7 +100,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-31",
-     "days": 47
+     "days": 48
     },
     "bundle": {
      "status": "g",
@@ -129,7 +129,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-10-01",
-     "days": 15
+     "days": 16
     },
     "bundle": {
      "status": "g",
@@ -158,7 +158,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-09-01",
-     "days": 46
+     "days": 47
     },
     "bundle": {
      "status": "g",
@@ -187,7 +187,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-23",
-     "days": 54
+     "days": 55
     },
     "bundle": {
      "status": "g",
@@ -216,7 +216,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-20",
-     "days": 57
+     "days": 58
     },
     "bundle": {
      "status": "g",
@@ -265,7 +265,7 @@
     }
    },
    "desc": "Better Sidebar for DSH — file tree, editor, changes, tasks and side chat in one column, separate for every conversation. Also exposes a service other plugins use to register sidebar tabs and file viewers.",
-   "version": "0.28.0-alpha.0",
+   "version": "0.28.0",
    "verdict": "watch_pending"
   },
   {
@@ -275,7 +275,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-10-17",
+     "last_commit": "2026-10-18",
      "days": 0
     },
     "bundle": {
@@ -296,7 +296,7 @@
     }
    },
    "desc": "Interactive terminal interface for DeepSeek Harness agents, sessions and tools.",
-   "version": "0.15.0",
+   "version": "0.16.1",
    "verdict": "watch_pending"
   },
   {
@@ -306,7 +306,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-10-16",
+     "last_commit": "2026-10-17",
      "days": 0
     },
     "bundle": {
@@ -325,7 +325,7 @@
     }
    },
    "desc": "Import conversation history from 25+ AI coding agents into DeepSeek Harness as resumable sessions — tool calls, reasoning and results kept intact, with reverse export. | 把 25+ AI 编程 Agent 的聊天记录导入 DeepSeek Harness 继续对话，保留",
-   "version": "0.26.0",
+   "version": "0.26.1",
    "verdict": "watch_pending"
   },
   {
@@ -336,7 +336,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-06",
-     "days": 40
+     "days": 41
     },
     "bundle": {
      "status": "g",
@@ -365,7 +365,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-29",
-     "days": 17
+     "days": 18
     },
     "bundle": {
      "status": "g",
@@ -394,7 +394,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-11",
-     "days": 5
+     "days": 6
     },
     "bundle": {
      "status": "g",
@@ -423,7 +423,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-29",
-     "days": 48
+     "days": 49
     },
     "bundle": {
      "status": "g",
@@ -452,7 +452,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 64
+     "days": 65
     },
     "bundle": {
      "status": "g",
@@ -481,7 +481,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-17",
-     "days": 61
+     "days": 62
     },
     "bundle": {
      "status": "g",
@@ -509,7 +509,7 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-10-16",
+     "last_commit": "2026-10-18",
      "days": 0
     },
     "bundle": {
@@ -528,7 +528,7 @@
     }
    },
    "desc": "Automatic provider/model fallback chains for DeepSeek Harness agents when LLM requests keep failing (retry exhausted, auth, quota, rate limit)",
-   "version": "0.6.5",
+   "version": "0.6.6",
    "verdict": "watch_pending"
   },
   {
@@ -539,7 +539,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-12",
-     "days": 34
+     "days": 35
     },
     "bundle": {
      "status": "g",
@@ -568,7 +568,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-07",
-     "days": 9
+     "days": 10
     },
     "bundle": {
      "status": "g",
@@ -597,7 +597,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 64
+     "days": 65
     },
     "bundle": {
      "status": "g",
@@ -626,7 +626,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-09",
-     "days": 7
+     "days": 8
     },
     "bundle": {
      "status": "g",
@@ -655,7 +655,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 36
+     "days": 37
     },
     "bundle": {
      "status": "g",
@@ -684,7 +684,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-21",
-     "days": 56
+     "days": 57
     },
     "bundle": {
      "status": "g",
@@ -713,7 +713,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 36
+     "days": 37
     },
     "bundle": {
      "status": "g",
@@ -742,7 +742,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-10",
-     "days": 36
+     "days": 37
     },
     "bundle": {
      "status": "g",
@@ -771,7 +771,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 64
+     "days": 65
     },
     "bundle": {
      "status": "r",
@@ -800,7 +800,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-18",
-     "days": 59
+     "days": 60
     },
     "bundle": {
      "status": "g",
@@ -829,7 +829,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 64
+     "days": 65
     },
     "bundle": {
      "status": "g",
@@ -858,7 +858,7 @@
     "maintenance": {
      "status": "g",
      "last_commit": "2026-10-13",
-     "days": 3
+     "days": 4
     },
     "bundle": {
      "status": "g",
@@ -887,7 +887,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-14",
-     "days": 64
+     "days": 65
     },
     "bundle": {
      "status": "g",
@@ -916,7 +916,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-15",
-     "days": 63
+     "days": 64
     },
     "bundle": {
      "status": "g",
@@ -945,7 +945,7 @@
     "maintenance": {
      "status": "y",
      "last_commit": "2026-09-06",
-     "days": 41
+     "days": 42
     },
     "bundle": {
      "status": "g",
@@ -974,7 +974,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-14",
-     "days": 64
+     "days": 65
     },
     "bundle": {
      "status": "g",
@@ -1003,7 +1003,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-13",
-     "days": 65
+     "days": 66
     },
     "bundle": {
      "status": "r",
@@ -1031,8 +1031,8 @@
    "checks": {
     "maintenance": {
      "status": "g",
-     "last_commit": "2026-10-13",
-     "days": 3
+     "last_commit": "2026-10-18",
+     "days": 0
     },
     "bundle": {
      "status": "g",
@@ -1053,7 +1053,7 @@
     }
    },
    "desc": "DeepSeek Harness-native integration for agent-vision-toolkit: image Q&A, OCR, grounding, UI restoration, pixel diff, Artifacts, and Web UI.",
-   "version": "0.1.46",
+   "version": "0.1.47",
    "verdict": "watch_pending"
   },
   {
@@ -1064,7 +1064,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-29",
-     "days": 48
+     "days": 49
     },
     "bundle": {
      "status": "g",
@@ -1093,7 +1093,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-09",
-     "days": 68
+     "days": 69
     },
     "bundle": {
      "status": "g",
@@ -1122,7 +1122,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-22",
-     "days": 56
+     "days": 57
     },
     "bundle": {
      "status": "g",
@@ -1151,7 +1151,7 @@
     "maintenance": {
      "status": "r",
      "last_commit": "2026-08-11",
-     "days": 66
+     "days": 67
     },
     "bundle": {
      "status": "g",
