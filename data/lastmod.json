@@ -8,184 +8,184 @@
 "h": "1a0cf7b30a9042ff"
 },
 "/index.html": {
-"d": "2026-10-20",
-"h": "7ead19b452c6ae94"
+"d": "2026-10-21",
+"h": "a40a96b910668792"
 },
 "/opc.html": {
 "d": "2026-09-08",
 "h": "c392c09b226763da"
 },
 "/plugins/billion-context-dsh.html": {
-"d": "2026-10-20",
-"h": "c0b8f7edd4b3ed4f"
+"d": "2026-10-21",
+"h": "eaf9ba9cd7902296"
 },
 "/plugins/deepseek-harness-tui.html": {
-"d": "2026-10-20",
-"h": "346c41f3860b1baa"
+"d": "2026-10-21",
+"h": "a0cebbf70e25dbe9"
 },
 "/plugins/dsh-advisor.html": {
-"d": "2026-10-20",
-"h": "29b1df6aedecf633"
+"d": "2026-10-21",
+"h": "fe67b8860d52ac9f"
 },
 "/plugins/dsh-agent-rp.html": {
-"d": "2026-10-20",
-"h": "d7c726610ef30bc6"
+"d": "2026-10-21",
+"h": "7fdb4dfbc2fd356b"
 },
 "/plugins/dsh-annotation.html": {
-"d": "2026-10-20",
-"h": "a397838f9cc03d15"
+"d": "2026-10-21",
+"h": "53e8a066eb55412c"
 },
 "/plugins/dsh-at-file.html": {
-"d": "2026-10-20",
-"h": "0d5a7a8c3bf46217"
+"d": "2026-10-21",
+"h": "5e8f097c4267bf47"
 },
 "/plugins/dsh-auto-blame.html": {
-"d": "2026-10-20",
-"h": "3795968854daddaf"
+"d": "2026-10-21",
+"h": "08681fb859258a99"
 },
 "/plugins/dsh-balance-meter.html": {
-"d": "2026-10-20",
-"h": "8dd17645da5cdeda"
+"d": "2026-10-21",
+"h": "657e1d412ce9bfde"
 },
 "/plugins/dsh-better-sidebar.html": {
-"d": "2026-10-19",
-"h": "3618075a7b000086"
+"d": "2026-10-21",
+"h": "e05f38e16a7576ee"
 },
 "/plugins/dsh-cc-tui.html": {
 "d": "2026-10-18",
 "h": "792817f3ccb8e7db"
 },
 "/plugins/dsh-chat-import.html": {
-"d": "2026-10-20",
-"h": "09fc06f59c711047"
+"d": "2026-10-21",
+"h": "a7feef63db9907a6"
 },
 "/plugins/dsh-context-doctor.html": {
-"d": "2026-10-20",
-"h": "9debb17c675526b7"
+"d": "2026-10-21",
+"h": "9593f9406d4e810b"
 },
 "/plugins/dsh-data-agent.html": {
-"d": "2026-10-20",
-"h": "d7972e7e42259605"
+"d": "2026-10-21",
+"h": "c15061f7832a7f3e"
 },
 "/plugins/dsh-deepcel.html": {
-"d": "2026-10-20",
-"h": "72c6d9f32eb5abf2"
+"d": "2026-10-21",
+"h": "a9738872efd5802b"
 },
 "/plugins/dsh-doctor.html": {
-"d": "2026-10-20",
-"h": "ac9a4cd3823200f9"
+"d": "2026-10-21",
+"h": "1508c62ce5216d6a"
 },
 "/plugins/dsh-git-identity.html": {
-"d": "2026-10-20",
-"h": "586f8f1301bd83b4"
+"d": "2026-10-21",
+"h": "94fcc84ca0567eb6"
 },
 "/plugins/dsh-inspect.html": {
-"d": "2026-10-20",
-"h": "98dff121ba7a6ea9"
+"d": "2026-10-21",
+"h": "64642a6193db2267"
 },
 "/plugins/dsh-llm-fallbacks.html": {
-"d": "2026-10-20",
-"h": "549f04711964a446"
+"d": "2026-10-21",
+"h": "ae8dc78345a8b250"
 },
 "/plugins/dsh-milestone.html": {
-"d": "2026-10-20",
-"h": "3b3108a3dba08722"
+"d": "2026-10-21",
+"h": "ea8b1e52114df2ad"
 },
 "/plugins/dsh-office.html": {
-"d": "2026-10-20",
-"h": "45d9bb0bd1326a91"
+"d": "2026-10-21",
+"h": "080b384a33af671c"
 },
 "/plugins/dsh-payload-capture.html": {
-"d": "2026-10-20",
-"h": "3ce2a4f8acf7e726"
+"d": "2026-10-21",
+"h": "2c8129c4b0fb4d1f"
 },
 "/plugins/dsh-pi-tui.html": {
-"d": "2026-10-20",
-"h": "c91d199a4bd1bbb7"
+"d": "2026-10-21",
+"h": "ee15e79770427941"
 },
 "/plugins/dsh-plugin-check.html": {
-"d": "2026-10-20",
-"h": "023ca93731f4ca75"
+"d": "2026-10-21",
+"h": "001f3dd3faf5c38e"
 },
 "/plugins/dsh-review-loop.html": {
-"d": "2026-10-20",
-"h": "566a5b11e03607dd"
+"d": "2026-10-21",
+"h": "176c025319933059"
 },
 "/plugins/dsh-security-audit.html": {
-"d": "2026-10-20",
-"h": "04e350a211b9c46c"
+"d": "2026-10-21",
+"h": "9f10757f11ff4b80"
 },
 "/plugins/dsh-session-health.html": {
-"d": "2026-10-20",
-"h": "fa1e5f0d2bf9d170"
+"d": "2026-10-21",
+"h": "f17309cae4dc9fbc"
 },
 "/plugins/dsh-session-search.html": {
-"d": "2026-10-20",
-"h": "721cda3b6e11d4c6"
+"d": "2026-10-21",
+"h": "8f8baef6c98731ab"
 },
 "/plugins/dsh-skin.html": {
-"d": "2026-10-20",
-"h": "a4c0120537b1ef7b"
+"d": "2026-10-21",
+"h": "3330e9d2511b7472"
 },
 "/plugins/dsh-skins.html": {
-"d": "2026-10-20",
-"h": "960d156906767571"
+"d": "2026-10-21",
+"h": "e2fa1ba96c6ac398"
 },
 "/plugins/dsh-slice-agent-loop.html": {
-"d": "2026-10-20",
-"h": "1c3d5c8ba4386f9a"
+"d": "2026-10-21",
+"h": "e0664de366adbeec"
 },
 "/plugins/dsh-test-runner.html": {
-"d": "2026-10-20",
-"h": "08ca1ac6feb61080"
+"d": "2026-10-21",
+"h": "1d96dff6d03856d9"
 },
 "/plugins/dsh-tool-git.html": {
-"d": "2026-10-20",
-"h": "34ad685a3cc4d895"
+"d": "2026-10-21",
+"h": "6fc52c26984ed66d"
 },
 "/plugins/dsh-tps.html": {
-"d": "2026-10-20",
-"h": "815bfdeea8787b9d"
+"d": "2026-10-21",
+"h": "53959a7f71257dc5"
 },
 "/plugins/dsh-turn-index.html": {
-"d": "2026-10-20",
-"h": "7d43ea7aad1ab8db"
+"d": "2026-10-21",
+"h": "407bd6882ebbe747"
 },
 "/plugins/dsh-vision-toolkit.html": {
-"d": "2026-10-20",
-"h": "afd8dd4083d56df4"
+"d": "2026-10-21",
+"h": "61170c3947a688dc"
 },
 "/plugins/dsh-vision.html": {
-"d": "2026-10-20",
-"h": "20c779fd4581327b"
+"d": "2026-10-21",
+"h": "d55ee83f44ada6ad"
 },
 "/plugins/dshp.html": {
-"d": "2026-10-20",
-"h": "70d893dd8c596998"
+"d": "2026-10-21",
+"h": "ff1e71e122382865"
 },
 "/plugins/index.html": {
-"d": "2026-10-20",
-"h": "b078941f72f14db3"
+"d": "2026-10-21",
+"h": "a7b393684f1e3c21"
 },
 "/plugins/sandbox-micro.html": {
-"d": "2026-10-20",
-"h": "b2305c150984aebe"
+"d": "2026-10-21",
+"h": "9bb54d3fd43ff0ec"
 },
 "/plugins/sandbox-mxc.html": {
-"d": "2026-10-20",
-"h": "aa23afcc95a50a6b"
+"d": "2026-10-21",
+"h": "66fd7ddd93524353"
 },
 "/plugins/sandbox-nono.html": {
-"d": "2026-10-20",
-"h": "70978cf4ab4a8135"
+"d": "2026-10-21",
+"h": "8f75f5db8ca21a59"
 },
 "/scenarios.html": {
 "d": "2026-08-25",
 "h": "39904af6b4eeddd9"
 },
 "/scenarios/01-migration.html": {
-"d": "2026-10-20",
-"h": "d49266edd17b5eba"
+"d": "2026-10-21",
+"h": "b1ad22a5966b7f65"
 },
 "/zh/about-audit.html": {
 "d": "2026-08-25",
@@ -196,183 +196,183 @@
 "h": "e7a0bcd8319b5bc4"
 },
 "/zh/index.html": {
-"d": "2026-10-20",
-"h": "02391790d0dfd24b"
+"d": "2026-10-21",
+"h": "ace3a545b3acbc75"
 },
 "/zh/opc.html": {
 "d": "2026-09-08",
 "h": "58abb573c9573760"
 },
 "/zh/plugins/billion-context-dsh.html": {
-"d": "2026-10-20",
-"h": "a6ed911bd0ac2272"
+"d": "2026-10-21",
+"h": "0cf2d1745a6fe7f2"
 },
 "/zh/plugins/deepseek-harness-tui.html": {
-"d": "2026-10-20",
-"h": "6b3c3fa784d42070"
+"d": "2026-10-21",
+"h": "55a83393fe3f49d0"
 },
 "/zh/plugins/dsh-advisor.html": {
-"d": "2026-10-20",
-"h": "61f4782c683542b5"
+"d": "2026-10-21",
+"h": "f9b115aec01a2eec"
 },
 "/zh/plugins/dsh-agent-rp.html": {
-"d": "2026-10-20",
-"h": "98de3dd2884699d7"
+"d": "2026-10-21",
+"h": "a3f93426c057a61d"
 },
 "/zh/plugins/dsh-annotation.html": {
-"d": "2026-10-20",
-"h": "a0e76014a807f2ac"
+"d": "2026-10-21",
+"h": "5c7ce23469942b12"
 },
 "/zh/plugins/dsh-at-file.html": {
-"d": "2026-10-20",
-"h": "5d043236cec2433c"
+"d": "2026-10-21",
+"h": "63acb9151f0c098e"
 },
 "/zh/plugins/dsh-auto-blame.html": {
-"d": "2026-10-20",
-"h": "019ba368bc1e5a3c"
+"d": "2026-10-21",
+"h": "7bd6854ba93395de"
 },
 "/zh/plugins/dsh-balance-meter.html": {
-"d": "2026-10-20",
-"h": "7ce0326ba09c02e7"
+"d": "2026-10-21",
+"h": "76c88967b5899116"
 },
 "/zh/plugins/dsh-better-sidebar.html": {
-"d": "2026-10-19",
-"h": "3e0849d6a7662c4a"
+"d": "2026-10-21",
+"h": "3e55b389b3c391f2"
 },
 "/zh/plugins/dsh-cc-tui.html": {
 "d": "2026-10-18",
 "h": "7c9bfd4e9abf2df0"
 },
 "/zh/plugins/dsh-chat-import.html": {
-"d": "2026-10-20",
-"h": "f1df2e208360b7c5"
+"d": "2026-10-21",
+"h": "60ff3f005ead5c38"
 },
 "/zh/plugins/dsh-context-doctor.html": {
-"d": "2026-10-20",
-"h": "37d218169e71377a"
+"d": "2026-10-21",
+"h": "53c1d993b404528c"
 },
 "/zh/plugins/dsh-data-agent.html": {
-"d": "2026-10-20",
-"h": "abb4a5ade7a9517d"
+"d": "2026-10-21",
+"h": "368dcea2a56d417c"
 },
 "/zh/plugins/dsh-deepcel.html": {
-"d": "2026-10-20",
-"h": "0a3148e4f152adec"
+"d": "2026-10-21",
+"h": "74c01e52825f03b7"
 },
 "/zh/plugins/dsh-doctor.html": {
-"d": "2026-10-20",
-"h": "0d5bcaf5d32e5486"
+"d": "2026-10-21",
+"h": "01ea8df958f875ba"
 },
 "/zh/plugins/dsh-git-identity.html": {
-"d": "2026-10-20",
-"h": "b3d0ba6092af7776"
+"d": "2026-10-21",
+"h": "f1fdf85800530a6d"
 },
 "/zh/plugins/dsh-inspect.html": {
-"d": "2026-10-20",
-"h": "f1c9a4d2f158e397"
+"d": "2026-10-21",
+"h": "8a34afc22cd6ef2a"
 },
 "/zh/plugins/dsh-llm-fallbacks.html": {
-"d": "2026-10-20",
-"h": "459d398a392adc59"
+"d": "2026-10-21",
+"h": "5c09fd29c46dc7e6"
 },
 "/zh/plugins/dsh-milestone.html": {
-"d": "2026-10-20",
-"h": "2a1bdfc1af71a30b"
+"d": "2026-10-21",
+"h": "a444b187dfb3f310"
 },
 "/zh/plugins/dsh-office.html": {
-"d": "2026-10-20",
-"h": "6b0dbad831424b84"
+"d": "2026-10-21",
+"h": "1db7a1fb5e6ba88f"
 },
 "/zh/plugins/dsh-payload-capture.html": {
-"d": "2026-10-20",
-"h": "0c0bd91d7ed087ab"
+"d": "2026-10-21",
+"h": "23e8d9235d9db2f5"
 },
 "/zh/plugins/dsh-pi-tui.html": {
-"d": "2026-10-20",
-"h": "0621c58af9a456eb"
+"d": "2026-10-21",
+"h": "bf4ff621939e33e2"
 },
 "/zh/plugins/dsh-plugin-check.html": {
-"d": "2026-10-20",
-"h": "def18518a5fbdedd"
+"d": "2026-10-21",
+"h": "7c4be9f982ed9c90"
 },
 "/zh/plugins/dsh-review-loop.html": {
-"d": "2026-10-20",
-"h": "02ebd51e4a34989c"
+"d": "2026-10-21",
+"h": "10443d4d758482c6"
 },
 "/zh/plugins/dsh-security-audit.html": {
-"d": "2026-10-20",
-"h": "a8616162b58b97ae"
+"d": "2026-10-21",
+"h": "e5cb70316affbfb2"
 },
 "/zh/plugins/dsh-session-health.html": {
-"d": "2026-10-20",
-"h": "c6a225b05ad1c38b"
+"d": "2026-10-21",
+"h": "d9d0615026ca544d"
 },
 "/zh/plugins/dsh-session-search.html": {
-"d": "2026-10-20",
-"h": "bbdb0cc7a062bd2c"
+"d": "2026-10-21",
+"h": "16688b5f4d0e3bf0"
 },
 "/zh/plugins/dsh-skin.html": {
-"d": "2026-10-20",
-"h": "a0bb631918e0a31d"
+"d": "2026-10-21",
+"h": "fa0d9daf62832413"
 },
 "/zh/plugins/dsh-skins.html": {
-"d": "2026-10-20",
-"h": "b6d35ab610916cad"
+"d": "2026-10-21",
+"h": "39eff7b073a91fc6"
 },
 "/zh/plugins/dsh-slice-agent-loop.html": {
-"d": "2026-10-20",
-"h": "895d5c0b4de6c39b"
+"d": "2026-10-21",
+"h": "5cbbf97f583eb939"
 },
 "/zh/plugins/dsh-test-runner.html": {
-"d": "2026-10-20",
-"h": "0ac5c37a45b4f21a"
+"d": "2026-10-21",
+"h": "678b8938568b42ac"
 },
 "/zh/plugins/dsh-tool-git.html": {
-"d": "2026-10-20",
-"h": "231ded90c3127139"
+"d": "2026-10-21",
+"h": "8b4b686af90e0e8e"
 },
 "/zh/plugins/dsh-tps.html": {
-"d": "2026-10-20",
-"h": "43376fe62104f1b9"
+"d": "2026-10-21",
+"h": "8b0d70158b245ac4"
 },
 "/zh/plugins/dsh-turn-index.html": {
-"d": "2026-10-20",
-"h": "a9675abd2bf33724"
+"d": "2026-10-21",
+"h": "d409258cb5c16d8c"
 },
 "/zh/plugins/dsh-vision-toolkit.html": {
-"d": "2026-10-20",
-"h": "d409953ce89b19b7"
+"d": "2026-10-21",
+"h": "0fee43104f30888a"
 },
 "/zh/plugins/dsh-vision.html": {
-"d": "2026-10-20",
-"h": "48045709b733e238"
+"d": "2026-10-21",
+"h": "b304514745879a0f"
 },
 "/zh/plugins/dshp.html": {
-"d": "2026-10-20",
-"h": "76bc183cc8a15c4a"
+"d": "2026-10-21",
+"h": "f4f7186813b30fa2"
 },
 "/zh/plugins/index.html": {
-"d": "2026-10-20",
-"h": "7e33994f18a8ef15"
+"d": "2026-10-21",
+"h": "36289763c21131bf"
 },
 "/zh/plugins/sandbox-micro.html": {
-"d": "2026-10-20",
-"h": "e1a8f27f84424f8f"
+"d": "2026-10-21",
+"h": "84248c6b1cf51ee3"
 },
 "/zh/plugins/sandbox-mxc.html": {
-"d": "2026-10-20",
-"h": "1d3bb561c7c8ce7b"
+"d": "2026-10-21",
+"h": "a98593eab9101d1e"
 },
 "/zh/plugins/sandbox-nono.html": {
-"d": "2026-10-20",
-"h": "ab7975b6c811b0fb"
+"d": "2026-10-21",
+"h": "554fb5c46151040a"
 },
 "/zh/scenarios.html": {
 "d": "2026-08-25",
 "h": "ff834c524a5c716d"
 },
 "/zh/scenarios/01-migration.html": {
-"d": "2026-10-20",
-"h": "063eb70556ebba29"
+"d": "2026-10-21",
+"h": "23ff5279698e0402"
 }
 }
